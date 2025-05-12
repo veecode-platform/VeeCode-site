@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 interface FeatureCardProps {
@@ -7,22 +8,25 @@ interface FeatureCardProps {
   altText?: string;
 }
 
-const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description, altText }) => {
+const FeatureCard: React.FC<FeatureCardProps> = ({
+  icon,
+  title,
+  description,
+  altText,
+}) => {
   return (
     <div className="flex gap-[14px_21px] flex-wrap">
-      <img
+      <Image
         src={icon}
         alt={altText || title}
         className="aspect-[1] object-contain w-[70px] shrink-0"
+        width={64.167}
+        height={55.417}
       />
-      <h2
-        className="text-[40px] font-bold grow shrink w-[468px] max-md:max-w-full"
-      >
+      <h2 className="text-[40px] font-bold grow shrink w-[468px] max-md:max-w-full">
         {title}
       </h2>
-      <p
-        className="text-xl font-normal grow shrink w-[560px] max-md:max-w-full"
-      >
+      <p className="text-xl font-normal grow shrink w-[560px] max-md:max-w-full">
         {description}
       </p>
     </div>
