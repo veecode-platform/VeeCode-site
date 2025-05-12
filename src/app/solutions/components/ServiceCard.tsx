@@ -7,7 +7,7 @@ interface ServiceCardProps {
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ title, description }) => {
   return (
-    <div className="flex w-full flex-col items-center text-base px-[47px] py-[65px] rounded-[10px] border-[rgba(51,255,206,1)] border-solid border-[3px] max-md:max-w-full max-md:mt-[35px] max-md:px-5">
+    <div className="flex w-full h-full flex-col justify-between items-center text-base px-[47px] py-[65px] rounded-[10px] border-[rgba(51,255,206,1)] border-solid border-[3px] max-md:max-w-full max-md:mt-[35px] max-md:px-5">
       <h3 className="text-black text-[25px] font-bold text-center">{title}</h3>
       <p className="text-black text-center font-normal self-stretch mt-[79px] max-md:mt-10">
         {description}

@@ -1,6 +1,8 @@
 import React from "react";
 import PricingCard from "./PricingCard";
 
+const checkIcon = "/assets/solutions/Check.svg";
+
 const PricingSection: React.FC = () => {
   const pricingPlans = [
     {
@@ -9,11 +11,11 @@ const PricingSection: React.FC = () => {
         "Acelere seu negócio com nossa solução de Portal do Desenvolvedor. Simplifique sua automação de APIs, Pipelines e mais para resolver seus problemas de negócio.",
       features: [
         {
-          icon: "https://cdn.builder.io/api/v1/image/assets/25b967a33ef84309975ff5f0a5545581/27978bc94b2bcc5da34a1a65fe83d89ab447f100?placeholderIfAbsent=true",
+          icon: checkIcon,
           text: "Suporte da comunidade",
         },
         {
-          icon: "https://cdn.builder.io/api/v1/image/assets/25b967a33ef84309975ff5f0a5545581/fe01d4e87e5ff98b9d2661dfbcf5aba5054bfa8b?placeholderIfAbsent=true",
+          icon: checkIcon,
           text: "Acesso à documentação",
         },
       ],
@@ -27,23 +29,23 @@ const PricingSection: React.FC = () => {
         "*Preço baseado no número de usuários e nível de serviço desejado",
       features: [
         {
-          icon: "https://cdn.builder.io/api/v1/image/assets/25b967a33ef84309975ff5f0a5545581/47acad6be8ffffd7134ea161f4d2a4b153b67e9f?placeholderIfAbsent=true",
+          icon: checkIcon,
           text: "Suporte 8x5",
         },
         {
-          icon: "https://cdn.builder.io/api/v1/image/assets/25b967a33ef84309975ff5f0a5545581/194084b571f49596fa223e1fea05364e701443c8?placeholderIfAbsent=true",
+          icon: checkIcon,
           text: "SLA de um día útil",
         },
         {
-          icon: "https://cdn.builder.io/api/v1/image/assets/25b967a33ef84309975ff5f0a5545581/a939f22390bb95c8189a789486aa80e465680e58?placeholderIfAbsent=true",
+          icon: checkIcon,
           text: "Suporte para todos os plugins",
         },
         {
-          icon: "https://cdn.builder.io/api/v1/image/assets/25b967a33ef84309975ff5f0a5545581/764afdbdc54de5502a1a5ed12b26f64b9d901dc4?placeholderIfAbsent=true",
+          icon: checkIcon,
           text: "Suporte para todos os templates",
         },
         {
-          icon: "https://cdn.builder.io/api/v1/image/assets/25b967a33ef84309975ff5f0a5545581/8c9070becc85488ec596a5e93b4a90ec86efdc40?placeholderIfAbsent=true",
+          icon: checkIcon,
           text: "Acesso direto aos nossos especialistas",
         },
       ],
@@ -57,23 +59,23 @@ const PricingSection: React.FC = () => {
         "*Preço baseado no número de usuários e nível de serviço desejado",
       features: [
         {
-          icon: "https://cdn.builder.io/api/v1/image/assets/25b967a33ef84309975ff5f0a5545581/56fb9c6d0a7a917643e6cd4f980f304d1b245483?placeholderIfAbsent=true",
+          icon: checkIcon,
           text: "Suporte 24x7",
         },
         {
-          icon: "https://cdn.builder.io/api/v1/image/assets/25b967a33ef84309975ff5f0a5545581/0833fc1b2782c7802e08143d516d661829946d25?placeholderIfAbsent=true",
+          icon: checkIcon,
           text: "SLA de um día útil",
         },
         {
-          icon: "https://cdn.builder.io/api/v1/image/assets/25b967a33ef84309975ff5f0a5545581/f258421dafb7b5b87ff0f8d3967a9b567e33ecd1?placeholderIfAbsent=true",
+          icon: checkIcon,
           text: "Suporte para todos os plugins e templates",
         },
         {
-          icon: "https://cdn.builder.io/api/v1/image/assets/25b967a33ef84309975ff5f0a5545581/ab49d0fa0c6de04f9cbadd506ed6d9fce1ceac2f?placeholderIfAbsent=true",
+          icon: checkIcon,
           text: "Acesso direto aos nossos especialistas",
         },
         {
-          icon: "https://cdn.builder.io/api/v1/image/assets/25b967a33ef84309975ff5f0a5545581/460aa315c51a3a8daed6637f8c8f80f6042b39ad?placeholderIfAbsent=true",
+          icon: checkIcon,
           text: "Features de IA exclusivas",
         },
       ],
@@ -88,9 +90,12 @@ const PricingSection: React.FC = () => {
         se adapta à sua necessidade:
       </h2>
       <div className="w-full max-w-[1410px] mt-[47px] max-md:max-w-full max-md:mt-10">
-        <div className="gap-5 flex max-md:flex-col max-md:items-stretch">
+        <div className="gap-5 grid grid-cols-1 md:grid-cols-3 max-md:items-stretch">
           {pricingPlans.map((plan, index) => (
-            <div key={index} className="w-[33%] max-md:w-full max-md:ml-0">
+            <div
+              key={index}
+              className="w-full h-full max-md:w-full max-md:ml-0"
+            >
               <PricingCard
                 title={plan.title}
                 description={plan.description}

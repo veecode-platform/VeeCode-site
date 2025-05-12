@@ -13,10 +13,10 @@ const CTASection: React.FC<CTASectionProps> = ({
   description,
   buttonText,
 }) => {
-  const [showContactForm, setShowContactForm] = React.useState(false);
-  const toggleContactForm = () => {
-    setShowContactForm(!showContactForm);
-  };
+  // const [showContactForm, setShowContactForm] = React.useState(false);
+  // const toggleContactForm = () => {
+  //   setShowContactForm(!showContactForm);
+  // };
 
   return (
     <>
@@ -34,7 +34,7 @@ const CTASection: React.FC<CTASectionProps> = ({
           {buttonText}
         </a>
       </section>
-      <div className="flex justify-center mt-8 mb-8">
+      {/* <div className="flex justify-center mt-8 mb-8">
         <button
           onClick={toggleContactForm}
           className="bg-[rgba(51,255,205,1)] text-white font-bold px-5 py-3 rounded-[10px] hover:bg-[rgba(41,204,164,1)] transition-colors"
@@ -43,7 +43,7 @@ const CTASection: React.FC<CTASectionProps> = ({
             ? "Fechar formulário"
             : "Abrir formulário de contato"}
         </button>
-      </div>
+      </div> */}
     </>
   );
 };

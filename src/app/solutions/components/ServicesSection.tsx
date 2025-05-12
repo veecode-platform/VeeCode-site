@@ -22,9 +22,12 @@ const ServicesSection: React.FC = () => {
 
   return (
     <section className="w-full max-w-[1409px] mt-[111px] max-md:max-w-full max-md:mt-10">
-      <div className="gap-5 flex max-md:flex-col max-md:items-stretch">
+      <div className="gap-5 grid grid-cols-1 md:grid-cols-3">
         {services.map((service, index) => (
-          <div key={index} className="w-[33%] max-md:w-full max-md:ml-0">
+          <div
+            key={index}
+            className="w-full max-h-full max-md:w-full max-md:ml-0"
+          >
             <ServiceCard
               title={service.title}
               description={service.description}

@@ -22,7 +22,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
   buttonText,
 }) => {
   return (
-    <div className="flex w-full flex-col items-stretch text-base text-black font-normal pt-[63px] pb-[29px] px-[38px] rounded-[10px] border-[rgba(51,255,206,1)] border-solid border-[3px] max-md:max-w-full max-md:mt-[38px] max-md:px-5">
+    <div className="flex w-full h-full flex-col justify-between text-base text-black font-normal pt-[63px] pb-[29px] px-[38px] rounded-[10px] border-[rgba(51,255,206,1)] border-solid border-[3px] max-md:max-w-full max-md:mt-[38px] max-md:px-5">
       <h3 className="text-[25px] font-bold text-center self-center">{title}</h3>
       <p className="text-black text-center self-center mt-[66px] max-md:mt-10">
         {description}
