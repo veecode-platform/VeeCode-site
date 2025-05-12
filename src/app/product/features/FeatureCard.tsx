@@ -1,0 +1,32 @@
+import React from "react";
+
+interface FeatureCardProps {
+  icon: string;
+  title: string;
+  description: string;
+  altText?: string;
+}
+
+const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description, altText }) => {
+  return (
+    <div className="flex gap-[14px_21px] flex-wrap">
+      <img
+        src={icon}
+        alt={altText || title}
+        className="aspect-[1] object-contain w-[70px] shrink-0"
+      />
+      <h2
+        className="text-[40px] font-bold grow shrink w-[468px] max-md:max-w-full"
+      >
+        {title}
+      </h2>
+      <p
+        className="text-xl font-normal grow shrink w-[560px] max-md:max-w-full"
+      >
+        {description}
+      </p>
+    </div>
+  );
+};
+
+export default FeatureCard;

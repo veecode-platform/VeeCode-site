@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/Button";
 import Image from "next/image";
+import Link from "next/link";
 
 const Header: React.FC = () => {
   return (
@@ -13,30 +14,30 @@ const Header: React.FC = () => {
         height={120}
       />
       <nav className="self-stretch flex min-w-60 items-center gap-[40px_70px] text-xl text-neutral-50 font-normal flex-wrap my-auto max-md:max-w-full">
-        <a
-          href="#product"
+        <Link
+          href="product"
           className="text-neutral-50 self-stretch my-auto hover:text-[rgba(51,255,205,1)]"
         >
           Produto
-        </a>
-        <a
+        </Link>
+        <Link
           href="#solutions"
           className="text-neutral-50 self-stretch my-auto hover:text-[rgba(51,255,205,1)]"
         >
           Soluções
-        </a>
-        <a
+        </Link>
+        <Link
           href="#resources"
           className="text-neutral-50 self-stretch gap-2.5 whitespace-nowrap my-auto p-2.5 hover:text-[rgba(51,255,205,1)]"
         >
           Recursos
-        </a>
-        <a
+        </Link>
+        <Link
           href="#comparison"
           className="text-neutral-50 self-stretch my-auto hover:text-[rgba(51,255,205,1)]"
         >
           Veecode vs. Backstage
-        </a>
+        </Link>
       </nav>
       <Button variant="secondary" size="default">
         Acesse a Demo
