@@ -1,5 +1,5 @@
 import React from "react";
-import FeatureSection from "./features/FeatureSection";
+import FeatureSection from "./components/FeatureSection";
 // import NewsletterForm from "../ui/product/NewsletterForm";
 // import ContactForm from "../ui/product/ContactForm";
 
