@@ -2,6 +2,8 @@ import React from "react";
 import { Button } from "@/components/ui/Button";
 import Image from "next/image";
 
+const HeroImage = "/assets/home/hero.webp";
+
 const Hero: React.FC = () => {
   return (
     <section className="flex flex-col items-center">
@@ -25,7 +27,7 @@ const Hero: React.FC = () => {
         </Button>
       </div>
       <Image
-        src="https://cdn.builder.io/api/v1/image/assets/25b967a33ef84309975ff5f0a5545581/5edbe96b1f9275743968d5e6c943f28da8be8b9b?placeholderIfAbsent=true"
+        src={HeroImage}
         width={724}
         height={407}
         alt="VeeCode Platform Dashboard"

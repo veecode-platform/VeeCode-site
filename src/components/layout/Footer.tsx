@@ -1,25 +1,22 @@
-import Image from "next/image";
 import React from "react";
+import VeeCodeLogo from "../VeeCodeLogo";
+import Link from "next/link";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="items-center self-stretch flex w-full flex-col bg-black mt-[88px] max-md:max-w-full max-md:mt-10 max-md:px-5">
+    <footer className="items-center self-stretch flex w-full flex-col bg-black mt-[88px] max-md:max-w-full max-md:mt-10 max-md:px-5 pt-20 pb-10 px-8">
       <div className="w-full max-w-[1204px] max-md:max-w-full">
         <div className="w-full gap-[60px] pb-28 max-md:max-w-full max-md:pb-[100px]">
-          <div className="content-start flex-wrap flex w-full gap-[32px_var(--inline-3xl,32px)] max-md:max-w-full">
-            <Image
-              src="https://platform.vee.codes/assets/logo/logo.svg"
-              alt="VeeCode Logo"
-              className="aspect-[2.31] object-contain w-[277px] min-w-40 shrink flex-1 basis-[0%]"
-              width={120}
-              height={120}
-            />
+          <div className="content-start align-top justify-start flex-wrap flex w-full gap-8 max-md:max-w-full">
+            <div className="min-w-60">
+              <VeeCodeLogo width={197} height={75} />
+            </div>
             <div className="min-w-40 justify-center flex flex-col text-base text-white flex-1 shrink basis-[0%] gap-4">
               <h3 className="self-stretch gap-2 font-bold whitespace-nowrap leading-[1.2]">
                 Sobre
               </h3>
               <nav className="justify-center flex flex-col font-medium text-center leading-none gap-2 mt-4">
-                <a
+                <Link
                   href="#how-it-works"
                   className="flex hover:text-[rgba(51,255,205,1)]"
                 >
@@ -28,8 +25,8 @@ const Footer: React.FC = () => {
                       Como funciona
                     </span>
                   </div>
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#support"
                   className="flex whitespace-nowrap mt-2 hover:text-[rgba(51,255,205,1)]"
                 >
@@ -38,8 +35,8 @@ const Footer: React.FC = () => {
                       Suporte
                     </span>
                   </div>
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#community"
                   className="self-stretch flex mt-2 hover:text-[rgba(51,255,205,1)]"
                 >
@@ -48,8 +45,8 @@ const Footer: React.FC = () => {
                       Junte-se à comunidade
                     </span>
                   </div>
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#contact"
                   className="flex mt-2 hover:text-[rgba(51,255,205,1)]"
                 >
@@ -58,7 +55,7 @@ const Footer: React.FC = () => {
                       Fale Conosco
                     </span>
                   </div>
-                </a>
+                </Link>
               </nav>
             </div>
             <div className="min-w-40 justify-center flex flex-col flex-1 shrink basis-[0%] gap-4">
@@ -66,7 +63,7 @@ const Footer: React.FC = () => {
                 Recursos
               </h3>
               <nav className="justify-center flex flex-col gap-2 mt-4">
-                <a
+                <Link
                   href="#documentation"
                   className="flex text-base text-white font-medium whitespace-nowrap text-center leading-none hover:text-[rgba(51,255,205,1)]"
                 >
@@ -75,8 +72,8 @@ const Footer: React.FC = () => {
                       Documentação
                     </span>
                   </div>
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#vkdr"
                   className="flex text-base text-white font-medium whitespace-nowrap text-center leading-none mt-2 hover:text-[rgba(51,255,205,1)]"
                 >
@@ -85,8 +82,8 @@ const Footer: React.FC = () => {
                       VKDR
                     </span>
                   </div>
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#devportal"
                   className="flex text-base text-white font-medium whitespace-nowrap text-center leading-none mt-2 hover:text-[rgba(51,255,205,1)]"
                 >
@@ -95,13 +92,13 @@ const Footer: React.FC = () => {
                       DevPortal
                     </span>
                   </div>
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#plugins"
-                  className="text-white text-base font-medium leading-none text-center mt-2 hover:text-[rgba(51,255,205,1)]"
+                  className="flex text-base text-white font-medium whitespace-nowrap text-center leading-none mt-2 hover:text-[rgba(51,255,205,1)]"
                 >
                   Plugins
-                </a>
+                </Link>
               </nav>
             </div>
             <div className="min-w-40 justify-center flex flex-col text-base text-white flex-1 shrink basis-[0%] gap-4">
@@ -109,7 +106,7 @@ const Footer: React.FC = () => {
                 Mais
               </h3>
               <nav className="justify-center flex flex-col font-medium text-center leading-none gap-2 mt-4">
-                <a
+                <Link
                   href="#blog"
                   className="flex whitespace-nowrap hover:text-[rgba(51,255,205,1)]"
                 >
@@ -118,8 +115,8 @@ const Footer: React.FC = () => {
                       Blog
                     </span>
                   </div>
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#privacy"
                   className="self-stretch flex mt-2 hover:text-[rgba(51,255,205,1)]"
                 >
@@ -128,8 +125,8 @@ const Footer: React.FC = () => {
                       Políticas de Privacidade
                     </span>
                   </div>
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#terms"
                   className="flex mt-2 hover:text-[rgba(51,255,205,1)]"
                 >
@@ -138,8 +135,8 @@ const Footer: React.FC = () => {
                       Termos de Serviço
                     </span>
                   </div>
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#faq"
                   className="flex whitespace-nowrap mt-2 hover:text-[rgba(51,255,205,1)]"
                 >
@@ -148,7 +145,7 @@ const Footer: React.FC = () => {
                       FAQ
                     </span>
                   </div>
-                </a>
+                </Link>
               </nav>
             </div>
           </div>
@@ -156,8 +153,8 @@ const Footer: React.FC = () => {
         <div className="flex min-h-px w-full flex-col items-stretch justify-center max-md:max-w-full">
           <div className="border min-h-px w-full bg-[#D2D5E2] border-[rgba(210,213,226,1)] border-solid max-md:max-w-full" />
         </div>
-        <div className="self-stretch w-full content-center flex-wrap gap-[24px_var(--inline-2xl,24px)] text-sm text-white font-normal leading-[1.4] py-[20px] max-md:max-w-full">
-          Copyright © 2025 Todos os direitos reservados
+        <div className="self-stretch w-full content-center flex-wrap gap-[24px_var(--inline-2xl,24px)] text-sm text-white font-normal leading-[1.4] py-[20px] max-md:max-w-full text-center">
+          <p>Copyright © 2025 Todos os direitos reservados</p>
         </div>
       </div>
     </footer>

@@ -2,6 +2,10 @@ import React from "react";
 import FeatureCard from "./FeatureCard";
 import { BsStars } from "react-icons/bs";
 
+const FeatureImg1 = "/assets/home/feature-card1.svg";
+const FeatureImg2 = "/assets/home/feature-card2.svg";
+const FeatureImg3 = "/assets/home/feature-card3.svg";
+
 const Features: React.FC = () => {
   return (
     <section className="flex flex-col items-center">
@@ -30,17 +34,17 @@ const Features: React.FC = () => {
         <div className="gap-5 flex max-md:flex-col max-md:items-stretch">
           <div className="w-full max-md:ml-0 grid grid-cols-3 gap-5 max-md:grid-cols-1">
             <FeatureCard
-              icon="https://cdn.builder.io/api/v1/image/assets/25b967a33ef84309975ff5f0a5545581/dc8932dd754a482693669efdece7d856b152501f?placeholderIfAbsent=true"
+              icon={FeatureImg1}
               title="Acelere o Onboarding"
               description="Centralize softwares, APIs, recursos e times em um só lugar. Otimize o tempo de onboarding do seu time e deixe toda a documentação centralizada em um só lugar"
             />
             <FeatureCard
-              icon="https://cdn.builder.io/api/v1/image/assets/25b967a33ef84309975ff5f0a5545581/17ea4dc9c35798e40209c80c108cfa52c35ae54e?placeholderIfAbsent=true"
+              icon={FeatureImg2}
               title="Configure sua plataforma"
               description="Faça deploys com segurança e consistência usando Templates. Teste de forma mais rápida e consistente. Acompanhe métricas, identifique gargalos e mantenha uma entrega de alta qualidade"
             />
             <FeatureCard
-              icon="https://cdn.builder.io/api/v1/image/assets/25b967a33ef84309975ff5f0a5545581/61a5efe38e2ddbe4da7f6613251d0a3029354270?placeholderIfAbsent=true"
+              icon={FeatureImg3}
               title="Conte com o nosso suporte"
               description="Esteja você executando na sua própria instância na nuvem ou dentro do seu datacenter, nós te ajudamos a configurar a plataforma de acordo com suas necessidades"
             />

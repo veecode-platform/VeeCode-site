@@ -8,8 +8,8 @@ interface CallToActionProps {
 
 const CallToAction: React.FC<CallToActionProps> = ({ title, subtitle }) => {
   return (
-    <section className="flex flex-col items-center">
-      <div className="min-h-[188px] w-[1032px] max-w-full mt-[131px] pb-6 max-md:mt-10">
+    <section className="flex flex-col items-center mt-[131px] pb-6 max-md:mt-10">
+      <div className="min-h-[188px] w-[1032px] max-w-full">
         <h2 className="text-black text-[40px] font-bold max-md:max-w-full text-center">
           {title}
         </h2>
