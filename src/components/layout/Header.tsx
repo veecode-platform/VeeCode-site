@@ -27,13 +27,13 @@ const Header: React.FC = () => {
           Soluções
         </Link>
         <Link
-          href="#resources"
+          href="resources"
           className="text-neutral-50 self-stretch gap-2.5 whitespace-nowrap my-auto p-2.5 hover:text-[rgba(51,255,205,1)]"
         >
           Recursos
         </Link>
         <Link
-          href="#comparison"
+          href="comparison"
           className="text-neutral-50 self-stretch my-auto hover:text-[rgba(51,255,205,1)]"
         >
           Veecode vs. Backstage
