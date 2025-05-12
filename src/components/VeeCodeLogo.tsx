@@ -2,10 +2,10 @@ import { VEECODE_LOGO } from "@/lib/constants";
 import Image from "next/image";
 import React from "react";
 
-export type VeeCodeLogoProps = {
+interface VeeCodeLogoProps {
   width?: number;
   height?: number;
-};
+}
 
 const VeeCodeLogo: React.FC<VeeCodeLogoProps> = ({ width, height }) => (
   <Image
