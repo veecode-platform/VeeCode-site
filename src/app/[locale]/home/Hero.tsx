@@ -4,26 +4,35 @@ import Image from "next/image";
 
 const HeroImage = "/assets/home/hero.webp";
 
-const Hero: React.FC = () => {
+interface HeroProps {
+  title: string;
+  description: string;
+  buttonLabel1: string;
+  buttonLabel2: string;
+}
+
+const Hero: React.FC<HeroProps> = ({
+  title,
+  description,
+  buttonLabel1,
+  buttonLabel2,
+}) => {
   return (
     <section className="flex flex-col items-center">
       <div className="flex w-[705px] max-w-full flex-col items-center text-black text-center mt-[107px] max-md:mt-10">
         <h1 className="text-[55px] font-bold max-md:max-w-full max-md:text-[40px]">
-          Transforme o trabalho
-          <br />
-          da sua equipe
+          {title}
         </h1>
         <p className="text-xl font-normal mt-[23px] max-md:max-w-full">
-          Uma Plataforma Interna de Desenvolvedores construída a partir do
-          Backstage que oferece transparência, flexibilidade e fácil implantação
+          {description}
         </p>
       </div>
       <div className="flex items-center gap-[23px] text-base mt-[31px]">
         <Button variant="default" size="sm">
-          Fale Conosco
+          {buttonLabel1}
         </Button>
         <Button variant="outline" size="sm">
-          Acesse a Demo
+          {buttonLabel2}
         </Button>
       </div>
       <Image

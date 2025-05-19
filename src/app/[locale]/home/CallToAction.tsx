@@ -3,10 +3,17 @@ import { Button } from "@/components/ui/Button";
 
 interface CallToActionProps {
   title: string;
-  subtitle?: string;
+  subtitle: string;
+  buttonLabel1: string;
+  buttonLabel2: string;
 }
 
-const CallToAction: React.FC<CallToActionProps> = ({ title, subtitle }) => {
+const CallToAction: React.FC<CallToActionProps> = ({
+  title,
+  subtitle,
+  buttonLabel1,
+  buttonLabel2,
+}) => {
   return (
     <section className="flex flex-col items-center mt-[131px] pb-6 max-md:mt-10">
       <div className="min-h-[188px] w-[1032px] max-w-full">
@@ -21,10 +28,10 @@ const CallToAction: React.FC<CallToActionProps> = ({ title, subtitle }) => {
       </div>
       <div className="z-10 flex mt-[-68px] min-h-11 w-[374px] max-w-full items-center gap-[23px] text-base">
         <Button variant="default" size="sm">
-          Fale Conosco
+          {buttonLabel1}
         </Button>
         <Button variant="outline" size="sm">
-          Acesse a Demo
+          {buttonLabel2}
         </Button>
       </div>
     </section>

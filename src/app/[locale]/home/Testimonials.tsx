@@ -1,32 +1,28 @@
 import React from "react";
 import TestimonialCard from "./TestimonialCard";
 
-const Testimonials: React.FC = () => {
-  const testimonials = [
-    {
-      quote:
-        "A VeeCode se tornou uma ferramenta essencial na nossa empresa. Aceleramos nossas entregas com uma redução significativa de tempo e mais importante, mantendo a observabilidade entre times.",
-      avatar: "https://cdn.builder.io/api/v1/image/assets/25b967a33ef84309975ff5f0a5545581/1dfda147ce98c68bf91368c835f201be0ccd8566?placeholderIfAbsent=true",
-      name: "Gabriel",
-      role: "Principal Product Designer",
-    },
-    {
-      quote:
-        "A VeeCode foi uma grata surpresa! Aceleramos em 90% as entregas de novos ambientes e tudo isso com um altíssimo padrão de segurança e governança, com um ótimo custo-benefício, que foi essencial na escolha da ferramenta.",
-      avatar: "https://cdn.builder.io/api/v1/image/assets/25b967a33ef84309975ff5f0a5545581/1dfda147ce98c68bf91368c835f201be0ccd8566?placeholderIfAbsent=true",
-      name: "Geraldo",
-      role: "Tech Leader",
-    },
-  ];
+const Avatar = "/assets/home/Avatar.svg";
 
+export type TestimonialCardProps = {
+  id: number;
+  quote: string;
+  author: string;
+  role: string;
+};
+
+interface TestimonialsProps {
+  cards: TestimonialCardProps[];
+}
+
+const Testimonials: React.FC<TestimonialsProps> = ({ cards }) => {
   return (
     <section className="bg-[rgba(210,213,226,0.16)] self-stretch flex min-h-[448px] w-full items-center gap-[40px_120px] justify-center flex-wrap px-[120px] max-md:max-w-full max-md:px-5">
-      {testimonials.map((testimonial, index) => (
+      {cards.map((testimonial) => (
         <TestimonialCard
-          key={index}
+          key={testimonial.id}
           quote={testimonial.quote}
-          avatar={testimonial.avatar}
-          name={testimonial.name}
+          avatar={Avatar}
+          name={testimonial.author}
           role={testimonial.role}
         />
       ))}

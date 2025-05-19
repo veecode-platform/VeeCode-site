@@ -5,11 +5,15 @@ const VertigoLogo = "/assets/home/vertigo-logo.webp";
 const AmbimaLogo = "/assets/home/ambima-logo.webp";
 const CredSystemLogo = "/assets/home/credsystem-logo.webp";
 
-const ClientLogos: React.FC = () => {
+interface ClientLogosProps {
+  label: string;
+}
+
+const ClientLogos: React.FC<ClientLogosProps> = ({ label }) => {
   return (
     <section className="flex flex-col items-center">
       <p className="text-[#4B5162] text-center text-base font-normal leading-[1.6] opacity-80 mt-[125px] max-md:max-w-full max-md:mt-10">
-        160 + clientes satisfeitos que escalam seus negócios com a VeeCode
+        {label}
       </p>
       <div className="flex w-full max-w-[1182px] items-center justify-center flex-wrap mt-9 max-md:max-w-full gap-8">
         <Image
