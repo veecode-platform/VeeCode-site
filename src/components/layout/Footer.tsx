@@ -1,8 +1,12 @@
 import React from "react";
 import VeeCodeLogo from "../VeeCodeLogo";
 import Link from "next/link";
+import { PatternComponentProps } from "@/lib/@types/patternComponentProps";
+import { getTranslations } from "next-intl/server";
 
-const Footer: React.FC = () => {
+const Footer: React.FC<PatternComponentProps> = async ({ locale }) => {
+  const t = await getTranslations({ locale, namespace: "footer" });
+
   return (
     <footer className="items-center self-stretch flex w-full flex-col bg-black max-md:max-w-full max-md:px-5 pt-20 pb-10 px-8">
       <div className="w-full max-w-[1204px] max-md:max-w-full">
@@ -13,94 +17,94 @@ const Footer: React.FC = () => {
             </div>
             <div className="min-w-40 flex justify-center flex-col text-base text-white flex-1 shrink basis-[0%] gap-4">
               <h3 className="self-stretch md:text-left gap-2 font-bold whitespace-nowrap leading-[1.2]">
-                Sobre
+                {t("about-title")}
               </h3>
               <nav className="flex justify-center flex-col font-medium text-center leading-none gap-2 mt-4">
                 <Link
                   href="#how-it-works"
                   className="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
                 >
-                  Como funciona
+                  {t("about-option1")}
                 </Link>
                 <Link
                   href="#support"
                   className="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
                 >
-                  Suporte
+                  {t("about-option2")}
                 </Link>
                 <Link
                   href="#community"
                   className="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
                 >
-                  Junte-se à comunidade
+                  {t("about-option3")}
                 </Link>
                 <Link
                   href="#contact"
                   className="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
                 >
-                  Fale Conosco
+                  {t("about-option4")}
                 </Link>
               </nav>
             </div>
             <div className="min-w-40 justify-center flex flex-col flex-1 shrink basis-[0%] gap-4">
               <h3 className="self-stretch  md:text-left gap-2 text-base text-white font-bold whitespace-nowrap leading-[1.2]">
-                Recursos
+                {t("resources-title")}
               </h3>
               <nav className="justify-center flex flex-col gap-2 mt-4">
                 <Link
                   href="#documentation"
                   className="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
                 >
-                  Documentação
+                  {t("resources-option1")}
                 </Link>
                 <Link
                   href="#vkdr"
                   className="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
                 >
-                  VKDR
+                  {t("resources-option2")}
                 </Link>
                 <Link
                   href="#devportal"
                   className="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
                 >
-                  DevPortal
+                  {t("resources-option3")}
                 </Link>
                 <Link
                   href="#plugins"
                   className="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
                 >
-                  Plugins
+                  {t("resources-option4")}
                 </Link>
               </nav>
             </div>
             <div className="min-w-40 justify-center flex flex-col text-base text-white flex-1 shrink basis-[0%] gap-4">
               <h3 className="self-stretch md:text-left gap-2 font-bold whitespace-nowrap leading-[1.2]">
-                Mais
+                {t("more-title")}
               </h3>
               <nav className="justify-center flex flex-col font-medium text-center leading-none gap-2 mt-4">
                 <Link
                   href="#blog"
                   className="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
                 >
-                  Blog
+                  {t("more-option1")}
                 </Link>
                 <Link
                   href="#privacy"
                   className="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
                 >
-                  Políticas de Privacidade
+                  {t("more-option2")}
                 </Link>
                 <Link
                   href="#terms"
                   className="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
                 >
-                  Termos de Serviço
+                  {t("more-option3")}
                 </Link>
                 <Link
                   href="#faq"
                   className="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
                 >
-                  FAQ
+                  {t("more-option4")}
                 </Link>
               </nav>
             </div>
@@ -110,7 +114,7 @@ const Footer: React.FC = () => {
           <div className="border min-h-px w-full bg-[#D2D5E2] border-neutral-700 border-solid max-md:max-w-full" />
         </div>
         <div className="self-stretch w-full content-center flex-wrap gap-[24px_var(--inline-2xl,24px)] text-sm text-white font-normal leading-[1.4] py-[20px] max-md:max-w-full text-center">
-          <p>Copyright © 2025 Todos os direitos reservados</p>
+          <p>{t("copyright")}</p>
         </div>
       </div>
     </footer>
