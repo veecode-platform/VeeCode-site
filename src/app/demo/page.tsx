@@ -41,6 +41,7 @@ const Demo: React.FC = () => {
                     className="w-8 h-8"
                     width={32}
                     height={32}
+                    unoptimized
                   />
                 </div>
                 <h3 className="text-xl font-bold">Catálogo de APIs</h3>
@@ -61,6 +62,7 @@ const Demo: React.FC = () => {
                     className="w-8 h-8"
                     width={32}
                     height={32}
+                    unoptimized
                   />
                 </div>
                 <h3 className="text-xl font-bold">Kong Service Manager</h3>
@@ -80,6 +82,7 @@ const Demo: React.FC = () => {
                     className="w-8 h-8"
                     width={32}
                     height={32}
+                    unoptimized
                   />
                 </div>
                 <h3 className="text-xl font-bold">Software Templates</h3>
@@ -100,6 +103,7 @@ const Demo: React.FC = () => {
                     className="w-8 h-8"
                     width={32}
                     height={32}
+                    unoptimized
                   />
                 </div>
                 <h3 className="text-xl font-bold">VeeCode RBAC</h3>

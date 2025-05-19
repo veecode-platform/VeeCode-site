@@ -52,6 +52,7 @@ const PlatformBenefits: React.FC = () => {
           src={BackgroundBenefits}
           alt="Background Pattern"
           className="aspect-[2.07] object-contain w-[879px] absolute z-0 max-w-full h-[424px] left-0 bottom-0 opacity-50"
+          unoptimized
         />
         <div className="content-start self-stretch flex-wrap z-0 flex w-full gap-[40px_var(--inline-4xl,40px)] max-md:max-w-full">
           <div className="min-w-[360px] justify-center items-stretch flex flex-col font-bold flex-1 shrink basis-[0%] gap-10 max-md:max-w-full">

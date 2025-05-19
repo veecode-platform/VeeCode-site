@@ -25,6 +25,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
         height={60}
         alt={`${name}'s avatar`}
         className="aspect-[1] object-contain w-10 shrink-0 rounded-full"
+        unoptimized
       />
       <div className="min-w-60 grow shrink w-[280px]">
         <div className="text-neutral-900 text-base font-semibold leading-loose">

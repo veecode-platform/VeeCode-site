@@ -22,6 +22,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
         className="aspect-[1] object-contain w-[70px] shrink-0"
         width={64.167}
         height={55.417}
+        unoptimized
       />
       <h2 className="text-[40px] font-bold grow shrink w-[468px] max-md:max-w-full">
         {title}

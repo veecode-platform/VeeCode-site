@@ -18,6 +18,7 @@ const ClientLogos: React.FC = () => {
           width={161}
           height={72}
           className="aspect-[2.24] object-contain w-[161px] self-stretch shrink-0 my-auto"
+          unoptimized
         />
         <Image
           src={AmbimaLogo}
@@ -25,6 +26,7 @@ const ClientLogos: React.FC = () => {
           width={183}
           height={97}
           className="aspect-[1.89] object-contain w-[183px] self-stretch shrink-0 my-auto"
+          unoptimized
         />
         <Image
           src={CredSystemLogo}
@@ -32,6 +34,7 @@ const ClientLogos: React.FC = () => {
           width={301}
           height={81}
           className="aspect-[3.72] object-contain w-[301px] self-stretch min-w-60 my-auto"
+          unoptimized
         />
       </div>
     </section>

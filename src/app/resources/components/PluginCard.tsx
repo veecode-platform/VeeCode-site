@@ -31,6 +31,7 @@ export const PluginCard: React.FC<PluginCardProps> = ({
           src={icon}
           alt={`${title} icon`}
           className="text-slate-950 aspect-[1] object-contain w-[102px] shrink-0 max-w-full max-md:mt-9"
+          unoptimized
         />
         <div className="mt-1.5 max-md:mt-10">
           <h3 className="text-3xl font-bold">{title}</h3>

@@ -14,6 +14,7 @@ const VeeCodeLogo: React.FC<VeeCodeLogoProps> = ({ width, height }) => (
     className="aspect-[3.21] object-contain w-[170px] self-stretch shrink-0 my-auto"
     width={width ?? 170}
     height={height ?? 53.03}
+    unoptimized
   />
 );
 

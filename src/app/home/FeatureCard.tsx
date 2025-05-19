@@ -22,6 +22,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
             height={18}
             width={18}
             className="aspect-[1] object-contain w-[18px] shrink-0 my-auto"
+            unoptimized
           />
           <div className="self-stretch gap-2.5 p-2.5">{title}</div>
         </div>

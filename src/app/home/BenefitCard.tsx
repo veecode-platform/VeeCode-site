@@ -21,6 +21,7 @@ const BenefitCard: React.FC<BenefitCardProps> = ({
           className="aspect-[1] object-contain w-6 self-stretch my-auto"
           width={24}
           height={24}
+          unoptimized
         />
       </div>
       <div className="min-w-60 text-base flex-1 shrink basis-6 my-auto">

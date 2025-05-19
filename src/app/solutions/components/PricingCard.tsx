@@ -43,6 +43,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
               className="aspect-[1] object-contain w-6 shrink-0"
               width={24}
               height={24}
+              unoptimized
             />
             <span className="basis-auto">{feature.text}</span>
           </li>

@@ -32,6 +32,7 @@ const Hero: React.FC = () => {
         height={407}
         alt="VeeCode Platform Dashboard"
         className="aspect-[1.78] object-contain w-[724px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] max-w-full mt-[51px] rounded-[11px] max-md:mt-10"
+        unoptimized
       />
     </section>
   );
