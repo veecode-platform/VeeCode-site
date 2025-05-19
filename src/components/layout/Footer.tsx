@@ -1,11 +1,12 @@
 import React from "react";
 import VeeCodeLogo from "../VeeCodeLogo";
-import Link from "next/link";
 import { PatternComponentProps } from "@/lib/@types/patternComponentProps";
 import { getTranslations } from "next-intl/server";
+import { ExternalLink, NavigationLink } from "../ui/links";
 
 const Footer: React.FC<PatternComponentProps> = async ({ locale }) => {
   const t = await getTranslations({ locale, namespace: "footer" });
+  const a = await getTranslations({ locale, namespace: "accessibility" });
 
   return (
     <footer className="items-center self-stretch flex w-full flex-col bg-black max-md:max-w-full max-md:px-5 pt-20 pb-10 px-8">
@@ -20,30 +21,31 @@ const Footer: React.FC<PatternComponentProps> = async ({ locale }) => {
                 {t("about-title")}
               </h3>
               <nav className="flex justify-center flex-col font-medium text-center leading-none gap-2 mt-4">
-                <Link
-                  href="#how-it-works"
+                <NavigationLink
+                  href="/"
                   className="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
                 >
                   {t("about-option1")}
-                </Link>
-                <Link
-                  href="#support"
+                </NavigationLink>
+                <NavigationLink
+                  href="/"
                   className="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
                 >
                   {t("about-option2")}
-                </Link>
-                <Link
-                  href="#community"
-                  className="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
+                </NavigationLink>
+                <ExternalLink
+                  href="https://github.com/vfipaas/safira-support/discussions"
+                  description={a("external-links.github")}
+                  styles="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
                 >
                   {t("about-option3")}
-                </Link>
-                <Link
-                  href="#contact"
+                </ExternalLink>
+                <NavigationLink
+                  href="/"
                   className="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
                 >
                   {t("about-option4")}
-                </Link>
+                </NavigationLink>
               </nav>
             </div>
             <div className="min-w-40 justify-center flex flex-col flex-1 shrink basis-[0%] gap-4">
@@ -51,30 +53,33 @@ const Footer: React.FC<PatternComponentProps> = async ({ locale }) => {
                 {t("resources-title")}
               </h3>
               <nav className="justify-center flex flex-col gap-2 mt-4">
-                <Link
+                <ExternalLink
                   href="#documentation"
-                  className="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
+                  description={a("external-links.docs")}
+                  styles="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
                 >
                   {t("resources-option1")}
-                </Link>
-                <Link
-                  href="#vkdr"
-                  className="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
+                </ExternalLink>
+                <ExternalLink
+                  description={a("external-links.vkdr")}
+                  href="https://docs.platform.vee.codes/vkdr/intro/"
+                  styles="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
                 >
                   {t("resources-option2")}
-                </Link>
-                <Link
-                  href="#devportal"
-                  className="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
+                </ExternalLink>
+                <ExternalLink
+                  description={a("external-links.docs")}
+                  href="https://docs.platform.vee.codes/devportal/intro/"
+                  styles="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
                 >
                   {t("resources-option3")}
-                </Link>
-                <Link
-                  href="#plugins"
+                </ExternalLink>
+                <NavigationLink
+                  href="/resources"
                   className="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
                 >
                   {t("resources-option4")}
-                </Link>
+                </NavigationLink>
               </nav>
             </div>
             <div className="min-w-40 justify-center flex flex-col text-base text-white flex-1 shrink basis-[0%] gap-4">
@@ -82,30 +87,31 @@ const Footer: React.FC<PatternComponentProps> = async ({ locale }) => {
                 {t("more-title")}
               </h3>
               <nav className="justify-center flex flex-col font-medium text-center leading-none gap-2 mt-4">
-                <Link
-                  href="#blog"
-                  className="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
+                <ExternalLink
+                  description={a("external-links.blog")}
+                  href="https://blog.platform.vee.codes/"
+                  styles="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
                 >
                   {t("more-option1")}
-                </Link>
-                <Link
-                  href="#privacy"
+                </ExternalLink>
+                <NavigationLink
+                  href="/"
                   className="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
                 >
                   {t("more-option2")}
-                </Link>
-                <Link
-                  href="#terms"
+                </NavigationLink>
+                <NavigationLink
+                  href="/"
                   className="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
                 >
                   {t("more-option3")}
-                </Link>
-                <Link
-                  href="#faq"
+                </NavigationLink>
+                <NavigationLink
+                  href="/"
                   className="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
                 >
                   {t("more-option4")}
-                </Link>
+                </NavigationLink>
               </nav>
             </div>
           </div>
@@ -114,7 +120,10 @@ const Footer: React.FC<PatternComponentProps> = async ({ locale }) => {
           <div className="border min-h-px w-full bg-[#D2D5E2] border-neutral-700 border-solid max-md:max-w-full" />
         </div>
         <div className="self-stretch w-full content-center flex-wrap gap-[24px_var(--inline-2xl,24px)] text-sm text-white font-normal leading-[1.4] py-[20px] max-md:max-w-full text-center">
-          <p>{t("copyright")}</p>
+          <p>
+            {" "}
+            Copyright &copy; {new Date().getFullYear()} {t("copyright")}
+          </p>
         </div>
       </div>
     </footer>
