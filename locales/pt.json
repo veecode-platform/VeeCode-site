@@ -84,7 +84,7 @@
     }
   },
   "header": {
-    "products": "Produtos",
+    "product": "Produtos",
     "solutions": "Soluções",
     "resources": "Recursos",
     "comparison": "Veecode vs. Backstage",
@@ -118,29 +118,25 @@
       "description": "Uma Plataforma Interna de Desenvolvedores construída a partir do Backstage que oferece transparência, flexibilidade e fácil implantação",
       "buttons": {
         "button1": {
-          "label": "Fale Conosco",
-          "href": "#"
+          "label": "Fale Conosco"
         },
         "button2": {
-          "label": "Acesse a Demo",
-          "href": "#"
+          "label": "Acesse a Demo"
         }
       },
       "image-alt": "Print da tela de scaffolder templates"
     },
     "label-customer-section": "160 + clientes satisfeitos que escalam seus negócios com a VeeCode",
-    "features": {
+    "feature": {
       "label": "Nossa Estratégia",
       "title": "Unifique nuvens, processos e ferramentas em um só lugar",
       "description": "Rapidamente conecte sua infraestrutura, gerencie deploys, performance e custo",
       "buttons": {
         "button1": {
-          "label": "Fale Conosco",
-          "href": "#"
+          "label": "Fale Conosco"
         },
         "button2": {
-          "label": "Acesse a Demo",
-          "href": "#"
+          "label": "Acesse a Demo"
         }
       },
       "card1": {
@@ -158,7 +154,9 @@
     },
     "benefits": {
       "title": "Eleve o seu código a um novo nível de eficiência com <strong>VeeCode Platform</strong>",
-      "buttonLabel1": "Planos de suporte",
+      "button": {
+        "label": "Planos de suporte"
+      },
       "card1": {
         "title": "Catálogos de API",
         "description": "Acesse uma extensa possibilidade de recursos e criem aplicações inovadoras."
@@ -182,14 +180,14 @@
     },
     "testimonials": {
       "testimonial-card1": {
-        "message": "A VeeCode se tornou uma ferramenta essencial na nossa empresa. Aceleramos nossas entregas com uma redução significativa de tempo e mais importante, mantendo a observabilidade entre times.",
+        "quote": "A VeeCode se tornou uma ferramenta essencial na nossa empresa. Aceleramos nossas entregas com uma redução significativa de tempo e mais importante, mantendo a observabilidade entre times.",
         "author": "Gabriel",
-        "position": "Principal Product Designer"
+        "role": "Principal Product Designer"
       },
       "testimonial-card2": {
-        "message": "A VeeCode foi uma grata surpresa! Aceleramos em 90% as entregas de novos ambientes e tudo isso com um altíssimo padrão de segurança e governança, com um ótimo custo-benefício, que foi essencial na escolha da ferramenta.",
+        "quote": "A VeeCode foi uma grata surpresa! Aceleramos em 90% as entregas de novos ambientes e tudo isso com um altíssimo padrão de segurança e governança, com um ótimo custo-benefício, que foi essencial na escolha da ferramenta.",
         "author": "Geraldo",
-        "position": "Tech Leader"
+        "role": "Tech Leader"
       }
     },
     "call-to-action": {
@@ -197,12 +195,10 @@
       "description": "Adote Backstage pela VeeCode",
       "buttons": {
         "button1": {
-          "label": "Fale Conosco",
-          "href": "#"
+          "label": "Fale Conosco"
         },
         "button2": {
-          "label": "Acesse a Demo",
-          "href": "#"
+          "label": "Acesse a Demo"
         }
       }
     }

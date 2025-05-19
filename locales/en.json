@@ -14,11 +14,11 @@
     },
     "failed": {
       "title": "Operation Failed | VeeCode Platform",
-      "description": "Failure page, you need to submit the request again."
+      "description": "Failure page, you need to make the request again."
     },
     "faq": {
       "title": "Frequently Asked Questions | VeeCode Platform",
-      "description": "Section with frequently asked questions and their respective answers, stay tuned for everything!"
+      "description": "Section with frequently asked questions and their respective answers, stay up to date with everything!"
     },
     "free-plan": {
       "title": "Free Plan | VeeCode Platform",
@@ -84,7 +84,7 @@
     }
   },
   "header": {
-    "products": "Products",
+    "product": "Products",
     "solutions": "Solutions",
     "resources": "Resources",
     "comparison": "Veecode vs. Backstage",
@@ -118,78 +118,76 @@
       "description": "An Internal Developer Platform built on Backstage that offers transparency, flexibility, and easy deployment",
       "buttons": {
         "button1": {
-          "label": "Contact Us",
-          "href": "#"
+          "label": "Contact Us"
         },
         "button2": {
-          "label": "Access the Demo",
-          "href": "#"
+          "label": "Access the Demo"
         }
       },
-      "image-alt": "Screenshot of scaffolder templates screen"
+      "image-alt": "Screenshot of the scaffolder templates screen"
     },
     "label-customer-section": "160+ satisfied customers scaling their business with VeeCode",
-    "features": {
+    "feature": {
       "label": "Our Strategy",
       "title": "Unify clouds, processes, and tools in one place",
       "description": "Quickly connect your infrastructure, manage deployments, performance, and cost",
       "buttons": {
         "button1": {
-          "label": "Contact Us",
-          "href": "#"
+          "label": "Contact Us"
         },
         "button2": {
-          "label": "Access the Demo",
-          "href": "#"
+          "label": "Access the Demo"
         }
       },
       "card1": {
         "title": "Accelerate Onboarding",
-        "description": "Centralize software, APIs, resources, and teams in one place. Optimize your team's onboarding time and keep all documentation centralized"
+        "description": "Centralize software, APIs, resources, and teams in one place. Optimize your team's onboarding time and keep all documentation centralized."
       },
       "card2": {
         "title": "Configure your platform",
-        "description": "Deploy securely and consistently using Templates. Test faster and more consistently. Track metrics, identify bottlenecks, and maintain high-quality delivery"
+        "description": "Deploy securely and consistently using Templates. Test faster and more consistently. Track metrics, identify bottlenecks, and maintain high-quality delivery."
       },
       "card3": {
         "title": "Count on our support",
-        "description": "Whether running on your own cloud instance or within your datacenter, we help you configure the platform according to your needs"
+        "description": "Whether you are running on your own cloud instance or in your datacenter, we help you configure the platform according to your needs."
       }
     },
     "benefits": {
       "title": "Take your code to a new level of efficiency with <strong>VeeCode Platform</strong>",
-      "buttonLabel1": "Support plans",
+      "button": {
+        "label": "Support Plans"
+      },
       "card1": {
         "title": "API Catalogs",
         "description": "Access a wide range of resources and create innovative applications."
       },
       "card2": {
         "title": "Software Templates",
-        "description": "Simplify the creation process and accelerate application development"
+        "description": "Simplify the creation process and accelerate application development."
       },
       "card3": {
         "title": "Observability Dashboards",
-        "description": "Monitor and analyze the performance of your applications"
+        "description": "Monitor and analyze the performance of your applications."
       },
       "card4": {
         "title": "Platform Engineering",
-        "description": "Create high-quality products efficiently and collaboratively in a robust environment."
+        "description": "Build high-quality products efficiently and collaboratively in a robust environment."
       },
       "card5": {
         "title": "API Management",
-        "description": "Manage, monitor, and optimize your APIs effectively with the ideal tools"
+        "description": "Manage, monitor, and optimize your APIs effectively with the ideal tools."
       }
     },
     "testimonials": {
       "testimonial-card1": {
-        "message": "VeeCode has become an essential tool in our company. We accelerated our deliveries with a significant reduction in time and, more importantly, maintained observability between teams.",
+        "quote": "VeeCode has become an essential tool in our company. We accelerated our deliveries with a significant reduction in time and, more importantly, maintained observability between teams.",
         "author": "Gabriel",
-        "position": "Principal Product Designer"
+        "role": "Principal Product Designer"
       },
       "testimonial-card2": {
-        "message": "VeeCode was a pleasant surprise! We accelerated the delivery of new environments by 90%, all with a very high standard of security and governance, and a great cost-benefit, which was essential in choosing the tool.",
+        "quote": "VeeCode was a pleasant surprise! We accelerated the delivery of new environments by 90%, all with a very high standard of security and governance, and great cost-benefit, which was essential in choosing the tool.",
         "author": "Geraldo",
-        "position": "Tech Leader"
+        "role": "Tech Leader"
       }
     },
     "call-to-action": {
@@ -197,83 +195,81 @@
       "description": "Adopt Backstage by VeeCode",
       "buttons": {
         "button1": {
-          "label": "Contact Us",
-          "href": "#"
+          "label": "Contact Us"
         },
         "button2": {
-          "label": "Access the Demo",
-          "href": "#"
+          "label": "Access the Demo"
         }
       }
     }
   },
   "product": {
     "card1": {
-      "title": "API Catalog",
-      "description": "Devportal by VeeCode Platform is the ideal platform to centralize and catalog your APIs efficiently. With Devportal, you can view, test, and manage all your APIs in one place while also accessing the documentation and plugins needed to develop your project, app, or feature."
+      "title": "Catálogo de APIs",
+      "description": "O Devportal by VeeCode Platform é a plataforma ideal para centralizar e catalogar suas APIs de maneira eficiente. Com o Devportal você pode ver, testar e gerenciar todas as suas APIs em um único lugar enquanto também tem acesso à documentação e plugins necessários para desenvolver o seu projeto, app ou feature."
     },
     "card2": {
       "title": "Software Templates",
-      "description": "With Devportal, you can customize your environment with development and infrastructure templates, as well as have the freedom to personalize pipelines. The platform offers a variety of pre-configured templates that speed up the development process and ensure consistency in your product."
+      "description": "Com o Devportal você pode customizar seu ambiente com templates para desenvolvimento e infraestrutura, assim como tem a liberdade para personalizar pipelines. A plataforma oferece uma variedade de templates pré-configurados que aceleram o processo de desenvolvimento e garantem consistência no seu produto"
     },
     "card3": {
       "title": "Kong Service Manager",
-      "description": "Manage and administer information about Kong services. List and manipulate routes, manage plugins without leaving the DevPortal. Access details of services and APIs."
+      "description": "Gerencie e administre informações sobre os serviços do Kong. Liste e manipule rotas, gerencie plugins sem sair do DevPortal. Acesse detalhes dos serviços e APIs"
     },
     "card4": {
       "title": "VeeCode Docs",
-      "description": "Centralize all documentation in one place. VeeCode searches for documentation in all repositories and gathers all entries in your DevPortal, allowing broad and organized access."
+      "description": "Centralize toda a documentação em um só lugar. O VeeCode busca por documentações em todos os repositórios e reúne todas as entrada em seu DevPortal, permitindo um acesso amplo e organizado."
     },
     "card5": {
       "title": "VeeCode RBAC",
-      "description": "VeeCode RBAC allows you to configure the access you need to ensure customized access. Select who can or cannot view items, perform tasks, or make changes, ensuring only relevant and pertinent information is shown to each type of user."
+      "description": "O VeeCode RBAC permite a configuração de acessos que você precisa para garantir acesso customizado. Selecione quem pode ou não, ver itens, executar tarefas ou realizar mudanças, garantindo mostrar apenas informações pertinentes e relevantes para cada tipo de usuário."
     }
   },
   "solutions": {
     "hero": {
-      "title": "Reach new levels of efficiency",
-      "description": "Count on VeeCode Platform to scale your business"
+      "title": "Alcance novos níveis de eficiência",
+      "description": "Conte com a VeeCode Platform para escalar seu negócio"
     },
     "services-section": {
       "cards": {
         "card1": {
-          "title": "Unlimited Testing",
-          "description": "Count on our team of qualified professionals to help you maximize the use of our products and tools. We are here to answer questions about installation, configuration, and usage, considering your workflow. Report any errors you encounter and their impact so we can fix them and prevent future issues.",
+          "title": "Teste Ilimitado",
+          "description": "Conte com nossa equipe de profissionais qualificados para ajudar a maximizar o uso de nossos produtos e ferramentas. Estamos aqui para responder perguntas sobre instalação, configuração e uso, levando em conta seu fluxo de trabalho. Relate quaisquer erros que encontrar e seu impacto, para que possamos corrigi-los e prevenir problemas futuros.",
           "buttons": {
             "button1": {
-              "label": "Start Now",
+              "label": "Comece Agora",
               "href": "#"
             },
             "button2": {
-              "label": "Contact Us",
+              "label": "Contate-nos",
               "href": "#"
             }
           }
         },
         "card2": {
           "title": "Launch Workshop",
-          "description": "Platform Engineering facilitates cloud migration by providing information, knowledge, and a strategic plan. The workshop explores the principles, benefits, and role of platform engineering, enabling participants to create a personalized strategic roadmap. By the end, they will have the knowledge to launch their Internal Developer Portal with confidence.",
+          "description": "A Engenharia de Plataforma facilita a migração para a nuvem, fornecendo informações, conhecimento e um plano estratégico. O workshop explora os princípios, benefícios e o papel da engenharia de plataforma, permitindo que os participantes criem um roteiro estratégico personalizado. Ao final, eles terão o conhecimento para lançar seu Portal do Desenvolvedor Interno com confiança.",
           "buttons": {
             "button1": {
-              "label": "Start Now",
+              "label": "Comece Agora",
               "href": "#"
             },
             "button2": {
-              "label": "Contact Us",
+              "label": "Contate-nos",
               "href": "#"
             }
           }
         },
         "card3": {
           "title": "Fast Track",
-          "description": "VeeCode Fast Track offers a specialized IDP solution to quickly improve the developer experience. Through a time-boxed effort, a dedicated team quickly sets up a DevPortal instance and provides initial templates and automations for immediate productivity gains.",
+          "description": "O VeeCode Fast Track oferece uma solução especializada de IDP para melhorar rapidamente a experiência do desenvolvedor. Através de um esforço com prazo definido, uma equipe dedicada configura rapidamente uma instância do DevPortal e fornece modelos e automações iniciais para ganhos imediatos de produtividade.",
           "buttons": {
             "button1": {
-              "label": "Start Now",
+              "label": "Comece Agora",
               "href": "#"
             },
             "button2": {
-              "label": "Contact Us",
+              "label": "Contate-nos",
               "href": "#"
             }
           }
@@ -281,195 +277,195 @@
       }
     },
     "pricing": {
-      "title": "Choose the support that best fits your needs:",
+      "title": "Escolha o suporte que melhor se adapta à sua necessidade:",
       "cards": {
         "card1": {
-          "title": "Free",
-          "description": "Accelerate your business with our Developer Portal solution. Simplify your automation of APIs, Pipelines, and more to solve your business problems.",
-          "subtitle": "The free plan includes:",
+          "title": "Grátis",
+          "description": "Acelere seu negócio com nossa solução de Portal do Desenvolvedor. Simplifique sua automação de APIs, Pipelines e mais para resolver seus problemas de negócio.",
+          "subtitle": "O plano gratuito inclui:",
           "benefits-list": {
-            "option1": "Community support",
-            "option2": "Access to documentation"
+            "option1": "Suporte da comunidade",
+            "option2": "Acesso à documentação"
           },
           "button": {
-            "label": "Start Now",
+            "label": "Comece Agora",
             "href": "#"
           }
         },
         "card2": {
-          "title": "Pro Support",
-          "description": "<p>Get all your questions answered about our solutions. No more problems with DevOps, API Development, Kubernetes, AWS, and more.*</p> <p>*Price based on the number of users and desired service level</p>",
-          "subtitle": "Support includes:",
+          "title": "Suporte Pro",
+          "description": "<p>Tire todas as suas dúvidas sobre nossas soluções. Chega de problemas com DevOps, Desenvolvimento de APIs, Kubernetes, AWS e mais.*</p> <p>*Preço baseado no número de usuários e nível de serviço desejado</p>",
+          "subtitle": "O suporte inclui:",
           "benefits-list": {
-            "option1": "8x5 support",
-            "option2": "One business day SLA",
-            "option3": "Support for all plugins",
-            "option4": "Support for all templates",
-            "option5": "Direct access to our specialists"
+            "option1": "Suporte 8x5",
+            "option2": "SLA de um día útil",
+            "option3": "Suporte para todos os plugins",
+            "option4": "Suporte para todos os templates",
+            "option5": "Acesso direto aos nossos especialistas"
           },
           "button": {
-            "label": "Contact Us",
+            "label": "Contate-nos",
             "href": "#"
           }
         },
         "card3": {
           "title": "",
-          "description": "<p>Count on our strategic and specialized support to ensure efficient and continuous adoption of our solutions.</p><p>*Price based on the number of users and desired service level</p>",
-          "subtitle": "Support includes:",
+          "description": "<p>Conte com nosso suporte estratégico e especializado para garantir uma adoção eficiente e contínua das nossas soluções.</p><p>*Preço baseado no número de usuários e nível de serviço desejado</p>",
+          "subtitle": "O suporte inclui:",
           "benefits-list": {
-            "option1": "24x7 support",
-            "option2": "One business day SLA",
-            "option3": "Support for all plugins and templates",
-            "option4": "Direct access to our specialists",
-            "option5": "Exclusive AI features"
+            "option1": "Suporte 24x7",
+            "option2": "SLA de um día útil",
+            "option3": "Suporte para todos os plugins e templates",
+            "option4": "Acesso direto aos nossos especialistas",
+            "option5": "Features de IA exclusivas"
           },
           "button": {
-            "label": "Contact Us",
+            "label": "Contate-nos",
             "href": "#"
           }
         }
       }
     },
     "cta-section": {
-      "title": "Need help deciding?",
-      "description": "Every company has its specific needs. We are here to help you choose the best path.",
+      "title": "Precisa de ajuda para decidir?",
+      "description": "Toda empresa tem suas necessidades específicas. Estamos aqui para te ajudar a escolher a melhor trilha.",
       "button": {
-        "label": "Talk to our sales team now",
+        "label": "Fale agora com nosso time de vendas",
         "href": "#"
       }
     }
   },
   "resources": {
-    "title": "VeeCode Plugins",
-    "description": "Access descriptions, guides, and installation instructions for our plugins",
+    "title": "Plugins VeeCode",
+    "description": "Acesse descrições, guias e instruções de instalação para nossos plugins",
     "github-workflows": {
-      "desc": "The Github Workflows plugin provides an alternative to manually trigger GitHub workflows within your Backstage component."
+      "desc": "O plugin Github Workflows fornece uma alternativa para acionar manualmente os workflows do GitHub dentro do seu componente Backstage."
     },
     "gitlab-pipelines": {
-      "desc": "The Gitlab Pipelines plugin integrates GitlabCI into your Backstage component in a simple way."
+      "desc": "O plugin Gitlab pipelines integra o GitlabCi ao seu componente Backstage de forma simples."
     },
     "kong-service-manager": {
-      "desc": "The Kong Service Manager plugin provides information about the Kong service, a list of associated routes, and also offers the ability to manage plugins without leaving Backstage."
+      "desc": "O plugin Kong Service Manager fornece informações sobre o serviço Kong, uma lista de rotas associadas e também oferece a possibilidade de manipular plugins sem sair do Backstage."
     },
     "kubernetes-gpt-analyzer": {
-      "desc": "The Kubernetes GPT Analyzer plugin uses artificial intelligence with the help of the k8s-operator to analyze and optimize your Kubernetes entities, improving the management and performance of your cluster. It facilitates anomaly detection and suggests best practices."
+      "desc": "O plugin Kubernetes GPT Analyzer utiliza inteligência artificial com a ajuda do k8s-operator para analisar e otimizar suas entidades Kubernetes, melhorando a gestão e o desempenho do seu cluster. Facilita a detecção de anomalias e sugere melhores práticas."
     },
     "infracost": {
-      "desc": "The Infracost plugin works together with Terraform and provides a graphical representation and cost estimates for your entity in the respective provider."
+      "desc": "O plugin Infracost funciona em conjunto com o terraform e fornece uma representação gráfica e estimativas de custo para sua entidade no respectivo provedor."
     },
     "action": {
       "contact": {
-        "title": "Need help deciding?",
-        "buttonLabel": "Contact Sales"
+        "title": "Precisa de ajuda para decidir?",
+        "buttonLabel": "Contato de Vendas"
       }
     }
   },
   "comparison": {
     "title": "Veecode vs Backstage",
-    "subtitle": "Efficiency for teams of any size.",
-    "description": "<p>Backstage is one of the best tools on the market for developing Internal Developer Platforms (IDPs). However, it requires a high technical effort to make it a viable IDP.</p><p>With Veecode, we use the open-source version of Backstage to build an IDP that is easy to understand and maintenance-free.</p>",
-    "table-title": "Compare the features",
+    "subtitle": "Eficiência para times de qualquer tamanho.",
+    "description": "<p>Backstage é uma das melhores ferramentas do mercado para desenvolver Plataformas Internas de Desenvolvimento (IDPs). No entanto, requer um alto esforço técnico para torná-lo um IDP viável.</p><p>Com a Veecode, usamos a versão open-source do Backstage para construir uma IDP de fácil compreensão e livre de manutenções.</p>",
+    "table-title": "Compare as features",
     "table": {
       "thead": {
         "label1": "VeeCode",
         "label2": "Backstage"
       },
       "line1": {
-        "col1": "Catalog"
+        "col1": "Catálogo"
       },
       "line2": {
-        "col1": "Bring your own data model",
-        "col2": "yes",
-        "col3": "yes, with some effort"
+        "col1": "Trazer seu modelo de dados",
+        "col2": "sim",
+        "col3": "sim, com algum esforço"
       },
       "line3": {
-        "col1": "Add and update catalog items via YAML",
-        "col2": "yes",
-        "col3": "yes"
+        "col1": "Adicionar e atualizar itens do catálogo via YAML",
+        "col2": "sim",
+        "col3": "sim"
       },
       "line4": {
-        "col1": "Update items from the UI",
-        "col2": "yes",
-        "col3": "no"
+        "col1": "Atualizar itens da UI",
+        "col2": "sim",
+        "col3": "não"
       },
       "line5": {
-        "col1": "Add and update catalog items via API",
-        "col2": "yes",
-        "col3": "no"
+        "col1": "Adicionar e atualizar itens do catálogo via API",
+        "col2": "sim",
+        "col3": "não"
       },
       "line6": {
-        "col1": "Sync repositories as catalog items",
-        "col2": "yes",
-        "col3": "no"
+        "col1": "Sincronizar repositórios como itens no catálogo",
+        "col2": "sim",
+        "col3": "não"
       },
       "line7": {
         "col1": "Templates"
       },
       "line8": {
-        "col1": "Self-serve actions",
-        "col2": "yes",
-        "col3": "yes"
+        "col1": "Ações self-serve",
+        "col2": "sim",
+        "col3": "sim"
       },
       "line9": {
-        "col1": "Customize self-serve actions",
-        "col2": "yes",
-        "col3": "yes"
+        "col1": "Customizar ações self-serve",
+        "col2": "sim",
+        "col3": "sim"
       },
       "line10": {
         "col1": "TechDocs"
       },
       "line11": {
-        "col1": "Creation engine",
+        "col1": "Mecanismo de criação",
         "col2": "TechDocs",
         "col3": "TechDocs"
       },
       "line12": {
-        "col1": "Extensible via plugins",
-        "col2": "yes",
-        "col3": "yes"
+        "col1": "Extensível via plugins",
+        "col2": "sim",
+        "col3": "sim"
       },
       "line13": {
-        "col1": "Plugins and extensions"
+        "col1": "Plugins e extensões"
       },
       "line14": {
-        "col1": "Theme customization",
-        "col2": "yes",
-        "col3": "Requires implementation"
+        "col1": "Customização de tema",
+        "col2": "sim",
+        "col3": "Requer implementação"
       },
       "line15": {
-        "col1": "Layout customization",
-        "col2": "yes",
-        "col3": "Requires implementation"
+        "col1": "Customização de layout",
+        "col2": "sim",
+        "col3": "Requer implementação"
       },
       "line16": {
-        "col1": "Access to all infrastructure and resources",
-        "col2": "yes",
-        "col3": "yes"
+        "col1": "Acesso a toda infraestrutura e recursos",
+        "col2": "sim",
+        "col3": "sim"
       },
       "line17": {
         "col1": "Role-Based Access Control - RBAC"
       },
       "line18": {
-        "col1": "Admin and non-admin roles",
-        "col2": "yes",
-        "col3": "yes"
+        "col1": "Funções de administrador e não administrador",
+        "col2": "sim",
+        "col3": "sim"
       },
       "line19": {
-        "col1": "Custom roles",
-        "col2": "yes",
-        "col3": "no"
+        "col1": "Funções personalizadas",
+        "col2": "sim",
+        "col3": "não"
       },
       "line20": {
-        "col1": "Custom permission policies",
-        "col2": "yes",
-        "col3": "yes"
+        "col1": "Políticas de permissões personalizadas",
+        "col2": "sim",
+        "col3": "sim"
       }
     },
     "cta-section": {
-      "title": "Need help deciding?",
-      "description": "Every company has its specific needs. We are here to help you choose the best path.",
+      "title": "Precisa de ajuda para decidir?",
+      "description": "Toda empresa tem suas necessidades específicas. Estamos aqui para te ajudar a escolher a melhor trilha.",
       "button": {
-        "label": "Talk to our sales team now",
+        "label": "Fale agora com nosso time de vendas",
         "href": "#"
       }
     }
