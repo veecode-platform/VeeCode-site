@@ -59,17 +59,6 @@ export default function ProductPage() {
         leftFeatures={leftFeatures}
         rightFeatures={rightFeatures}
       />
-
-      {/* <section className="container mx-auto px-4 py-12">
-        <h2 className="text-3xl font-bold mb-8 text-center">
-          Conheça mais sobre o VeeCode Platform
-        </h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <NewsletterForm />
-          <ContactForm />
-        </div>
-      </section> */}
     </main>
   );
 }
