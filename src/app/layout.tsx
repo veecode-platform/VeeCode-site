@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.className} antialiased`}>
-        <div className="bg-white flex flex-col overflow-hidden items-stretch min-h-screen">
+        <div className="bg-white flex flex-col overflow-hidden items-stretch min-h-screen mt-[94px]">
           <Header />
           {children}
           <Footer />
