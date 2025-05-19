@@ -1,23 +1,24 @@
 "use client";
 
 import React from "react";
-// import { useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { IoLanguageOutline } from "react-icons/io5";
-// import { usePathname, useRouter } from "@/i18n/routing";
+import { usePathname, useRouter } from "@/i18n/routing";
 
 const SwitchLanguage = () => {
   const [dropdownShow, setDropdownShow] = React.useState<boolean>(false);
-  // const t = useTranslations("localeSwitcher");
+  const t = useTranslations("localeSwitcher");
 
-  // const pathName = usePathname();
-  // const router = useRouter();
+  const pathName = usePathname();
+  const router = useRouter();
 
   const handleToggleDropdown = () => setDropdownShow(!dropdownShow);
 
   const handleChooseLanguage = (lgn: string) => {
     handleToggleDropdown();
     console.log("lgn", lgn); // TODO remove this log
-    // router.push(pathName as any, { locale: lgn });
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    router.push(pathName as any, { locale: lgn });
   };
 
   return (
@@ -37,21 +38,19 @@ const SwitchLanguage = () => {
               className="p-1 text-lg text-gray-300 rounded-sm cursor-pointer w-[100%] h-8 flex items-center justify-center"
               onClick={() => handleChooseLanguage("pt")}
             >
-              {/* {t.rich("pt", {
+              {t.rich("pt", {
                 p: (chunks) => <p>{chunks}</p>,
                 span: (chunks) => <span>{chunks}</span>,
-              })} */}
-              <p>PT</p> <span>🇧🇷</span>
+              })}
             </li>
             <li
               className="py-1 px-2 text-lg text-gray-300 rounded-sm cursor-pointer w-[100%] h-8 flex items-center justify-center"
               onClick={() => handleChooseLanguage("en")}
             >
-              {/* {t.rich("en", {
+              {t.rich("en", {
                 p: (chunks) => <p>{chunks}</p>,
                 span: (chunks) => <span>{chunks}</span>,
-              })} */}
-              <p>EN</p> <span>🇬🇧</span>
+              })}
             </li>
           </ul>
         </div>
