@@ -5,9 +5,11 @@ import { Button } from "@/components/ui/Button";
 import Link from "next/link";
 import { RxHamburgerMenu } from "react-icons/rx";
 import clsx from "clsx";
+import { useTranslations } from "next-intl";
 
 const MenuMobile = () => {
   const [open, setOpen] = React.useState(false);
+  const t = useTranslations("header");
 
   return (
     <>
@@ -29,32 +31,32 @@ const MenuMobile = () => {
         >
           <nav className="flex flex-col items-start justify-start gap-8 my-15 text-xl">
             <Link
-              href="product"
+              href="/product"
               className="text-neutral-50 self-stretch my-auto hover:text-[rgba(51,255,205,1)] p-4 hover:bg-neutral-700"
             >
-              Produto
+              {t("product")}
             </Link>
             <Link
-              href="solutions"
+              href="/solutions"
               className="text-neutral-50 self-stretch my-auto hover:text-[rgba(51,255,205,1)] p-4 hover:bg-neutral-700"
             >
-              Soluções
+              {t("solutions")}
             </Link>
             <Link
-              href="resources"
+              href="/resources"
               className="text-neutral-50 self-stretch gap-2.5 whitespace-nowrap my-auto hover:text-[rgba(51,255,205,1)] p-4 hover:bg-neutral-700"
             >
-              Recursos
+              {t("resources")}
             </Link>
             <Link
-              href="comparison"
+              href="/comparison"
               className="text-neutral-50 self-stretch my-auto hover:text-[rgba(51,255,205,1)] p-4 hover:bg-neutral-700"
             >
-              Veecode vs. Backstage
+              {t("comparison")}
             </Link>
             <div className="p-4">
               <Button variant="secondary" size="default">
-                Acesse a Demo
+                {t("demo")}
               </Button>
             </div>
           </nav>
