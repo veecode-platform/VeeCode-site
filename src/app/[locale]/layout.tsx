@@ -6,7 +6,8 @@ import { routing } from "@/i18n/routing";
 import { LayoutProps } from "@/lib/@types/pageProps";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
-import { hasLocale } from "next-intl";
+import { hasLocale, NextIntlClientProvider } from "next-intl";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const thumbnailImageUrl =
   "https://cdn.platform.vee.codes/landing-page/thumbnail.png";
@@ -52,13 +53,16 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
 
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={`${poppins.className} antialiased`}>
-        <div className="bg-white flex flex-col overflow-hidden items-stretch min-h-screen mt-[94px]">
-          <Header locale={locale} />
-          {children}
-          <Footer locale={locale} />
-        </div>
+        <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_ANALYTICS_ID!} />
+        <NextIntlClientProvider>
+          <div className="bg-white flex flex-col overflow-hidden items-stretch min-h-screen mt-[94px]">
+            <Header locale={locale} />
+            {children}
+            <Footer locale={locale} />
+          </div>
+        </NextIntlClientProvider>
       </body>
     </html>
   );
