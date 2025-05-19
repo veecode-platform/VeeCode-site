@@ -2,14 +2,17 @@
 
 import React from "react";
 import { Button } from "@/components/ui/Button";
-import Link from "next/link";
 import { RxHamburgerMenu } from "react-icons/rx";
 import clsx from "clsx";
 import { useTranslations } from "next-intl";
+import { NavigationLink } from "@/components/ui/links";
+import VeeCodeLogo from "@/components/VeeCodeLogo";
 
 const MenuMobile = () => {
   const [open, setOpen] = React.useState(false);
   const t = useTranslations("header");
+
+  const toggleMenu = () => setOpen(!open);
 
   return (
     <>
@@ -23,37 +26,44 @@ const MenuMobile = () => {
       {open && (
         <div
           className={clsx(
-            "fixed top-[94px] left-0 z-[9999] transition-all duration-500 ease-in w-full h-full bg-neutral-800 md:w-[70%]",
+            "fixed top-0 left-0 z-[9999] transition-all duration-500 ease-in w-full h-full bg-neutral-800 md:w-[70%]",
             open
               ? "translate-x-0 opacity-100"
               : "-translate-x-full opacity-0 pointer-events-none"
           )}
         >
           <nav className="flex flex-col items-start justify-start gap-8 my-15 text-xl">
-            <Link
+            <NavigationLink href="/" onClick={toggleMenu}>
+              <VeeCodeLogo />
+            </NavigationLink>
+            <NavigationLink
               href="/product"
+              onClick={toggleMenu}
               className="text-neutral-50 self-stretch my-auto hover:text-[rgba(51,255,205,1)] p-4 hover:bg-neutral-700"
             >
               {t("product")}
-            </Link>
-            <Link
+            </NavigationLink>
+            <NavigationLink
               href="/solutions"
+              onClick={toggleMenu}
               className="text-neutral-50 self-stretch my-auto hover:text-[rgba(51,255,205,1)] p-4 hover:bg-neutral-700"
             >
               {t("solutions")}
-            </Link>
-            <Link
+            </NavigationLink>
+            <NavigationLink
               href="/resources"
+              onClick={toggleMenu}
               className="text-neutral-50 self-stretch gap-2.5 whitespace-nowrap my-auto hover:text-[rgba(51,255,205,1)] p-4 hover:bg-neutral-700"
             >
               {t("resources")}
-            </Link>
-            <Link
+            </NavigationLink>
+            <NavigationLink
               href="/comparison"
+              onClick={toggleMenu}
               className="text-neutral-50 self-stretch my-auto hover:text-[rgba(51,255,205,1)] p-4 hover:bg-neutral-700"
             >
               {t("comparison")}
-            </Link>
+            </NavigationLink>
             <div className="p-4">
               <Button variant="secondary" size="default">
                 {t("demo")}

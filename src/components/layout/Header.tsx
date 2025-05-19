@@ -11,7 +11,7 @@ const Header: React.FC<PatternComponentProps> = async ({ locale }) => {
   const t = await getTranslations({ locale, namespace: "header" });
 
   return (
-    <header className="flex justify-center items-center self-stretch h-[94px] w-full gap-[40px_100px] flex-wrap bg-neutral-700 px-10 py-5 max-md:max-w-full max-md:px-5 z-[9999999] fixed top-0">
+    <header className="flex justify-center items-center self-stretch h-[94px] w-full gap-[40px_100px] flex-wrap bg-neutral-700 px-10 py-5 max-md:max-w-full max-md:px-5 z-[9999999] relative">
       <div className="w-full flex items-center justify-between  2xl:w-[80%]  2xl:mx-auto">
         <NavigationLink href="/">
           <VeeCodeLogo />

@@ -57,7 +57,7 @@ export default async function LocaleLayout({
       <body className={`${poppins.className} antialiased`}>
         <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_ANALYTICS_ID!} />
         <NextIntlClientProvider>
-          <div className="bg-white flex flex-col overflow-hidden items-stretch min-h-screen mt-[94px]">
+          <div className="bg-white flex flex-col overflow-hidden items-stretch min-h-screen">
             <Header locale={locale} />
             {children}
             <Footer locale={locale} />
