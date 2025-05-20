@@ -329,19 +329,19 @@
     "title": "Plugins VeeCode",
     "description": "Acesse descrições, guias e instruções de instalação para nossos plugins",
     "github-workflows": {
-      "desc": "O plugin Github Workflows fornece uma alternativa para acionar manualmente os workflows do GitHub dentro do seu componente Backstage."
+      "description": "O plugin Github Workflows fornece uma alternativa para acionar manualmente os workflows do GitHub dentro do seu componente Backstage."
     },
     "gitlab-pipelines": {
-      "desc": "O plugin Gitlab pipelines integra o GitlabCi ao seu componente Backstage de forma simples."
+      "description": "O plugin Gitlab pipelines integra o GitlabCi ao seu componente Backstage de forma simples."
     },
     "kong-service-manager": {
-      "desc": "O plugin Kong Service Manager fornece informações sobre o serviço Kong, uma lista de rotas associadas e também oferece a possibilidade de manipular plugins sem sair do Backstage."
+      "description": "O plugin Kong Service Manager fornece informações sobre o serviço Kong, uma lista de rotas associadas e também oferece a possibilidade de manipular plugins sem sair do Backstage."
     },
     "kubernetes-gpt-analyzer": {
-      "desc": "O plugin Kubernetes GPT Analyzer utiliza inteligência artificial com a ajuda do k8s-operator para analisar e otimizar suas entidades Kubernetes, melhorando a gestão e o desempenho do seu cluster. Facilita a detecção de anomalias e sugere melhores práticas."
+      "description": "O plugin Kubernetes GPT Analyzer utiliza inteligência artificial com a ajuda do k8s-operator para analisar e otimizar suas entidades Kubernetes, melhorando a gestão e o desempenho do seu cluster. Facilita a detecção de anomalias e sugere melhores práticas."
     },
     "infracost": {
-      "desc": "O plugin Infracost funciona em conjunto com o terraform e fornece uma representação gráfica e estimativas de custo para sua entidade no respectivo provedor."
+      "description": "O plugin Infracost funciona em conjunto com o terraform e fornece uma representação gráfica e estimativas de custo para sua entidade no respectivo provedor."
     },
     "action": {
       "contact": {

@@ -326,27 +326,27 @@
     }
   },
   "resources": {
-    "title": "Plugins VeeCode",
-    "description": "Acesse descrições, guias e instruções de instalação para nossos plugins",
+    "title": "VeeCode Plugins",
+    "description": "Access descriptions, guides, and installation instructions for our plugins",
     "github-workflows": {
-      "desc": "O plugin Github Workflows fornece uma alternativa para acionar manualmente os workflows do GitHub dentro do seu componente Backstage."
+      "description": "The Github Workflows plugin provides an alternative to manually trigger GitHub workflows within your Backstage component."
     },
     "gitlab-pipelines": {
-      "desc": "O plugin Gitlab pipelines integra o GitlabCi ao seu componente Backstage de forma simples."
+      "description": "The Gitlab Pipelines plugin integrates GitlabCi into your Backstage component in a simple way."
     },
     "kong-service-manager": {
-      "desc": "O plugin Kong Service Manager fornece informações sobre o serviço Kong, uma lista de rotas associadas e também oferece a possibilidade de manipular plugins sem sair do Backstage."
+      "description": "The Kong Service Manager plugin provides information about the Kong service, a list of associated routes, and also allows you to manage plugins without leaving Backstage."
     },
     "kubernetes-gpt-analyzer": {
-      "desc": "O plugin Kubernetes GPT Analyzer utiliza inteligência artificial com a ajuda do k8s-operator para analisar e otimizar suas entidades Kubernetes, melhorando a gestão e o desempenho do seu cluster. Facilita a detecção de anomalias e sugere melhores práticas."
+      "description": "The Kubernetes GPT Analyzer plugin uses artificial intelligence with the help of the k8s-operator to analyze and optimize your Kubernetes entities, improving cluster management and performance. It facilitates anomaly detection and suggests best practices."
     },
     "infracost": {
-      "desc": "O plugin Infracost funciona em conjunto com o terraform e fornece uma representação gráfica e estimativas de custo para sua entidade no respectivo provedor."
+      "description": "The Infracost plugin works together with Terraform and provides a graphical representation and cost estimates for your entity in the respective provider."
     },
     "action": {
       "contact": {
-        "title": "Precisa de ajuda para decidir?",
-        "buttonLabel": "Contato de Vendas"
+        "title": "Need help deciding?",
+        "buttonLabel": "Contact Sales"
       }
     }
   },
