@@ -227,111 +227,101 @@
   },
   "solutions": {
     "hero": {
-      "title": "Alcance novos níveis de eficiência",
-      "description": "Conte com a VeeCode Platform para escalar seu negócio"
+      "title": "Reach new levels of efficiency",
+      "description": "Count on VeeCode Platform to scale your business"
     },
     "services-section": {
       "cards": {
         "card1": {
-          "title": "Teste Ilimitado",
-          "description": "Conte com nossa equipe de profissionais qualificados para ajudar a maximizar o uso de nossos produtos e ferramentas. Estamos aqui para responder perguntas sobre instalação, configuração e uso, levando em conta seu fluxo de trabalho. Relate quaisquer erros que encontrar e seu impacto, para que possamos corrigi-los e prevenir problemas futuros.",
+          "title": "Unlimited Testing",
+          "description": "Count on our team of qualified professionals to help you maximize the use of our products and tools. We are here to answer questions about installation, configuration, and usage, considering your workflow. Report any errors you encounter and their impact so we can fix them and prevent future issues.",
           "buttons": {
             "button1": {
-              "label": "Comece Agora",
-              "href": "#"
+              "label": "Get Started"
             },
             "button2": {
-              "label": "Contate-nos",
-              "href": "#"
+              "label": "Contact Us"
             }
           }
         },
         "card2": {
           "title": "Launch Workshop",
-          "description": "A Engenharia de Plataforma facilita a migração para a nuvem, fornecendo informações, conhecimento e um plano estratégico. O workshop explora os princípios, benefícios e o papel da engenharia de plataforma, permitindo que os participantes criem um roteiro estratégico personalizado. Ao final, eles terão o conhecimento para lançar seu Portal do Desenvolvedor Interno com confiança.",
+          "description": "Platform Engineering facilitates cloud migration by providing information, knowledge, and a strategic plan. The workshop explores the principles, benefits, and role of platform engineering, enabling participants to create a personalized strategic roadmap. By the end, they will have the knowledge to confidently launch their Internal Developer Portal.",
           "buttons": {
             "button1": {
-              "label": "Comece Agora",
-              "href": "#"
+              "label": "Get Started"
             },
             "button2": {
-              "label": "Contate-nos",
-              "href": "#"
+              "label": "Contact Us"
             }
           }
         },
         "card3": {
           "title": "Fast Track",
-          "description": "O VeeCode Fast Track oferece uma solução especializada de IDP para melhorar rapidamente a experiência do desenvolvedor. Através de um esforço com prazo definido, uma equipe dedicada configura rapidamente uma instância do DevPortal e fornece modelos e automações iniciais para ganhos imediatos de produtividade.",
+          "description": "VeeCode Fast Track offers a specialized IDP solution to quickly improve the developer experience. Through a time-bound effort, a dedicated team quickly sets up a DevPortal instance and provides initial templates and automations for immediate productivity gains.",
           "buttons": {
             "button1": {
-              "label": "Comece Agora",
-              "href": "#"
+              "label": "Get Started"
             },
             "button2": {
-              "label": "Contate-nos",
-              "href": "#"
+              "label": "Contact Us"
             }
           }
         }
       }
     },
     "pricing": {
-      "title": "Escolha o suporte que melhor se adapta à sua necessidade:",
+      "title": "Choose the support that best fits your needs:",
       "cards": {
         "card1": {
-          "title": "Grátis",
-          "description": "Acelere seu negócio com nossa solução de Portal do Desenvolvedor. Simplifique sua automação de APIs, Pipelines e mais para resolver seus problemas de negócio.",
-          "subtitle": "O plano gratuito inclui:",
+          "title": "Free",
+          "description": "Accelerate your business with our Developer Portal solution. Simplify your API, Pipeline automation, and more to solve your business problems.",
+          "subtitle": "The free plan includes:",
           "benefits-list": {
-            "option1": "Suporte da comunidade",
-            "option2": "Acesso à documentação"
+            "option1": "Community support",
+            "option2": "Access to documentation"
           },
           "button": {
-            "label": "Comece Agora",
-            "href": "#"
+            "label": "Get Started"
           }
         },
         "card2": {
-          "title": "Suporte Pro",
-          "description": "<p>Tire todas as suas dúvidas sobre nossas soluções. Chega de problemas com DevOps, Desenvolvimento de APIs, Kubernetes, AWS e mais.*</p> <p>*Preço baseado no número de usuários e nível de serviço desejado</p>",
-          "subtitle": "O suporte inclui:",
+          "title": "Pro Support",
+          "description": "<p>Get all your questions answered about our solutions. No more issues with DevOps, API Development, Kubernetes, AWS, and more.*</p> <p>*Price based on number of users and desired service level</p>",
+          "subtitle": "Support includes:",
           "benefits-list": {
-            "option1": "Suporte 8x5",
-            "option2": "SLA de um día útil",
-            "option3": "Suporte para todos os plugins",
-            "option4": "Suporte para todos os templates",
-            "option5": "Acesso direto aos nossos especialistas"
+            "option1": "8x5 support",
+            "option2": "One business day SLA",
+            "option3": "Support for all plugins",
+            "option4": "Support for all templates",
+            "option5": "Direct access to our specialists"
           },
           "button": {
-            "label": "Contate-nos",
-            "href": "#"
+            "label": "Contact Us"
           }
         },
         "card3": {
-          "title": "",
-          "description": "<p>Conte com nosso suporte estratégico e especializado para garantir uma adoção eficiente e contínua das nossas soluções.</p><p>*Preço baseado no número de usuários e nível de serviço desejado</p>",
-          "subtitle": "O suporte inclui:",
+          "title": "Custom Support",
+          "description": "<p>Count on our strategic and specialized support to ensure efficient and continuous adoption of our solutions.</p><p>*Price based on number of users and desired service level</p>",
+          "subtitle": "Support includes:",
           "benefits-list": {
-            "option1": "Suporte 24x7",
-            "option2": "SLA de um día útil",
-            "option3": "Suporte para todos os plugins e templates",
-            "option4": "Acesso direto aos nossos especialistas",
-            "option5": "Features de IA exclusivas"
+            "option1": "24x7 support",
+            "option2": "One business day SLA",
+            "option3": "Support for all plugins and templates",
+            "option4": "Direct access to our specialists",
+            "option5": "Exclusive AI features"
           },
           "button": {
-            "label": "Contate-nos",
-            "href": "#"
+            "label": "Contact Us"
           }
         }
       }
     },
     "cta-section": {
-      "title": "Precisa de ajuda para decidir?",
-      "description": "Toda empresa tem suas necessidades específicas. Estamos aqui para te ajudar a escolher a melhor trilha.",
+      "title": "Need help deciding?",
+      "description": "Every company has its specific needs. We are here to help you choose the best path.",
       "button": {
-        "label": "Fale agora com nosso time de vendas",
-        "href": "#"
+        "label": "Talk to our sales team now"
       }
     }
   },

@@ -1,23 +1,11 @@
 import React from "react";
 import Image from "next/image";
+import { PricingCardProps } from "./PricingSection";
 
-interface FeatureItem {
-  icon: string;
-  text: string;
-}
-
-interface PricingCardProps {
-  title: string;
-  description: string;
-  disclaimer?: string;
-  features: FeatureItem[];
-  buttonText: string;
-}
-
-const PricingCard: React.FC<PricingCardProps> = ({
+const PricingCard: React.FC<Omit<PricingCardProps, "id">> = ({
   title,
   description,
-  disclaimer,
+  subtitle,
   features,
   buttonText,
 }) => {
@@ -27,13 +15,8 @@ const PricingCard: React.FC<PricingCardProps> = ({
       <p className="text-black text-center self-center mt-[66px] max-md:mt-10">
         {description}
       </p>
-      {disclaimer && (
-        <p className="text-center text-sm self-center mt-5">{disclaimer}</p>
-      )}
       <div className="bg-[rgba(51,255,206,1)] flex shrink-0 h-px mt-14 max-md:mt-10" />
-      <h4 className="text-black font-semibold mt-[22px]">
-        {title === "Grátis" ? "O plano gratuito inclui:" : "O suporte inclui:"}
-      </h4>
+      <h4 className="text-black font-semibold mt-[22px]">{subtitle}</h4>
       <ul className="mt-[13px] space-y-[11px]">
         {features.map((feature, index) => (
           <li key={index} className="flex items-stretch gap-[11px] text-sm">

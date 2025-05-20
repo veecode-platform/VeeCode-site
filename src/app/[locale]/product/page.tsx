@@ -1,6 +1,6 @@
 import React from "react";
 import FeatureSection from "./components/FeatureSection";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { PageProps } from "@/lib/@types/pageProps";
 // import NewsletterForm from "../ui/product/NewsletterForm";
 // import ContactForm from "../ui/product/ContactForm";
@@ -13,6 +13,9 @@ const Icon5 = "/assets/product/icon5.svg";
 
 export default async function ProductPage({ params }: PageProps) {
   const { locale } = await params;
+  // Enable static rendering
+  setRequestLocale(locale);
+
   const t = await getTranslations({ locale, namespace: "product" });
 
   // Feature data for the left column

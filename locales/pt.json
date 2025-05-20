@@ -237,12 +237,10 @@
           "description": "Conte com nossa equipe de profissionais qualificados para ajudar a maximizar o uso de nossos produtos e ferramentas. Estamos aqui para responder perguntas sobre instalação, configuração e uso, levando em conta seu fluxo de trabalho. Relate quaisquer erros que encontrar e seu impacto, para que possamos corrigi-los e prevenir problemas futuros.",
           "buttons": {
             "button1": {
-              "label": "Comece Agora",
-              "href": "#"
+              "label": "Comece Agora"
             },
             "button2": {
-              "label": "Contate-nos",
-              "href": "#"
+              "label": "Contate-nos"
             }
           }
         },
@@ -251,12 +249,10 @@
           "description": "A Engenharia de Plataforma facilita a migração para a nuvem, fornecendo informações, conhecimento e um plano estratégico. O workshop explora os princípios, benefícios e o papel da engenharia de plataforma, permitindo que os participantes criem um roteiro estratégico personalizado. Ao final, eles terão o conhecimento para lançar seu Portal do Desenvolvedor Interno com confiança.",
           "buttons": {
             "button1": {
-              "label": "Comece Agora",
-              "href": "#"
+              "label": "Comece Agora"
             },
             "button2": {
-              "label": "Contate-nos",
-              "href": "#"
+              "label": "Contate-nos"
             }
           }
         },
@@ -265,12 +261,10 @@
           "description": "O VeeCode Fast Track oferece uma solução especializada de IDP para melhorar rapidamente a experiência do desenvolvedor. Através de um esforço com prazo definido, uma equipe dedicada configura rapidamente uma instância do DevPortal e fornece modelos e automações iniciais para ganhos imediatos de produtividade.",
           "buttons": {
             "button1": {
-              "label": "Comece Agora",
-              "href": "#"
+              "label": "Comece Agora"
             },
             "button2": {
-              "label": "Contate-nos",
-              "href": "#"
+              "label": "Contate-nos"
             }
           }
         }
@@ -288,8 +282,7 @@
             "option2": "Acesso à documentação"
           },
           "button": {
-            "label": "Comece Agora",
-            "href": "#"
+            "label": "Comece Agora"
           }
         },
         "card2": {
@@ -304,12 +297,11 @@
             "option5": "Acesso direto aos nossos especialistas"
           },
           "button": {
-            "label": "Contate-nos",
-            "href": "#"
+            "label": "Contate-nos"
           }
         },
         "card3": {
-          "title": "",
+          "title": "Suporte Custom",
           "description": "<p>Conte com nosso suporte estratégico e especializado para garantir uma adoção eficiente e contínua das nossas soluções.</p><p>*Preço baseado no número de usuários e nível de serviço desejado</p>",
           "subtitle": "O suporte inclui:",
           "benefits-list": {
@@ -320,8 +312,7 @@
             "option5": "Features de IA exclusivas"
           },
           "button": {
-            "label": "Contate-nos",
-            "href": "#"
+            "label": "Contate-nos"
           }
         }
       }
@@ -330,8 +321,7 @@
       "title": "Precisa de ajuda para decidir?",
       "description": "Toda empresa tem suas necessidades específicas. Estamos aqui para te ajudar a escolher a melhor trilha.",
       "button": {
-        "label": "Fale agora com nosso time de vendas",
-        "href": "#"
+        "label": "Fale agora com nosso time de vendas"
       }
     }
   },
