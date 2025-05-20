@@ -205,24 +205,24 @@
   },
   "product": {
     "card1": {
-      "title": "Catálogo de APIs",
-      "description": "O Devportal by VeeCode Platform é a plataforma ideal para centralizar e catalogar suas APIs de maneira eficiente. Com o Devportal você pode ver, testar e gerenciar todas as suas APIs em um único lugar enquanto também tem acesso à documentação e plugins necessários para desenvolver o seu projeto, app ou feature."
+      "title": "API Catalog",
+      "description": "Devportal by VeeCode Platform is the ideal platform to centralize and catalog your APIs efficiently. With Devportal, you can view, test, and manage all your APIs in one place while also accessing the documentation and plugins needed to develop your project, app, or feature."
     },
     "card2": {
       "title": "Software Templates",
-      "description": "Com o Devportal você pode customizar seu ambiente com templates para desenvolvimento e infraestrutura, assim como tem a liberdade para personalizar pipelines. A plataforma oferece uma variedade de templates pré-configurados que aceleram o processo de desenvolvimento e garantem consistência no seu produto"
+      "description": "With Devportal, you can customize your environment with development and infrastructure templates, as well as have the freedom to personalize pipelines. The platform offers a variety of pre-configured templates that speed up the development process and ensure consistency in your product."
     },
     "card3": {
       "title": "Kong Service Manager",
-      "description": "Gerencie e administre informações sobre os serviços do Kong. Liste e manipule rotas, gerencie plugins sem sair do DevPortal. Acesse detalhes dos serviços e APIs"
+      "description": "Manage and administer information about Kong services. List and manipulate routes, manage plugins without leaving the DevPortal. Access details of services and APIs."
     },
     "card4": {
       "title": "VeeCode Docs",
-      "description": "Centralize toda a documentação em um só lugar. O VeeCode busca por documentações em todos os repositórios e reúne todas as entrada em seu DevPortal, permitindo um acesso amplo e organizado."
+      "description": "Centralize all documentation in one place. VeeCode searches for documentation in all repositories and gathers all entries in your DevPortal, allowing broad and organized access."
     },
     "card5": {
       "title": "VeeCode RBAC",
-      "description": "O VeeCode RBAC permite a configuração de acessos que você precisa para garantir acesso customizado. Selecione quem pode ou não, ver itens, executar tarefas ou realizar mudanças, garantindo mostrar apenas informações pertinentes e relevantes para cada tipo de usuário."
+      "description": "VeeCode RBAC allows you to configure the access you need to ensure customized permissions. Select who can or cannot view items, perform tasks, or make changes, ensuring only relevant and pertinent information is shown to each user type."
     }
   },
   "solutions": {
