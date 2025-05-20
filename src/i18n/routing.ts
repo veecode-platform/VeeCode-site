@@ -15,6 +15,8 @@ export const routing = defineRouting({
     "/comparison": "/comparison",
     "/how-it-works": "/how-it-works",
     "/support": "/support",
+    "/privacy-policy": "/privacy-policy",
+    "/terms-of-service": "/terms-of-service",
   },
 });
 

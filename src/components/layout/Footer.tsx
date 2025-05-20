@@ -95,7 +95,7 @@ const Footer: React.FC<PatternComponentProps> = async ({ locale }) => {
                   {t("more-option1")}
                 </ExternalLink>
                 <NavigationLink
-                  href="/"
+                  href="/privacy-policy"
                   className="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
                 >
                   {t("more-option2")}
