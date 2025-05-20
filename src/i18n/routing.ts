@@ -13,6 +13,7 @@ export const routing = defineRouting({
     "/resources": "/resources",
     "/plugin/[path]": "/plugin/[path]",
     "/comparison": "/comparison",
+    "/how-it-works": "/how-it-works",
   },
 });
 
