@@ -500,5 +500,57 @@
         "description": "<p>Aqui está a cereja do bolo. Com a evolução da tecnologia, todos os dias surge uma nova e mais poderosa maneira de realizar seu serviço, o tempo todo há novas atualizações que mudam todo o formato do processo, e tudo isso é cada vez mais complexo de acompanhar e especialmente de implementar. Aqui está nossa proposta: conte com nosso suporte! De forma simples e rápida, podemos resolver suas dúvidas e ajudá-lo a trazer as melhores opções para o seu negócio. Saiba mais sobre nossos planos.</p>"
       }
     }
+  },
+  "supportOptions": {
+    "title": "Opções de Suporte",
+    "subtitle": "Um time de especialistas em quem você pode confiar",
+    "body": {
+      "title1": "Suporte à Plataforma",
+      "subtitle1": "Conte com nosso time de profissionais qualificados e experientes para te ajudar a extrair o máximo dos nossos produtos e ferramentas, considerando os detalhes do seu departamento de TI. Além disso, podemos ajudar com dúvidas que surgirem durante o uso dos nossos produtos e componentes embarcados em nossa solução. Nosso plano é oferecer suporte a um custo muito menor do que ter um profissional especialista em tempo integral na sua equipe.",
+      "title2": "Nossos especialistas estão prontos para te ajudar com",
+      "benefits": {
+        "option1": "Kong API Gateway",
+        "option2": "AWS EKS",
+        "option3": "Okta",
+        "option4": "Insomnia",
+        "option5": "Provedores Git",
+        "option6": "Gerador de Código Quarkus",
+        "option7": "Keycloak",
+        "option8": "Docker",
+        "option9": "Kubernetes",
+        "option10": "Mockserver",
+        "option11": "DevPortal",
+        "option12": "Okteto",
+        "option13": "OpenAPI",
+        "option14": "Gerador de Código Spring Boot",
+        "option15": "Terraform",
+        "option16": "Argo CD"
+      },
+      "title3": "O que está incluso no nosso suporte",
+      "items": {
+        "item1": {
+          "title": "Dúvidas",
+          "description": "Obtenha respostas sobre instalação, configuração e uso dos nossos produtos considerando os detalhes do seu fluxo de trabalho, além de suporte para quaisquer artefatos gerados pelo produto."
+        },
+        "item2": {
+          "title": "Resolução de problemas",
+          "description": "Qualquer problema que surgir será rapidamente resolvido para retornar à operação normal."
+        },
+        "item3": {
+          "title": "Correção de bugs",
+          "description": "Reporte bugs que encontrar e nos ajude a entender como eles impactam você para garantir que sejam corrigidos e evitados no futuro."
+        },
+        "item4": {
+          "title": "Interaja com nosso time",
+          "description": "Assinantes têm acesso ao nosso <strong>Portal de Serviços</strong> onde podem abrir e acompanhar o atendimento de suas solicitações."
+        },
+        "item5": {
+          "title": "Tempos de resposta garantidos",
+          "description": "<p>Garantimos respostas de acordo com o tipo de suporte contratado.</p><p>- <strong>Suporte Standard:</strong> best-effort com SLA de 1 dia útil. Inclui 10 chamados mensais (máx. 2 simultâneos), acesso à comunidade e biblioteca de ativos.</p><p>- <strong>Suporte Enterprise:</strong> resposta no mesmo dia, suporte 24/7, personalizável conforme a necessidade do cliente. Vendido via contato direto.</p><p><strong>Atenção:</strong> Este não é um serviço de emergência. Em casos especiais, o serviço de suporte pode não estar disponível. Avisaremos por e-mail com pelo menos 3 semanas de antecedência.</p>"
+        }
+      },
+      "title4": "Preços",
+      "description4": "Para acessar o Suporte, é necessário ser assinante da Plataforma. Confira a <strong>página de preços</strong> para mais detalhes."
+    }
   }
 }
