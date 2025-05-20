@@ -28,10 +28,10 @@ export const CardItem: React.FC<CardItemProps> = ({
         />
       </div>
       <div className="flex flex-col gap-8 justify-center items-center w-full lg:items-start xl:w-[85%]">
-        <h2 className="w-full title-card text-center lg:text-left text-neutral-800">
+        <h2 className="w-full text-2xl font-medium text-center lg:text-left text-neutral-800">
           {title}
         </h2>
-        <div className="w-full body-card text-center lg:text-left ">
+        <div className="w-full text-xl text-center lg:text-left ">
           {children}
         </div>
       </div>
