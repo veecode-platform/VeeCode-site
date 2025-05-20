@@ -16,7 +16,7 @@ const DefaultPage: React.FC<DefaultPageProps> = ({
           {title}
         </h1>
         {subtitle && (
-          <p className="text-center text-xl font-normal mt-[13px] max-md:max-w-full lg:w-[80%] lg:mx-auto">
+          <p className="text-center text-xl font-normal mt-[13px] max-md:max-w-full">
             {subtitle}
           </p>
         )}
