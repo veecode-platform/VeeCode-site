@@ -458,5 +458,48 @@
         "label": "Fale agora com nosso time de vendas"
       }
     }
+  },
+  "howItWorks": {
+    "title": "Como Funciona",
+    "subtitle": "A VeeCode Platform pode ajudá-lo a obter a infraestrutura da sua API em minutos. Veja como funciona.",
+    "options": {
+      "option1": {
+        "title": "Você está indo para a nuvem nativa, mas não sabe como",
+        "description": "<p>Você precisa entregar soluções, não apenas aplicativos. Você terá que aprender a lidar e gerenciar a nuvem, e espera-se que faça isso gastando menos dinheiro. Mas existem infinitas escolhas para cada recurso disponível: clusters, bancos de dados, balanceadores de carga, chaves, a lista continua.</p> <p>Nós automatizamos a maior parte disso com o VKPR - você pode pular a maior parte da curva de aprendizado e manter o foco nas partes divertidas. Nossas ferramentas o levarão lá através de automação, IaC e GitOps.</p>"
+      },
+      "option2": {
+        "title": "Você tem que fazer essa coisa de API",
+        "description": "<p>Você vai construir (e gerenciar) microserviços e APIs, mas há tantas partes móveis e você ainda está lutando. Você só precisa construir, sem vasculhar centenas de serviços de nuvem com centenas de configurações, onde um pequeno erro pode lhe custar uma conta surpresa.</p><p> Podemos ajudá-lo desde a especificação até a produção. Nossas ferramentas são opinativas e reduzirão suas escolhas a um número razoável. Experimente o safira-cli para criar seus templates de código e gerar pipelines prontos para uso, para que você possa fazer o commit desde o desenvolvimento até a produção sem complexidade adicional. Nosso fluxo de trabalho proposto remove muitos problemas - e estamos sempre melhorando para você.</p>"
+      },
+      "option3": {
+        "title": "Você precisa aprender infraestrutura como código",
+        "description": "<p>Você precisa entregar soluções, não apenas aplicativos. Você terá que aprender a lidar e gerenciar a nuvem, e espera-se que faça isso gastando menos dinheiro. Mas existem infinitas escolhas para cada recurso disponível: clusters, bancos de dados, balanceadores de carga, chaves, a lista continua.</p> <p>Nós automatizamos a maior parte disso com o VKPR - você pode pular a maior parte da curva de aprendizado e manter o foco nas partes divertidas. Nossas ferramentas o levarão lá através de automação, IaC e GitOps.</p>"
+      },
+      "option4": {
+        "title": "Um cluster Kubernetes não é suficiente",
+        "description": "<p>Levar as coisas para a produção em uma mentalidade de nuvem nativa requer muito mais do que apenas um cluster gerenciado. Podemos ajudá-lo a definir sua arquitetura trazendo para o seu cluster os componentes necessários que os tornarão prontos para produção. Sim, você precisará de componentes para observabilidade, um gateway de API, balanceadores de carga, bancos de dados e segurança. E nós daremos suporte a todos eles, proporcionando uma experiência de autoatendimento para que clusters não sejam um grande problema.</p> <p>O que queremos é que você não leve meses para decidir sua arquitetura de TI. Você pode fazer isso hoje!</p>"
+      },
+      "option5": {
+        "title": "Você não está sozinho",
+        "description": "<p>Você não está sozinho. Nós fornecemos suporte para nosso código e ferramentas - e eles são seus para usar para sempre, mesmo que você não seja mais nosso cliente. Também oferecemos suporte de melhor esforço para os produtos que ajudamos a instalar, para que você possa aproveitar seus recursos combinados e decidir melhor quando ou por que licenciá-los (se é que vai licenciar - todos eles também são de código aberto).</p> <p>Fica ainda melhor. Se nossas ferramentas não atenderem completamente, você pode tentar nos pedir para melhorá-las de graça. Sim, estamos continuamente aprimorando nosso conjunto de ferramentas e realmente precisamos do seu feedback.</p>"
+      },
+      "option6": {
+        "title": "Acelere sua provisão de nuvem",
+        "description": "<p>Atualmente, os serviços mais bem-sucedidos do mercado passaram por sua transição digital, e a maioria deles teve dificuldades nesse processo, precisando contratar consultores e serviços caros para lidar com esse desafio. Agora, com o <strong>VKPR</strong>, sua transição e uso de ferramentas nativas da nuvem se tornam mais simples. Construímos uma interface de linha de comando dedicada para construir clusters Kubernetes de forma rápida, simples e automatizada por meio de pipelines de IaC seguindo a metodologia GitOps. Juntamente com uma ferramenta auxiliar que facilita a instalação e gerenciamento de aplicativos que estão no mundo nativo da nuvem, sem qualquer dependência de uso.</p>"
+      },
+      "option7": {
+        "title": "Automatize a construção de sua API",
+        "description": "<p>Sabemos o quão caro e demorado é construir uma API. Para resolver esse problema, construímos uma interface de linha de comando, o <strong>Safira-Cli</strong>. Usando um arquivo de API aberta, junto com um comando simples, nossa CLI constrói um template completo de API nos frameworks Java mais usados no mercado: SpringBoot e Quarkus. Tudo isso de maneira rápida e automatizada. Além disso, nossa solução permite personalizações que trazem robustez ao projeto, como o uso de Mockserver, configurações de pipeline e conteinerização por Docker e Kubernetes, bem como um alto nível de segurança com gateway de API como Kong e autenticação como Okta.</p>"
+      },
+      "option8": {
+        "title": "Centralize o gerenciamento de seus Microserviços",
+        "description": "<p>A arquitetura de microserviços revolucionou a internet, e aproveitando essa inovação, criamos o DevPortal. Esta ferramenta é nossa plataforma que centraliza todas as suas Especificações e APIs, ajudando o usuário a visualizar mais de perto os serviços dispostos em APIs. Graças à sua facilitação visual, os testes de API são mais rápidos e com melhor visualização, oferecendo um conjunto de possibilidades para atuar em nossa plataforma. Acelere o gerenciamento de seus microserviços e aproxime-se do cliente com feedbacks mais rápidos com o DevPortal.</p>"
+      },
+      "option9": {
+        "title": "Obtenha suporte especializado",
+        "description": "<p>Aqui está a cereja do bolo. Com a evolução da tecnologia, todos os dias surge uma nova e mais poderosa maneira de realizar seu serviço, o tempo todo há novas atualizações que mudam todo o formato do processo, e tudo isso é cada vez mais complexo de acompanhar e especialmente de implementar. Aqui está nossa proposta: conte com nosso suporte! De forma simples e rápida, podemos resolver suas dúvidas e ajudá-lo a trazer as melhores opções para o seu negócio. Saiba mais sobre nossos planos.</p>"
+      }
+    },
+    "buttonLabel": "Ver Planos"
   }
 }
