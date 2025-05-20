@@ -6,7 +6,7 @@ const safeBasePath = basePath && basePath.startsWith("/") ? basePath : "";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export", // static,
+  output: "export",
   trailingSlash: true,
   basePath: safeBasePath,
   assetPrefix: safeBasePath,
