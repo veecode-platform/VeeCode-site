@@ -26,7 +26,7 @@ const CallToAction: React.FC<CallToActionProps> = ({
           </p>
         )}
       </div>
-      <div className="z-10 flex mt-[-68px] min-h-11 w-[374px] max-w-full items-center gap-[23px] text-base">
+      <div className="z-10 flex items-center gap-[23px] justify-center mt-[-68px] min-h-11 w-[374px] max-w-full  text-base">
         <Button variant="default" size="sm">
           {buttonLabel1}
         </Button>
