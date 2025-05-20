@@ -365,41 +365,41 @@
       },
       "line2": {
         "col1": "Trazer seu modelo de dados",
-        "col2": "sim",
+        "col2": "✓",
         "col3": "sim, com algum esforço"
       },
       "line3": {
         "col1": "Adicionar e atualizar itens do catálogo via YAML",
-        "col2": "sim",
-        "col3": "sim"
+        "col2": "✓",
+        "col3": "✓"
       },
       "line4": {
         "col1": "Atualizar itens da UI",
-        "col2": "sim",
-        "col3": "não"
+        "col2": "✓",
+        "col3": "—"
       },
       "line5": {
         "col1": "Adicionar e atualizar itens do catálogo via API",
-        "col2": "sim",
-        "col3": "não"
+        "col2": "✓",
+        "col3": "—"
       },
       "line6": {
         "col1": "Sincronizar repositórios como itens no catálogo",
-        "col2": "sim",
-        "col3": "não"
+        "col2": "✓",
+        "col3": "—"
       },
       "line7": {
         "col1": "Templates"
       },
       "line8": {
         "col1": "Ações self-serve",
-        "col2": "sim",
-        "col3": "sim"
+        "col2": "✓",
+        "col3": "✓"
       },
       "line9": {
         "col1": "Customizar ações self-serve",
-        "col2": "sim",
-        "col3": "sim"
+        "col2": "✓",
+        "col3": "✓"
       },
       "line10": {
         "col1": "TechDocs"
@@ -411,52 +411,51 @@
       },
       "line12": {
         "col1": "Extensível via plugins",
-        "col2": "sim",
-        "col3": "sim"
+        "col2": "✓",
+        "col3": "✓"
       },
       "line13": {
         "col1": "Plugins e extensões"
       },
       "line14": {
         "col1": "Customização de tema",
-        "col2": "sim",
+        "col2": "✓",
         "col3": "Requer implementação"
       },
       "line15": {
         "col1": "Customização de layout",
-        "col2": "sim",
+        "col2": "✓",
         "col3": "Requer implementação"
       },
       "line16": {
         "col1": "Acesso a toda infraestrutura e recursos",
-        "col2": "sim",
-        "col3": "sim"
+        "col2": "✓",
+        "col3": "✓"
       },
       "line17": {
         "col1": "Role-Based Access Control - RBAC"
       },
       "line18": {
         "col1": "Funções de administrador e não administrador",
-        "col2": "sim",
-        "col3": "sim"
+        "col2": "✓",
+        "col3": "✓"
       },
       "line19": {
         "col1": "Funções personalizadas",
-        "col2": "sim",
-        "col3": "não"
+        "col2": "✓",
+        "col3": "—"
       },
       "line20": {
         "col1": "Políticas de permissões personalizadas",
-        "col2": "sim",
-        "col3": "sim"
+        "col2": "✓",
+        "col3": "✓"
       }
     },
     "cta-section": {
       "title": "Precisa de ajuda para decidir?",
       "description": "Toda empresa tem suas necessidades específicas. Estamos aqui para te ajudar a escolher a melhor trilha.",
       "button": {
-        "label": "Fale agora com nosso time de vendas",
-        "href": "#"
+        "label": "Fale agora com nosso time de vendas"
       }
     }
   }

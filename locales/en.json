@@ -352,111 +352,110 @@
   },
   "comparison": {
     "title": "Veecode vs Backstage",
-    "subtitle": "Eficiência para times de qualquer tamanho.",
-    "description": "<p>Backstage é uma das melhores ferramentas do mercado para desenvolver Plataformas Internas de Desenvolvimento (IDPs). No entanto, requer um alto esforço técnico para torná-lo um IDP viável.</p><p>Com a Veecode, usamos a versão open-source do Backstage para construir uma IDP de fácil compreensão e livre de manutenções.</p>",
-    "table-title": "Compare as features",
+    "subtitle": "Efficiency for teams of any size.",
+    "description": "<p>Backstage is one of the best tools on the market for developing Internal Developer Platforms (IDPs). However, it requires a high technical effort to make it a viable IDP.</p><p>With Veecode, we use the open-source version of Backstage to build an IDP that is easy to understand and maintenance-free.</p>",
+    "table-title": "Compare the features",
     "table": {
       "thead": {
         "label1": "VeeCode",
         "label2": "Backstage"
       },
       "line1": {
-        "col1": "Catálogo"
+        "col1": "Catalog"
       },
       "line2": {
-        "col1": "Trazer seu modelo de dados",
-        "col2": "sim",
-        "col3": "sim, com algum esforço"
+        "col1": "Bring your data model",
+        "col2": "✓",
+        "col3": "yes, with some effort"
       },
       "line3": {
-        "col1": "Adicionar e atualizar itens do catálogo via YAML",
-        "col2": "sim",
-        "col3": "sim"
+        "col1": "Add and update catalog items via YAML",
+        "col2": "✓",
+        "col3": "✓"
       },
       "line4": {
-        "col1": "Atualizar itens da UI",
-        "col2": "sim",
-        "col3": "não"
+        "col1": "Update items from the UI",
+        "col2": "✓",
+        "col3": "—"
       },
       "line5": {
-        "col1": "Adicionar e atualizar itens do catálogo via API",
-        "col2": "sim",
-        "col3": "não"
+        "col1": "Add and update catalog items via API",
+        "col2": "✓",
+        "col3": "—"
       },
       "line6": {
-        "col1": "Sincronizar repositórios como itens no catálogo",
-        "col2": "sim",
-        "col3": "não"
+        "col1": "Sync repositories as catalog items",
+        "col2": "✓",
+        "col3": "—"
       },
       "line7": {
         "col1": "Templates"
       },
       "line8": {
-        "col1": "Ações self-serve",
-        "col2": "sim",
-        "col3": "sim"
+        "col1": "Self-serve actions",
+        "col2": "✓",
+        "col3": "✓"
       },
       "line9": {
-        "col1": "Customizar ações self-serve",
-        "col2": "sim",
-        "col3": "sim"
+        "col1": "Customize self-serve actions",
+        "col2": "✓",
+        "col3": "✓"
       },
       "line10": {
         "col1": "TechDocs"
       },
       "line11": {
-        "col1": "Mecanismo de criação",
+        "col1": "Creation engine",
         "col2": "TechDocs",
         "col3": "TechDocs"
       },
       "line12": {
-        "col1": "Extensível via plugins",
-        "col2": "sim",
-        "col3": "sim"
+        "col1": "Extensible via plugins",
+        "col2": "✓",
+        "col3": "✓"
       },
       "line13": {
-        "col1": "Plugins e extensões"
+        "col1": "Plugins and extensions"
       },
       "line14": {
-        "col1": "Customização de tema",
-        "col2": "sim",
-        "col3": "Requer implementação"
+        "col1": "Theme customization",
+        "col2": "✓",
+        "col3": "Requires implementation"
       },
       "line15": {
-        "col1": "Customização de layout",
-        "col2": "sim",
-        "col3": "Requer implementação"
+        "col1": "Layout customization",
+        "col2": "✓",
+        "col3": "Requires implementation"
       },
       "line16": {
-        "col1": "Acesso a toda infraestrutura e recursos",
-        "col2": "sim",
-        "col3": "sim"
+        "col1": "Access to all infrastructure and resources",
+        "col2": "✓",
+        "col3": "✓"
       },
       "line17": {
         "col1": "Role-Based Access Control - RBAC"
       },
       "line18": {
-        "col1": "Funções de administrador e não administrador",
-        "col2": "sim",
-        "col3": "sim"
+        "col1": "Admin and non-admin roles",
+        "col2": "✓",
+        "col3": "✓"
       },
       "line19": {
-        "col1": "Funções personalizadas",
-        "col2": "sim",
-        "col3": "não"
+        "col1": "Custom roles",
+        "col2": "✓",
+        "col3": "—"
       },
       "line20": {
-        "col1": "Políticas de permissões personalizadas",
-        "col2": "sim",
-        "col3": "sim"
+        "col1": "Custom permission policies",
+        "col2": "✓",
+        "col3": "✓"
       }
     },
     "cta-section": {
-      "title": "Precisa de ajuda para decidir?",
-      "description": "Toda empresa tem suas necessidades específicas. Estamos aqui para te ajudar a escolher a melhor trilha.",
+      "title": "Need help deciding?",
+      "description": "Every company has its specific needs. We are here to help you choose the best path.",
       "button": {
-        "label": "Fale agora com nosso time de vendas",
-        "href": "#"
+        "label": "Talk to our sales team now"
       }
     }
   }
