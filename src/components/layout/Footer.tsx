@@ -22,7 +22,7 @@ const Footer: React.FC<PatternComponentProps> = async ({ locale }) => {
               </h3>
               <nav className="flex justify-center flex-col font-medium text-center leading-none gap-2 mt-4">
                 <NavigationLink
-                  href="/"
+                  href="/how-it-works"
                   className="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
                 >
                   {t("about-option1")}
