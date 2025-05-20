@@ -14,6 +14,7 @@ export const routing = defineRouting({
     "/plugin/[path]": "/plugin/[path]",
     "/comparison": "/comparison",
     "/how-it-works": "/how-it-works",
+    "/support": "/support",
   },
 });
 
