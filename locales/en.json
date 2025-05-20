@@ -661,5 +661,61 @@
         }
       }
     }
+  },
+  "faq": {
+    "title": "FAQ",
+    "subtitle": "Frequently Asked Questions",
+    "items": {
+      "ask1": {
+        "title": "What is the difference between Standard and Enterprise support?",
+        "answer": "In addition to the information already explained in the comparison card, the standard is the self-service logic, where you enter the ticket and communication platform and bring us your problems so that we at VeeCode can help you solve them. With Enterprise, the support offer is made according to your needs, where we can solve your problems with you, where we outline together a strategy with deadlines. Or, depending on the context, for you, where we separate our team to focus on the issues that are necessary."
+      },
+      "ask2": {
+        "title": "Do I have to pay to use VeeCode Platform products?",
+        "answer": "No. Our products are free, we only charge for the personalized support service that offers help in stacks that permeate the world of APIs, microservices and Devops."
+      },
+      "ask3": {
+        "title": "Which stacks does professional support cover?",
+        "answer": "VKPR, DevPortal, Safira-CLI, Kong, Kubernetes, Docker, Swagger, Insomnia, Okta, Mockserver, Vault, Keycloak, Prometheus, Jaeger, ArgoCD, Node, NPM, Okteto, Linux, AWS, Digital Ocean, Github, Gitlab, Gitbucket, Terraform, API design and microservices."
+      },
+      "ask4": {
+        "title": "Is there a discount on the subscription service?",
+        "answer": "We are on a launch promotion, so take advantage of the opportunity to have access to the most complete expert support on the market that fits in your pocket."
+      },
+      "ask5": {
+        "title": "Is there an opt-out fee for the personalized support subscription?",
+        "answer": "We offer you a 15-day Support Trial, during which your card will not be charged, and the value of the chosen package will be charged only after this trial period."
+      },
+      "ask6": {
+        "title": "What does 8x5 and 24x7 support mean?",
+        "answer": "They are models of operation of the support, the model 8x5, means that our availability of service is 8 hours a day on 5 days a week, already the 24x7, follows the same logic and it is 24 hours a day the 7 days a week, or full time."
+      },
+      "ask7": {
+        "title": "Besides the site, what are other means of communication?",
+        "answer": "You can find us on our social networks (instagram, linkedin and facebook), as well as in our community on github where you will find perfect interaction channels to answer your questions and relate to the tech public."
+      },
+      "ask8": {
+        "title": "I have a feedback about a VeeCode Platform product, where can I post it?",
+        "answer": "Our main contact channel is the Github Discussion, where you will find a dedicated channel for feedback where your criticism is genuinely heard. You can also contact us by any of our means of communication, and we will be very happy with your contribution."
+      },
+      "ask9": {
+        "title": "What is Safira? And what is it used for?",
+        "answer": "Safira-CLI accelerates the construction of APIs from an OpenAPI file. Its purpose is to facilitate the routine of the developer who has a long learning curve for building custom APIs according to the market's demand for robustness and technology, which is embedded in the settings of our product when generating the API project template after a few commands in the Safira CLI."
+      },
+      "ask10": {
+        "title": "What is the VKPR? And what is it used for?",
+        "answer": "VKPR builds for you a cloud infrastructure with a few lines of code. We understand that there is a mystery that surrounds the world of Devops, and there are great challenges in cloud provisioning. VKPR abstracts away the difficulties of provisioning and gives you freedom in creating the infrastructure either in test or in production."
+      },
+      "ask11": {
+        "title": "What is DevPortal? What is it for?",
+        "answer": "DevPortal is a platform that centralizes your Specs and APIs making it easy to control microservices. Today we understand that the microservices architecture is necessary to deliver value to our users. Devportal works as a showcase of specifications and APIs that facilitate the control and testing of services."
+      }
+    },
+    "action": {
+      "contact": {
+        "title": "Still having doubts?",
+        "buttonLabel": "Contact us"
+      }
+    }
   }
 }

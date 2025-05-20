@@ -101,13 +101,13 @@ const Footer: React.FC<PatternComponentProps> = async ({ locale }) => {
                   {t("more-option2")}
                 </NavigationLink>
                 <NavigationLink
-                  href="/"
+                  href="/terms-of-service"
                   className="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
                 >
                   {t("more-option3")}
                 </NavigationLink>
                 <NavigationLink
-                  href="/"
+                  href="/faq"
                   className="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
                 >
                   {t("more-option4")}
