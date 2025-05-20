@@ -24,7 +24,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
         height={55.417}
         unoptimized
       />
-      <h2 className="text-[40px] font-bold grow shrink w-[468px] max-md:max-w-full">
+      <h2 className="title-card grow shrink w-[468px] max-md:max-w-full">
         {title}
       </h2>
       <p className="text-xl font-normal grow shrink w-[560px] max-md:max-w-full">
