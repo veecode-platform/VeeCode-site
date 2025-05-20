@@ -4,8 +4,7 @@ import HeroSection from "./components/HeroSection";
 import PricingSection from "./components/PricingSection";
 import ServicesSection from "./components/ServicesSection";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-
-const checkIcon = "/assets/solutions/Check.svg";
+import { CHECK_ICON } from "@/lib/constants";
 
 export default async function SolutionsPage({ params }: PageProps) {
   const { locale } = await params;
@@ -46,11 +45,11 @@ export default async function SolutionsPage({ params }: PageProps) {
       subtitle: t("pricing.cards.card1.subtitle"),
       features: [
         {
-          icon: checkIcon,
+          icon: CHECK_ICON,
           text: t("pricing.cards.card1.benefits-list.option1"),
         },
         {
-          icon: checkIcon,
+          icon: CHECK_ICON,
           text: t("pricing.cards.card1.benefits-list.option2"),
         },
       ],
@@ -65,23 +64,23 @@ export default async function SolutionsPage({ params }: PageProps) {
       subtitle: t("pricing.cards.card2.subtitle"),
       features: [
         {
-          icon: checkIcon,
+          icon: CHECK_ICON,
           text: t("pricing.cards.card2.benefits-list.option1"),
         },
         {
-          icon: checkIcon,
+          icon: CHECK_ICON,
           text: t("pricing.cards.card2.benefits-list.option2"),
         },
         {
-          icon: checkIcon,
+          icon: CHECK_ICON,
           text: t("pricing.cards.card2.benefits-list.option3"),
         },
         {
-          icon: checkIcon,
+          icon: CHECK_ICON,
           text: t("pricing.cards.card2.benefits-list.option4"),
         },
         {
-          icon: checkIcon,
+          icon: CHECK_ICON,
           text: t("pricing.cards.card2.benefits-list.option5"),
         },
       ],
@@ -96,23 +95,23 @@ export default async function SolutionsPage({ params }: PageProps) {
       subtitle: t("pricing.cards.card3.subtitle"),
       features: [
         {
-          icon: checkIcon,
+          icon: CHECK_ICON,
           text: t("pricing.cards.card3.benefits-list.option1"),
         },
         {
-          icon: checkIcon,
+          icon: CHECK_ICON,
           text: t("pricing.cards.card3.benefits-list.option2"),
         },
         {
-          icon: checkIcon,
+          icon: CHECK_ICON,
           text: t("pricing.cards.card3.benefits-list.option3"),
         },
         {
-          icon: checkIcon,
+          icon: CHECK_ICON,
           text: t("pricing.cards.card3.benefits-list.option4"),
         },
         {
-          icon: checkIcon,
+          icon: CHECK_ICON,
           text: t("pricing.cards.card3.benefits-list.option5"),
         },
       ],
