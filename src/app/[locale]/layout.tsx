@@ -8,9 +8,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { GoogleAnalytics } from "@next/third-parties/google";
-
-const thumbnailImageUrl =
-  "https://cdn.platform.vee.codes/landing-page/thumbnail.png";
+import { THUMBNAIL_IMAGE_URL } from "@/lib/constants";
 
 //function to generate the routes for all the locales
 export function generateStaticParams() {
@@ -27,7 +25,7 @@ export async function generateMetadata(props: Omit<LayoutProps, "children">) {
     keywords: ["backstage", "idp", "platform", "veecode"],
     openGraph: {
       title: t("home.title"),
-      images: thumbnailImageUrl,
+      images: THUMBNAIL_IMAGE_URL,
     },
     robots: {
       index: true,
