@@ -1,0 +1,38 @@
+name: Deploy to GitHub Pages
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Build the project
+        env:
+          NEXT_PUBLIC_BASE_PATH: ${{ secrets.NEXT_PUBLIC_BASE_PATH }}
+          NEXT_PUBLIC_ANALYTICS_ID: ${{ secrets.NEXT_PUBLIC_ANALYTICS_ID }}
+          NEXT_PUBLIC_HOST_URL: ${{ secrets.NEXT_PUBLIC_HOST_URL }}
+          NEXT_PUBLIC_GOOGLE_TAG_MANAGER: ${{ secrets.NEXT_PUBLIC_GOOGLE_TAG_MANAGER }}
+          NEXT_PUBLIC_LAMBDA_BASE_URL: ${{ secrets.NEXT_PUBLIC_LAMBDA_BASE_URL }}
+          NEXT_PUBLIC_NEUROLEAD_ID: ${{ secrets.NEXT_PUBLIC_NEUROLEAD_ID }}
+          NEXT_PUBLIC_LAMBDA_API_KEY: ${{ secrets.LAMBDA_API_KEY }}
+        run: yarn build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./out
+          cname: cname-landing-page-teste.homolog.platform.vee.codes
