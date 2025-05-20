@@ -570,5 +570,96 @@
         "description": "<p>Os dados coletados podem ser usados para completar o processo de compra, cumprir as obrigações decorrentes do uso de nossos serviços e produtos, responder às suas solicitações e perguntas, manter o cadastro atualizado com o objetivo de contatá-lo por telefone, entre outros meios, promover nossos serviços e produtos, informar sobre novidades, conteúdos, objetivos e outros eventos relevantes para a manutenção.</p><p>Poderemos alterar o conteúdo desta Política de Privacidade a qualquer momento, conforme o objetivo ou a necessidade, como para adequação legal e conformidade com uma disposição de lei ou norma que tenha força jurídica equivalente, sendo de responsabilidade de nosso USUÁRIO verificá-la sempre que acessar nosso site.</p>"
       }
     }
+  },
+  "termsOfService": {
+    "title": "Termos de Serviço",
+    "blocks": {
+      "definitions": {
+        "title": "DEFINIÇÕES",
+        "content": "<p>Estes Termos e Condições ('Termos') definem a 'VeeCode Platform' (ou 'Plataforma') como o conjunto de ferramentas, incluindo (mas não se limitando a) código-fonte, geradores de código, aceleradores, portais de desenvolvedores, definições de pipeline, interfaces de linha de comando, documentação, práticas, arquiteturas de referência e outros artefatos, com ou sem código aberto, que compõem nossos produtos, regulamentando seu acesso e uso.</p><p>Os 'Termos' também definem coletivamente (regulando o acesso e uso) nossos serviços ('Serviços'), incluindo (mas não se limitando a) suporte à 'Plataforma', suporte técnico genérico, nossos sites (e todos os canais de suporte), níveis de suporte, conteúdo de suporte e base de conhecimento, canais da comunidade, conteúdo da comunidade e eventos.</p><p>Indivíduos ou entidades que usam nossa 'Plataforma' e/ou nossos 'Serviços' serão coletivamente chamados de 'Clientes' ou 'Usuários' (às vezes 'você' ou 'seu'). Em situações específicas (como definidas abaixo), podem ser chamados de 'Assinantes' ou 'Membros'.</p><p>Ao usar nossa 'Plataforma' e/ou nossos 'Serviços', você está aceitando estes 'Termos' como um contrato vinculativo, independentemente de ser ou não um cliente pagante ou membro, seja como indivíduo ou como entidade que você representa.</p><p><strong>Se você não concorda com estes 'Termos' ou com quaisquer outras regras e condições aqui descritas, você não pode usar, acessar ou copiar nenhum dos 'Serviços' ou da 'Plataforma'.</strong></p>"
+      },
+      "generalTerms": {
+        "title": "TERMOS GERAIS & CONDIÇÕES",
+        "updateToTerms": {
+          "title": "1- ATUALIZAÇÕES DOS TERMOS",
+          "item1": "1.1 - Estes Termos devem ser revisados e alterados com o tempo e sem aviso prévio. Os Termos atuais estarão sempre disponíveis online (URL).",
+          "item2": "1.2 - Faremos o possível para notificá-lo com antecedência sobre mudanças significativas, especialmente quando afetarem preço e escopo, mas espera-se que você os verifique regularmente por conta própria.",
+          "item3": "1.3 - Se em algum momento você não concordar com estes Termos, poderá rescindi-los e deixar de usar tanto a 'Plataforma' quanto os 'Serviços'.",
+          "item4": "1.4 - <strong>Se você continuar a usar a 'Plataforma' ou os 'Serviços' após uma revisão, estará vinculado aos novos Termos</strong>."
+        },
+        "servicesOffered": {
+          "title": "2- SERVIÇOS OFERECIDOS E TERMOS",
+          "item1": "2.1 - <strong>Assinatura da VeeCode Platform</strong>: acesso a 10 chamadas de suporte mensais, com um máximo de 2 simultâneas, acesso à nossa comunidade e canais de suporte, biblioteca de ativos (em construção) e inclui sua escolha de <strong>Suporte Padrão</strong> (sem custo adicional) ou <strong>Suporte Empresarial</strong> (por um custo extra, tratando diretamente conosco).",
+          "item2": "2.2 - <strong>Suporte Padrão</strong>: suporte de melhor esforço com SLA de 1 dia útil.",
+          "item3": "2.3 - <strong>Suporte Empresarial</strong>: resposta no mesmo dia, suporte 24/7, com ajustes personalizáveis com o cliente. Acordo sendo comercializado via contato direto.",
+          "item4": "Este documento também inclui Termos de Serviço específicos que fornecem mais detalhes para esses serviços."
+        },
+        "customersAndUsers": {
+          "title": "3- CLIENTES E USUÁRIOS",
+          "item1": "3.1 - Um 'Cliente' significa uma entidade (e seus representantes) adquirindo uma Assinatura da VeeCode Platform, vinculada aos Termos aqui documentados e responsável por nomear os 'Usuários' ativos sob esta assinatura (e também os 'Usuários Administrativos').",
+          "item2": "3.2 - Um 'Usuário' (ou 'membro') é um usuário autorizado sob uma 'Assinatura' ativa, com acesso à 'Plataforma' (na forma de - e não restrito a - ativos, código, documentos, portais e ferramentas) e 'Serviços' (na forma de - e não restrito a - portais de suporte, fóruns comunitários e base de conhecimento).",
+          "item3": "3.3 - Um 'Usuário Administrativo' é um 'Usuário' autorizado a adicionar ou remover 'Usuários' cobertos por uma 'Assinatura' válida, restrito ao número limitado de usuários especificado pela assinatura.",
+          "item4": "3.4 - Usuários que excedem a quantidade da assinatura podem ser adquiridos diretamente pela plataforma."
+        },
+        "pricingAndBilling": {
+          "title": "4- PREÇOS E FATURAMENTO",
+          "item1": "4.1 - Ao se inscrever nos Serviços no site, o cliente optará por um plano de suporte e tarifas, escolhendo pagamento mensal ou anual.",
+          "item2": "4.2 - Um pedido aprovado para uma assinatura cobrará seu cartão de crédito e iniciará um 'Ano de Serviço' (ou apenas 'ano').",
+          "item3": "4.3 - A duração mínima para uma assinatura (e plano de suporte) é de 12 meses (um ano de serviço completo). Como exceção a esta regra, um novo cliente tem a opção de cancelar a assinatura (e ser reembolsado) até 15 dias após o início do primeiro ano de serviço.",
+          "item4": "4.4 - Todos os pedidos estão sujeitos à aprovação da VeeCode. Em caso de rejeição, os valores recebidos serão reembolsados em até 7 dias.",
+          "item5": "4.5 - Um método de pagamento alternativo pode ser utilizado, se ambas as partes concordarem por escrito: a VeeCode pode faturar o cliente por 1 (um) ano de serviço antecipadamente, e o pagamento pode ser feito por transferência bancária (em até 7 dias).",
+          "item6": "4.6 - Falha ao cobrar cartões de crédito (e pagar faturas) resultará no bloqueio do acesso aos serviços. Isso não afetará componentes de código aberto nem qualquer ativo criado ou gerado com as ferramentas da plataforma."
+        },
+        "renewAndUpgrade": {
+          "title": "5- RENOVAÇÃO, UPGRADE E CANCELAMENTO",
+          "item1": "5.1 - No final do ano de serviço, a renovação é automática, a menos que a assinatura tenha sido cancelada. Alterações de preço entrarão em vigor na renovação.",
+          "item2": "5.2 - A renovação automática pode ser evitada cancelando a assinatura pelo menos 30 dias antes do final do ano de serviço.",
+          "item3": "5.3 - A renovação inicia um novo ano de serviço sob a assinatura atual.",
+          "item4": "5.4 - O nível de suporte pode ser <strong>atualizado</strong> a qualquer momento durante o ano de serviço. Nesse caso, um valor pro-rata (proporcional) será cobrado antecipadamente.",
+          "item5": "5.5 - O nível de suporte pode ser <strong>rebaixado</strong> a qualquer momento durante o ano de serviço, mas isso só terá efeito no próximo ano de serviço. O nível de suporte atual permanecerá ativo até o final do ano de serviço, mas na renovação o novo nível de suporte se tornará ativo (e cobrado de acordo).",
+          "item6": "5.6 - Uma assinatura (e seus serviços associados) pode ser cancelada a qualquer momento por ambas as partes, sem aviso prévio ou motivo. Os serviços e a assinatura permanecerão ativos (e cobrados) até o final do ano de serviço atual e não serão renovados.",
+          "item7": "5.7 - Uma assinatura pode ser cancelada a qualquer momento (e os serviços interrompidos) em caso de falha no pagamento do valor devido de acordo com a assinatura ativa. Você ainda deve o restante do ano de serviço, e os serviços serão retomados assim que o pagamento for recebido.",
+          "item8": "5.8 - Uma assinatura cancelada não afeta o direito de usar os componentes de código aberto da 'Plataforma' ou qualquer outro componente disponível gratuitamente para não assinantes. Também não afeta os direitos de quaisquer artefatos gerados pela plataforma e suas ferramentas."
+        },
+        "liabilityLimitations": {
+          "title": "6. LIMITAÇÕES DE RESPONSABILIDADE",
+          "item1": "6.1 - A 'Plataforma' é composta por muitos produtos de terceiros, além de produtos desenvolvidos por nós.",
+          "item2": "6.2 - A 'Plataforma' contém ferramentas que auxiliam na automação de implantação desses produtos com configurações predefinidas e opinativas. Tais configurações devem ser verificadas e testadas pelos clientes de acordo com suas necessidades.",
+          "item3": "6.3 - A 'Plataforma' também oferece ferramentas para geração de código, e tal código deve ser manipulado e testado pelo cliente.",
+          "item4": "6.4 - Nossos 'Serviços' incluem suporte de 'melhor esforço', conforme definido nos Termos de Serviço.",
+          "item5": "6.5 - Portanto, sob nenhuma circunstância e em nenhum evento, 'nós' (nossa empresa ou seus afiliados, funcionários, diretores, agentes, sucessores) seremos responsáveis por quaisquer danos (de qualquer tipo) ou lucros cessantes. Ao usar nossa plataforma ou serviços de qualquer forma, seja sendo um assinante ativo ou não, você concorda com esta limitação e com todos os 'Termos'."
+        },
+        "intelectualProperty": {
+          "title": "7- PROPRIEDADE INTELECTUAL",
+          "item1": "7.1 - A 'Plataforma' é composta por muitos produtos de terceiros, além de produtos desenvolvidos por nós. Todos os produtos de terceiros são usados, baixados e configurados conforme permitido por seus criadores.",
+          "item2": "7.2 - Alguns de nossos produtos são explicitamente de código aberto e regidos por uma licença específica (você deve consultar o arquivo LICENSE versionado com o código-fonte). A menos que mencionado de outra forma, você é livre para usar, redistribuir e modificar esses produtos conforme permitido pela LICENÇA.",
+          "item3": "7.3 - A plataforma pode ser usada para gerar código-fonte de várias maneiras. Você é o proprietário de todo o código que gerar, bem como de qualquer código que escrever junto com o código gerado. Você é livre para usar, reutilizar e distribuir esses arquivos de código-fonte como desejar.",
+          "item4": "7.4 - Continuamos sendo os proprietários do nosso código-fonte (como nossos templates usados na geração de código). Você não pode reivindicar a propriedade deles, mas isso não afeta os arquivos gerados por você ao usar a plataforma - eles são seus, independentemente de ser assinante ou não.",
+          "item5": "7.5 - Uma assinatura ativa da plataforma e dos serviços proporcionará acesso a documentos restritos, exemplos de código, sistemas de suporte e outros ativos. Os usuários autorizados de um cliente estão autorizados a fazer cópias desses ativos para uso pessoal e de trabalho, mas não estão autorizados a redistribuí-los, vendê-los ou publicá-los. Isso é estritamente sob o uso justo - cópias feitas por crawlers e bots são consideradas um abuso desse direito e uma violação desses termos.",
+          "item6": "7.6 - Se você contribuir voluntariamente para o código-fonte da nossa plataforma por meio de pull requests (ou outras formas de submissão de código), nós seremos os proprietários dessa submissão."
+        }
+      },
+      "renewalTermination": {
+        "title": "1. RENOVAÇÃO E RESCISÃO",
+        "items": {
+          "item1": "1.1 - Uma assinatura ativa fornece acesso a ativos restritos e a serviços, incluindo serviços de suporte. Estes estão sempre sujeitos aos Termos Gerais, além dos termos desta seção.",
+          "item2": "1.2 - A renovação ou rescisão de serviços é regida pelos termos em Renovação, Upgrade & Rescisão."
+        }
+      },
+      "servicesDefinition": {
+        "title": "2. DEFINIÇÃO DE SERVIÇOS",
+        "items": {
+          "item1": "2.1 - <strong>Acesso a conteúdo</strong>: documentos, vídeos, exemplos de código, templates de código, base de conhecimento e outros recursos estarão disponíveis para usuários com uma assinatura ativa.",
+          "item2": "2.2 - <strong>Canais comunitários</strong>: os usuários terão acesso a comunidades fechadas e fóruns restritos a assinantes ativos. Nesses canais, os usuários podem pedir orientação, ajudar uns aos outros e construir uma comunidade. Regularmente teremos funcionários nesses canais, tanto para contribuir quanto para moderar discussões.",
+          "item3": "2.3 - <strong>Canais de suporte</strong>: os usuários poderão registrar casos de suporte através de canais específicos disponíveis. Esses canais serão explicados e provisionados durante o onboarding do cliente.",
+          "item4": "2.4 - <strong>Níveis de suporte</strong>: os clientes escolherão o nível de suporte ao assinar. O suporte pode ser atualizado ou rebaixado, conforme explicado em Renovação, Upgrade & Rescisão. Os níveis atuais de suporte são &quote;Padrão&quote; (SLA de 1 dia útil) e &quote;Enterprise&quote; (resposta no mesmo dia).",
+          "item5": "2.5 - <strong>Melhor esforço</strong>: o suporte é fornecido com base no 'melhor esforço', onde faremos o nosso melhor para responder aos casos dentro dos limites do SLA. Isso pode ser afetado por alguns fatores, como um grande volume de solicitações de suporte no mesmo dia ou feriados nacionais.",
+          "item6": "2.6 - <strong>Ferramentas de suporte</strong>: o suporte será amplamente aprimorado se nossas ferramentas, recursos e automações forem utilizados na provisão de infraestrutura, na geração de código-fonte e na configuração de ambientes em nuvem. Também forneceremos ferramentas para facilitar diagnósticos, monitoramento e solução de problemas. Espera-se (mas não é obrigatório) que você implante, configure e use essas ferramentas, pois elas foram projetadas para reduzir o atrito no suporte e o tempo para resolver problemas.",
+          "item7": "2.7 - <strong>Suporte vs Consultoria</strong>: o suporte trata de apontar problemas de configuração, identificar ou corrigir bugs, solucionar problemas, revisar código e responder a perguntas gerais. O Suporte Padrão, por outro lado, não é consultoria: não somos uma equipe alocada para fazer seu trabalho. No suporte padrão, você tem acesso a 10 chamadas de suporte mensais, com um máximo de 2 simultâneas, com a possibilidade de não utilizar o total de chamados e trocá-los por sessões de reunião síncronas para resolver problemas específicos.",
+          "item8": "2.8 - No Suporte Enterprise, você terá acesso à nossa plataforma com profissionais especializados que construirão o escopo técnico da solução durante a sessão de onboarding com você, além de ajudar sua equipe a executar esse escopo, além de sessões de mentoria, programação em par e auditoria da execução do roadmap da solução planejada.",
+          "item9": "2.9 - Nosso serviço de Suporte Padrão operará das <strong>9h às 18h</strong> no fuso horário <strong>GMT-3</strong>."
+        }
+      }
+    }
   }
 }
