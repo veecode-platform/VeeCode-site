@@ -1,11 +1,13 @@
 import React from "react";
 import { Button } from "@/components/ui/Button";
+import { ExternalLink, NavigationLink } from "@/components/ui/links";
 
 interface CallToActionProps {
   title: string;
   subtitle: string;
   buttonLabel1: string;
   buttonLabel2: string;
+  descriptionExternalLink: string;
 }
 
 const CallToAction: React.FC<CallToActionProps> = ({
@@ -13,6 +15,7 @@ const CallToAction: React.FC<CallToActionProps> = ({
   subtitle,
   buttonLabel1,
   buttonLabel2,
+  descriptionExternalLink,
 }) => {
   return (
     <section className="flex flex-col items-center my-[131px] pb-6 max-md:my-10">
@@ -27,12 +30,19 @@ const CallToAction: React.FC<CallToActionProps> = ({
         )}
       </div>
       <div className="z-10 flex items-center gap-[23px] justify-center mt-[-68px] min-h-11 w-[374px] max-w-full  text-base">
-        <Button variant="default" size="sm">
-          {buttonLabel1}
-        </Button>
-        <Button variant="outline" size="sm">
-          {buttonLabel2}
-        </Button>
+        <NavigationLink href="/contact-us">
+          <Button variant="default" size="sm" aria-label={buttonLabel1}>
+            {buttonLabel1}
+          </Button>
+        </NavigationLink>
+        <ExternalLink
+          description={descriptionExternalLink}
+          href="https://devportal.demo.vee.codes/"
+        >
+          <Button variant="outline" size="sm" aria-label={buttonLabel2}>
+            {buttonLabel2}
+          </Button>
+        </ExternalLink>
       </div>
     </section>
   );

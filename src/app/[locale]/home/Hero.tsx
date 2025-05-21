@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/Button";
 import Image from "next/image";
+import { ExternalLink, NavigationLink } from "@/components/ui/links";
 
 const HeroImage = "/assets/home/hero.webp";
 
@@ -9,6 +10,7 @@ interface HeroProps {
   description: string;
   buttonLabel1: string;
   buttonLabel2: string;
+  descriptionExternalLink: string;
 }
 
 const Hero: React.FC<HeroProps> = ({
@@ -16,6 +18,7 @@ const Hero: React.FC<HeroProps> = ({
   description,
   buttonLabel1,
   buttonLabel2,
+  descriptionExternalLink,
 }) => {
   return (
     <section className="flex flex-col items-center">
@@ -28,12 +31,19 @@ const Hero: React.FC<HeroProps> = ({
         </p>
       </div>
       <div className="flex items-center gap-[23px] text-base mt-[31px]">
-        <Button variant="default" size="sm">
-          {buttonLabel1}
-        </Button>
-        <Button variant="outline" size="sm">
-          {buttonLabel2}
-        </Button>
+        <NavigationLink href="/contact-us">
+          <Button variant="default" size="sm" aria-label={buttonLabel1}>
+            {buttonLabel1}
+          </Button>
+        </NavigationLink>
+        <ExternalLink
+          description={descriptionExternalLink}
+          href="https://devportal.demo.vee.codes/"
+        >
+          <Button variant="outline" size="sm" aria-label={buttonLabel2}>
+            {buttonLabel2}
+          </Button>
+        </ExternalLink>
       </div>
       <Image
         src={HeroImage}

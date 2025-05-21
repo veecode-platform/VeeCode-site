@@ -1,6 +1,8 @@
 import React from "react";
 import FeatureCard from "./FeatureCard";
 import { BsStars } from "react-icons/bs";
+import { ExternalLink, NavigationLink } from "@/components/ui/links";
+import { Button } from "@/components/ui/Button";
 
 export type FeatureCard = {
   id: number;
@@ -13,6 +15,7 @@ interface FeaturesProps {
   description: string;
   buttonLabel1: string;
   buttonLabel2: string;
+  descriptionExternalLink: string;
   cards: FeatureCard[];
 }
 
@@ -22,6 +25,7 @@ const Features: React.FC<FeaturesProps> = ({
   description,
   buttonLabel1,
   buttonLabel2,
+  descriptionExternalLink,
   cards,
 }) => {
   return (
@@ -37,12 +41,19 @@ const Features: React.FC<FeaturesProps> = ({
         {description}
       </p>
       <div className="flex min-h-[52px] items-center gap-[23px] text-base mt-[31px]">
-        <button className="bg-[rgba(51,255,205,1)] self-stretch text-white font-bold w-[168px] my-auto p-2.5 rounded-[10px]">
-          {buttonLabel1}
-        </button>
-        <button className="bg-white border self-stretch text-[rgba(30,30,30,1)] font-normal w-[183px] my-auto p-2.5 rounded-[10px] border-[rgba(30,30,30,0.5)] border-solid">
-          {buttonLabel2}
-        </button>
+        <NavigationLink href="/contact-us">
+          <Button variant="default" size="sm" aria-label={buttonLabel1}>
+            {buttonLabel1}
+          </Button>
+        </NavigationLink>
+        <ExternalLink
+          description={descriptionExternalLink}
+          href="https://devportal.demo.vee.codes/"
+        >
+          <Button variant="outline" size="sm" aria-label={buttonLabel2}>
+            {buttonLabel2}
+          </Button>
+        </ExternalLink>
       </div>
 
       <div className="w-full max-w-[1257px] mt-[164px] max-md:max-w-full max-md:mt-10">
@@ -59,16 +70,6 @@ const Features: React.FC<FeaturesProps> = ({
                 />
               );
             })}
-            {/* <FeatureCard
-              icon={FeatureImg2}
-              title="Configure sua plataforma"
-              description="Faça deploys com segurança e consistência usando Templates. Teste de forma mais rápida e consistente. Acompanhe métricas, identifique gargalos e mantenha uma entrega de alta qualidade"
-            />
-            <FeatureCard
-              icon={FeatureImg3}
-              title="Conte com o nosso suporte"
-              description="Esteja você executando na sua própria instância na nuvem ou dentro do seu datacenter, nós te ajudamos a configurar a plataforma de acordo com suas necessidades"
-            /> */}
           </div>
         </div>
       </div>
