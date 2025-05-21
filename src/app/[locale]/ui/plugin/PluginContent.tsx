@@ -38,7 +38,7 @@ export const PluginContent: React.FC<PluginContentProps> = ({ pluginData }) => {
   }, [pluginData]);
 
   return (
-    <section className={style.root}>
+    <section className={`${style.root} w-full`}>
       <Remark
         remarkPlugins={[remarkGemoji] as any}
         remarkToRehypeOptions={{ allowDangerousHtml: true }}
