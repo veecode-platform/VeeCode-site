@@ -23,10 +23,10 @@ interface PricinSectionProps {
 const PricingSection: React.FC<PricinSectionProps> = ({ title, cards }) => {
   return (
     <section className="flex flex-col items-center w-full">
-      <h2 className="self-stretch gap-2.5 text-[55px] text-black font-bold text-center mt-[101px] px-[101px] py-[41px] max-md:max-w-full max-md:text-[40px] max-md:mt-10 max-md:px-5">
+      <h2 className="self-stretch gap-2.5 text-[55px] text-black font-bold text-center pt-20 md:pt-0 md:mt-[101px] px-[101px] py-[41px] max-md:max-w-full max-md:text-[40px] max-md:mt-10 max-md:px-5">
         {title}
       </h2>
-      <div className="w-full max-w-[1410px] mt-[47px] max-md:max-w-full max-md:mt-10">
+      <div className="w-full max-w-[1410px] md:mt-[47px] max-md:max-w-full max-md:mt-10 pb-20 md:pb-0">
         <div className="gap-5 grid grid-cols-1 md:grid-cols-3 max-md:items-stretch">
           {cards.map((plan) => (
             <div

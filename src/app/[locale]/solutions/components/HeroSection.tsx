@@ -7,7 +7,7 @@ interface HeroSectionProps {
 
 const HeroSection: React.FC<HeroSectionProps> = ({ title, subtitle }) => {
   return (
-    <section className="w-[969px] max-w-full text-black mt-[163px] max-md:mt-10">
+    <section className="w-[969px] max-w-full text-black pt-10 md:pt-0 md:mt-[163px] max-md:mt-10">
       <h1 className="text-[55px] font-bold max-md:max-w-full max-md:text-[40px] text-center">
         {title}
       </h1>
