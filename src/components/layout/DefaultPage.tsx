@@ -23,7 +23,7 @@ const DefaultPage: React.FC<DefaultPageProps> = ({
           </p>
         )}
       </section>
-      <section className="mt-25">{children}</section>
+      <section className="mt-25 w-[90vw] mx-auto md:w-full">{children}</section>
       <ScrollTop />
     </main>
   );
