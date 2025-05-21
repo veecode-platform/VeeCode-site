@@ -14,8 +14,8 @@ const ComparisonTable: React.FC<ComparisionTableProps> = ({
   tableTitle,
 }) => {
   return (
-    <section className="self-center flex w-[963px] max-w-full flex-col items-stretch text-[#1e1e1e] mt-[163px] max-md:mt-10">
-      <div className="self-center w-[639px] max-w-full text-black text-center">
+    <section className="self-center flex w-[90vw] mx-auto md:w-[963px] max-w-full flex-col items-stretch text-[#1e1e1e] mt-[163px] max-md:mt-10">
+      <div className="self-center pt-10 md:pt-0 w-[639px] max-w-full text-black text-center">
         <h1 className="text-[55px] font-bold max-md:max-w-full max-md:text-[40px]">
           {title}
         </h1>
