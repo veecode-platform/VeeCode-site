@@ -41,7 +41,7 @@ const Footer: React.FC<PatternComponentProps> = async ({ locale }) => {
                   {t("about-option3")}
                 </ExternalLink>
                 <NavigationLink
-                  href="/"
+                  href="/contact-us"
                   className="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
                 >
                   {t("about-option4")}
