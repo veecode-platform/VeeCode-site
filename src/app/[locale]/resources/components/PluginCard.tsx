@@ -22,7 +22,7 @@ export const PluginCard: React.FC<PluginCardProps> = ({
 }) => {
   return (
     <article
-      className={`border bg-neutral-50 w-full h-full px-[37px] py-[55px] rounded-xl border-[rgba(51,255,206,1)] border-solid max-md:max-w-full max-md:px-5  text-black ${className}`}
+      className={`border bg-neutral-200 w-full h-full px-[37px] py-[55px] rounded-xl border-neutral-50 border-solid max-md:max-w-full max-md:px-5  text-black cursor-pointer ${className}`}
     >
       <div className="flex items-start gap-5 ml-[11px] max-md:flex-col max-md:ml-2.5">
         <Image

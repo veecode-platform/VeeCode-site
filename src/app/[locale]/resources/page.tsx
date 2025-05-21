@@ -12,31 +12,31 @@ export default async function ResourcesPage({ params }: PageProps) {
 
   const pluginsCards = [
     {
-      icon: "/assets/resources/github.svg",
+      icon: "https://veecode-platform.github.io/support/imgs/logo_2.svg",
       title: "Github Workflows",
       tags: [{ name: "CI-CD" }, { name: "Github" }],
       description: t("github-workflows.description"),
     },
     {
-      icon: "/assets/resources/gitlab.svg",
+      icon: "https://veecode-platform.github.io/support/imgs/logo_1.svg",
       title: "Gitlab Pipelines",
       tags: [{ name: "CI-CD" }, { name: "Gitlab" }],
       description: t("gitlab-pipelines.description"),
     },
     {
-      icon: "/assets/resources/kong.svg",
+      icon: "https://veecode-platform.github.io/support/imgs/logo_3.svg",
       title: "Kong Service Manager",
       tags: [{ name: "Kong" }, { name: "API Gateway" }, { name: "Services" }],
       description: t("kong-service-manager.description"),
     },
     {
-      icon: "/assets/resources/gptanalyzer.svg",
+      icon: "https://veecode-platform.github.io/support/imgs/logo_4.svg",
       title: "Kubernetes GPT Analyzer",
       tags: [{ name: "Kubernetes" }, { name: "IA" }, { name: "Monitoring" }],
       description: t("kubernetes-gpt-analyzer.description"),
     },
     {
-      icon: "/assets/resources/infracost.svg",
+      icon: "https://veecode-platform.github.io/support/imgs/logo_5.svg",
       title: "Infracost",
       tags: [{ name: "Finops" }, { name: "Infracost" }, { name: "Estimate" }],
       description: t("infracost.description"),
