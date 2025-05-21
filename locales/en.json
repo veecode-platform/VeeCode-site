@@ -711,5 +711,54 @@
         "answer": "DevPortal is a platform that centralizes your Specs and APIs making it easy to control microservices. Today we understand that the microservices architecture is necessary to deliver value to our users. Devportal works as a showcase of specifications and APIs that facilitate the control and testing of services."
       }
     }
+  },
+  "contactUs": {
+    "title": "Find out how we can help your business",
+    "subtitle": "Talk to our sales specialist. Use the form below or send an email to <strong>platform-sales@vee.codes</strong>",
+    "form": {
+      "name": {
+        "label": "Your Name",
+        "placeholder": "First and last name"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "you@acme.com"
+      },
+      "org": {
+        "label": "Company/ Organization",
+        "placeholder": "Acme, Inc."
+      },
+      "message": {
+        "label": "How Can we help",
+        "placeholder": "Yout Message"
+      },
+      "buttonLabel": "Submit",
+      "terms": {
+        "checkbox1": {
+          "label": "I have read, understood and agree to Veecode Platform's",
+          "linkLabel": "Terms of Service"
+        },
+        "checkbox2": {
+          "label": "and",
+          "linkLabel": "Privacy Policy"
+        }
+      }
+    },
+    "faqSection": {
+      "title": "FAQ",
+      "subtitle": "Frequently Asked Questions"
+    }
+  },
+  "feedback": {
+    "contact": {
+      "success": "<p>We have received your email!</p><p>Our team will get back to you as soon as we can!</p>",
+      "error": "<p>There was an issue submitting your message.</p><p>Please verify your details and try again. If the problem persists, feel free to contact us directly via phone or email.</p>"
+    },
+    "payment": {
+      "success": "<p>Confirmation of contact received</p><p>We will send you an e-mail with more details on the next steps.</p>",
+      "error": "<p>An error has occurred</p><p>Please check your data and try again.</p>"
+    },
+    "buttonLabelSuccess": "Home",
+    "buttonLabelError": "Try Again"
   }
 }

@@ -717,5 +717,54 @@
         }
       }
     }
+  },
+  "contactUs": {
+    "title": "Descubra como podemos ajudar o seu negócio",
+    "subtitle": "Fale conosco! Use o formulário abaixo ou envie um e-mail para <strong>platform-sales@vee.codes</strong>",
+    "form": {
+      "name": {
+        "label": "Seu Nome",
+        "placeholder": "Nome e sobrenome"
+      },
+      "email": {
+        "label": "E-mail",
+        "placeholder": "voce@acme.com"
+      },
+      "org": {
+        "label": "Empresa/Organização",
+        "placeholder": "Acme, Inc."
+      },
+      "message": {
+        "label": "Como podemos ajudar",
+        "placeholder": "Sua mensagem"
+      },
+      "buttonLabel": "Enviar",
+      "terms": {
+        "checkbox1": {
+          "label": "Eu li, entendi e estou de acordo com VeeCode Platform",
+          "linkLabel": "Termos de Serviço"
+        },
+        "checkbox2": {
+          "label": "e",
+          "linkLabel": "Política de Privacidade"
+        }
+      }
+    },
+    "faqSection": {
+      "title": "FAQ",
+      "subtitle": "Perguntas Frequentes"
+    }
+  },
+  "feedback": {
+    "contact": {
+      "success": "<p>Recebemos seu e-mail!</p><p>Nossa equipe responderá o mais rápido possível!</p>",
+      "error": "<p>Houve um problema ao enviar sua mensagem.</p><p>Por favor, verifique seus dados e tente novamente. Se o problema persistir, entre em contato diretamente por telefone ou e-mail.</p>"
+    },
+    "payment": {
+      "success": "<p>Confirmação de contato recebido</p><p>Enviaremos um e-mail com mais detalhes sobre os próximos passos.</p>",
+      "error": "<p>Ocorreu algum erro</p><p>Por favor, verifique os dados informados e tente novamente.</p>"
+    },
+    "buttonLabelSuccess": "Voltar",
+    "buttonLabelError": "Tente Novamente"
   }
 }
