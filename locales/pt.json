@@ -20,45 +20,37 @@
       "title": "Perguntas Frequentes | VeeCode Platform",
       "description": "Sessão com perguntas frequentes e suas respectivas respostas, aproveite e fique por dentro de tudo!"
     },
-    "free-plan": {
-      "title": "Plano Gratuito | VeeCode Platform",
-      "description": "Nesta etapa, validaremos seus dados para acessar o conteúdo gratuito."
-    },
-    "governance": {
-      "title": "Governança | VeeCode Platform",
-      "description": "Facilite a tomada de decisões estratégicas com dados precisos sobre tecnologias e dependências. Reduza o overhead de infraestrutura e evite a duplicação de esforços, acelerando o desenvolvimento."
-    },
     "how-it-works": {
       "title": "Como Funciona | VeeCode Platform",
       "description": "Saiba como essa poderosa ferramenta funciona."
     },
-    "plugins": {
+    "resources": {
       "title": "Backstage Plugins | VeeCode Platform",
       "description": "Descrições, guias e instruções de instalação para plugins do Backstage."
-    },
-    "pricing": {
-      "title": "Planos | VeeCode Platform",
-      "description": "Selecione um plano ideal para aproveitar ao máximo a plataforma."
     },
     "privacy-policy": {
       "title": "Política de Privacidade | VeeCode Platform",
       "description": "Fazemos tudo pensado nos mínimos detalhes, sinta-se à vontade para revisar nossa política de privacidade."
     },
-    "success": {
-      "title": "Aguardando Confirmação | VeeCode Platform",
-      "description": "Esta sessão é para quem sabe onde quer chegar! Parabéns por fazer parte da plataforma!"
-    },
     "support": {
       "title": "Suporte | VeeCode Platform",
       "description": "Temos uma equipe de especialistas pronta para te ajudar."
     },
+    "solutions": {
+      "title": "Soluções | VeeCode Platform",
+      "description": "Descubra como a VeeCode Platform pode escalar seu negócio com soluções para automação, DevOps e gestão de APIs."
+    },
+    "product": {
+      "title": "Produto | VeeCode Platform",
+      "description": "Conheça os principais produtos da VeeCode Platform para acelerar o desenvolvimento, centralizar APIs, automatizar processos e garantir governança em sua infraestrutura."
+    },
+    "comparison": {
+      "title": "VeeCode vs Backstage | VeeCode Platform",
+      "description": "Compare as funcionalidades e benefícios entre a VeeCode Platform e o Backstage para encontrar a melhor solução para sua equipe."
+    },
     "terms-of-service": {
       "title": "Termos de Serviço | VeeCode Platform",
       "description": "Sinta-se à vontade para revisar nossos termos de serviço."
-    },
-    "validate": {
-      "title": "Validar | VeeCode Platform",
-      "description": "Nesta etapa, validaremos seus dados."
     }
   },
   "manifest": {

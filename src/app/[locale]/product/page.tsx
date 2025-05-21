@@ -1,15 +1,28 @@
 import React from "react";
 import FeatureSection from "./components/FeatureSection";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { PageProps } from "@/lib/@types/pageProps";
-// import NewsletterForm from "../ui/product/NewsletterForm";
-// import ContactForm from "../ui/product/ContactForm";
+import { LayoutProps, PageProps } from "@/lib/@types/pageProps";
+import { routing } from "@/i18n/routing";
 
 const Icon1 = "/assets/product/icon1.svg";
 const Icon2 = "/assets/product/icon2.svg";
 const Icon3 = "/assets/product/icon3.svg";
 const Icon4 = "/assets/product/icon4.svg";
 const Icon5 = "/assets/product/icon5.svg";
+
+export async function generateMetadata(props: Omit<LayoutProps, "children">) {
+  const { locale } = await props.params;
+  const t = await getTranslations({ locale, namespace: "metadata" });
+
+  return {
+    title: t("product.title"),
+    description: t("product.description"),
+  };
+}
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
 
 export default async function ProductPage({ params }: PageProps) {
   const { locale } = await params;

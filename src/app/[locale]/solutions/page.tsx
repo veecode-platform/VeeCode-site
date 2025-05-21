@@ -1,10 +1,25 @@
-import { PageProps } from "@/lib/@types/pageProps";
+import { LayoutProps, PageProps } from "@/lib/@types/pageProps";
 import CTASection from "../ui/solutions/CTASection";
 import HeroSection from "./components/HeroSection";
 import PricingSection from "./components/PricingSection";
 import ServicesSection from "./components/ServicesSection";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { CHECK_ICON } from "@/lib/constants";
+import { routing } from "@/i18n/routing";
+
+export async function generateMetadata(props: Omit<LayoutProps, "children">) {
+  const { locale } = await props.params;
+  const t = await getTranslations({ locale, namespace: "metadata" });
+
+  return {
+    title: t("solutions.title"),
+    description: t("solutions.description"),
+  };
+}
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
 
 export default async function SolutionsPage({ params }: PageProps) {
   const { locale } = await params;

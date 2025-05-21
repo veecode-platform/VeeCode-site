@@ -1,6 +1,21 @@
 import DefaultPage from "@/components/layout/DefaultPage";
-import { PageProps } from "@/lib/@types/pageProps";
+import { routing } from "@/i18n/routing";
+import { LayoutProps, PageProps } from "@/lib/@types/pageProps";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+
+export async function generateMetadata(props: Omit<LayoutProps, "children">) {
+  const { locale } = await props.params;
+  const t = await getTranslations({ locale, namespace: "metadata" });
+
+  return {
+    title: t("terms-of-service.title"),
+    description: t("terms-of-service.description"),
+  };
+}
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
 
 export default async function TermsOfServicePage({ params }: PageProps) {
   const { locale } = await params;

@@ -14,51 +14,43 @@
     },
     "failed": {
       "title": "Operation Failed | VeeCode Platform",
-      "description": "Failure page, you need to make the request again."
+      "description": "Failure page, you need to submit the request again."
     },
     "faq": {
       "title": "Frequently Asked Questions | VeeCode Platform",
-      "description": "Section with frequently asked questions and their respective answers, stay up to date with everything!"
-    },
-    "free-plan": {
-      "title": "Free Plan | VeeCode Platform",
-      "description": "At this stage, we will validate your data to access the free content."
-    },
-    "governance": {
-      "title": "Governance | VeeCode Platform",
-      "description": "Facilitate strategic decision-making with accurate data on technologies and dependencies. Reduce infrastructure overhead and avoid duplication of efforts, accelerating development."
+      "description": "Section with frequently asked questions and their respective answers. Take advantage and stay up to date!"
     },
     "how-it-works": {
       "title": "How It Works | VeeCode Platform",
       "description": "Learn how this powerful tool works."
     },
-    "plugins": {
+    "resources": {
       "title": "Backstage Plugins | VeeCode Platform",
       "description": "Descriptions, guides, and installation instructions for Backstage plugins."
     },
-    "pricing": {
-      "title": "Plans | VeeCode Platform",
-      "description": "Select an ideal plan to make the most of the platform."
-    },
     "privacy-policy": {
       "title": "Privacy Policy | VeeCode Platform",
-      "description": "We do everything with attention to detail, feel free to review our privacy policy."
-    },
-    "success": {
-      "title": "Awaiting Confirmation | VeeCode Platform",
-      "description": "This session is for those who know where they want to go! Congratulations on being part of the platform!"
+      "description": "We do everything with attention to detail. Feel free to review our privacy policy."
     },
     "support": {
       "title": "Support | VeeCode Platform",
       "description": "We have a team of specialists ready to help you."
     },
+    "solutions": {
+      "title": "Solutions | VeeCode Platform",
+      "description": "Discover how VeeCode Platform can scale your business with solutions for automation, DevOps, and API management."
+    },
+    "product": {
+      "title": "Product | VeeCode Platform",
+      "description": "Get to know the main products of VeeCode Platform to accelerate development, centralize APIs, automate processes, and ensure governance in your infrastructure."
+    },
+    "comparison": {
+      "title": "VeeCode vs Backstage | VeeCode Platform",
+      "description": "Compare the features and benefits between VeeCode Platform and Backstage to find the best solution for your team."
+    },
     "terms-of-service": {
       "title": "Terms of Service | VeeCode Platform",
       "description": "Feel free to review our terms of service."
-    },
-    "validate": {
-      "title": "Validate | VeeCode Platform",
-      "description": "At this stage, we will validate your data."
     }
   },
   "manifest": {

@@ -2,12 +2,27 @@
 import DefaultPage from "@/components/layout/DefaultPage";
 import FaqList from "@/components/ui/FaqList";
 import { ExternalLink } from "@/components/ui/links";
-import { PageProps } from "@/lib/@types/pageProps";
+import { LayoutProps, PageProps } from "@/lib/@types/pageProps";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import Image from "next/image";
 import { FormElement } from "../ui/contact-us/FormElement";
+import { routing } from "@/i18n/routing";
 
 const flowImage = `/assets/icons/contact_form_img.svg`;
+
+export async function generateMetadata(props: Omit<LayoutProps, "children">) {
+  const { locale } = await props.params;
+  const t = await getTranslations({ locale, namespace: "metadata" });
+
+  return {
+    title: t("contact-us.title"),
+    description: t("contact-us.description"),
+  };
+}
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
 
 export default async function ContactUsPage({ params }: PageProps) {
   const { locale } = await params;

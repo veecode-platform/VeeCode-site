@@ -1,11 +1,26 @@
 import DefaultPage from "@/components/layout/DefaultPage";
-import { PageProps } from "@/lib/@types/pageProps";
+import { LayoutProps, PageProps } from "@/lib/@types/pageProps";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { FaInfoCircle } from "react-icons/fa";
 import { FaLayerGroup, FaMedal, FaUsers, FaWrench } from "react-icons/fa6";
 import SupportCategories from "./components/SupportCategories";
 import ListDetails from "./components/ListDetails";
 import SupportBenefits from "./components/SupportBenefits";
+import { routing } from "@/i18n/routing";
+
+export async function generateMetadata(props: Omit<LayoutProps, "children">) {
+  const { locale } = await props.params;
+  const t = await getTranslations({ locale, namespace: "metadata" });
+
+  return {
+    title: t("support.title"),
+    description: t("support.description"),
+  };
+}
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
 
 export default async function SupportPage({ params }: PageProps) {
   const { locale } = await params;

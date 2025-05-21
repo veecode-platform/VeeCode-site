@@ -1,10 +1,25 @@
 import { Button } from "@/components/ui/Button";
 import { NavigationLink } from "@/components/ui/links";
-import { PageProps } from "@/lib/@types/pageProps";
+import { routing } from "@/i18n/routing";
+import { LayoutProps, PageProps } from "@/lib/@types/pageProps";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import Image from "next/image";
 
 const SuccessImage = `/assets/icons/success.png`;
+
+export async function generateMetadata(props: Omit<LayoutProps, "children">) {
+  const { locale } = await props.params;
+  const t = await getTranslations({ locale, namespace: "metadata" });
+
+  return {
+    title: t("contact-success.title"),
+    description: t("contact-success.description"),
+  };
+}
+
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
 
 export default async function ContactSuccessPage({ params }: PageProps) {
   const { locale } = await params;
