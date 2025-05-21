@@ -18,6 +18,9 @@ export const routing = defineRouting({
     "/privacy-policy": "/privacy-policy",
     "/terms-of-service": "/terms-of-service",
     "/faq": "/faq",
+    "/contact-us": "/contact-us",
+    "/contact-success": "/contact-success",
+    "/contact-failed": "/contact-failed",
   },
 });
 
