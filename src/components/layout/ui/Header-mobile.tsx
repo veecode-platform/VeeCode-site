@@ -19,7 +19,7 @@ const MenuMobile = () => {
     <>
       <button
         onClick={() => setOpen(!open)}
-        className="2xl:hidden p-2.5 cursor-pointer hover:text-color-primary"
+        className="xl:hidden p-2.5 cursor-pointer hover:text-color-primary"
       >
         <RxHamburgerMenu size={30} />
       </button>

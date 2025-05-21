@@ -16,7 +16,7 @@ interface TestimonialsProps {
 
 const Testimonials: React.FC<TestimonialsProps> = ({ cards }) => {
   return (
-    <section className="bg-[rgba(210,213,226,0.16)] py-10 md:py-0 self-stretch flex min-h-[448px] w-full items-center gap-[40px_120px] justify-center flex-wrap px-[120px] max-md:max-w-full max-md:px-5">
+    <section className="bg-[rgba(210,213,226,0.16)] py-10 2xl:py-0 self-stretch flex min-h-[448px] w-full items-center gap-[40px_120px] justify-center flex-wrap px-[120px] max-md:max-w-full max-md:px-5">
       {cards.map((testimonial) => (
         <TestimonialCard
           key={testimonial.id}

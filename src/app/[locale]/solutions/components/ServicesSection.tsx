@@ -18,7 +18,7 @@ interface ServiceSectionProps {
 const ServicesSection: React.FC<ServiceSectionProps> = ({ cards }) => {
   return (
     <section className="w-full max-w-[1409px] mt-[111px] max-md:max-w-full max-md:mt-10">
-      <div className="gap-5 grid grid-cols-1 md:grid-cols-3">
+      <div className="gap-5 grid grid-cols-1 md:grid-cols-3 xl:w-[90vw] xl:mx-auto 2xl-w-full">
         {cards.map((service) => (
           <div
             key={service.id}
