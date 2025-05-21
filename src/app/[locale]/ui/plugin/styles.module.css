@@ -1,5 +1,6 @@
 .root {
   max-width: 90vw;
+  
  h1 {
   color: #151515; /* $color17 */
   border-bottom: 1px solid #555; /* $color4 */
