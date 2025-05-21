@@ -3,11 +3,6 @@ import BenefitCard from "./BenefitCard";
 import { Button } from "@/components/ui/Button";
 import Image from "next/image";
 
-// const BenefitsImg1 = "/assets/home/benefits1.svg";
-// const BenefitsImg2 = "/assets/home/benefits2.svg";
-// const BenefitsImg3 = "/assets/home/benefits3.svg";
-// const BenefitsImg4 = "/assets/home/benefits4.svg";
-// const BenefitsImg5 = "/assets/home/benefits5.svg";
 const BackgroundBenefits = "/assets/home/banner-benefits.webp";
 
 export type BenefitsCard = {
@@ -39,7 +34,7 @@ const PlatformBenefits: React.FC<PlatformBenefitsProps> = ({
           unoptimized
         />
         <div className="content-start self-stretch flex-wrap z-0 flex w-full gap-[40px_var(--inline-4xl,40px)] max-md:max-w-full">
-          <div className="min-w-[360px] justify-center items-stretch flex flex-col font-bold flex-1 shrink basis-[0%] gap-10 max-md:max-w-full">
+          <div className="w-[90vw] md:min-w-[360px] justify-center items-stretch flex flex-col font-bold flex-1 shrink basis-[0%] gap-10 max-md:max-w-full">
             <h2 className="text-white text-5xl leading-[56px] max-md:max-w-full max-md:text-[40px] max-md:leading-[52px]">
               {title}
             </h2>

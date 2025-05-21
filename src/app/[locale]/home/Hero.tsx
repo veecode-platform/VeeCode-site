@@ -22,7 +22,7 @@ const Hero: React.FC<HeroProps> = ({
 }) => {
   return (
     <section className="flex flex-col items-center">
-      <div className="flex w-[705px] max-w-full flex-col items-center text-black text-center mt-[107px] max-md:mt-10">
+      <div className="flex w-[90vw] pt-15 md:pt-0 md:w-[705px] max-w-full flex-col items-center text-black text-center mt-35 md:mt-[107px] max-md:mt-10">
         <h1 className="text-[55px] font-bold max-md:max-w-full max-md:text-[40px]">
           {title}
         </h1>
@@ -50,7 +50,7 @@ const Hero: React.FC<HeroProps> = ({
         width={724}
         height={407}
         alt="VeeCode Platform Dashboard"
-        className="aspect-[1.78] object-contain w-[724px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] max-w-full mt-[51px] rounded-[11px] max-md:mt-10"
+        className="aspect-[1.78] object-contain w-[90vw] md:w-[724px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] max-w-full mt-[51px] rounded-[11px] max-md:mt-10"
         unoptimized
       />
     </section>
