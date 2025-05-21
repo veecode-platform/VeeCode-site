@@ -92,7 +92,7 @@ export default async function Home({ params }: PageProps) {
         description={t("feature.description")}
         buttonLabel1={t("feature.buttons.button1.label")}
         buttonLabel2={t("feature.buttons.button2.label")}
-        descriptionExternalLink={a("external.links-demo")}
+        descriptionExternalLink={a("external-links.demo")}
         cards={featureCards}
       />
       <PlatformBenefits
@@ -114,7 +114,7 @@ export default async function Home({ params }: PageProps) {
         subtitle={t("call-to-action.description")}
         buttonLabel1={t("call-to-action.buttons.button1.label")}
         buttonLabel2={t("call-to-action.buttons.button2.label")}
-        descriptionExternalLink={a("external.links-demo")}
+        descriptionExternalLink={a("external-links.demo")}
       />
     </main>
   );
