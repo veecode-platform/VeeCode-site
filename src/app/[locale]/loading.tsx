@@ -1,15 +1,29 @@
-const LoadingStyle = {
-  minHeight: "75vh",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-};
+import DefaultPage from "@/components/layout/DefaultPage";
+import Image from "next/image";
+
+const LoadingAnimation = `/assets/icons/loading.gif`;
 
 const loading = () => {
   return (
-    <>
-      <div style={LoadingStyle}>Loading -- todo</div>
-    </>
+    <DefaultPage title="">
+      <div className="h-[75vh] flex justify-center items-center">
+        <div className="flex justify-center items-center w-full h-full">
+          <Image
+            src={LoadingAnimation}
+            priority
+            alt="Loading animation"
+            width={200}
+            height={62}
+            style={{
+              width: "100%",
+              height: "auto",
+            }}
+            unoptimized
+            className="w-[60%] md:max-w-[280px] xl:max-w-[480px]"
+          />
+        </div>
+      </div>
+    </DefaultPage>
   );
 };
 
