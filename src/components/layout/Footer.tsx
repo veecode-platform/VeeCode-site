@@ -54,7 +54,7 @@ const Footer: React.FC<PatternComponentProps> = async ({ locale }) => {
               </h3>
               <nav className="justify-center flex flex-col gap-2 mt-4">
                 <ExternalLink
-                  href="#documentation"
+                  href="https://docs.platform.vee.codes/"
                   description={a("external-links.docs")}
                   styles="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
                 >
