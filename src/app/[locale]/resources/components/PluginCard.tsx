@@ -25,7 +25,7 @@ export const PluginCard: React.FC<PluginCardProps> = ({
   className = "",
 }) => {
   return (
-    <NavigationLink href={`/plugin/${path}` as any}>
+    <NavigationLink href={`/plugin/${path}` as any} className="w-full h-full">
       <article
         className={`border bg-neutral-200 w-full h-full px-[37px] py-[55px] rounded-xl border-neutral-50 border-solid max-md:max-w-full max-md:px-5  text-black cursor-pointer ${className}`}
       >
