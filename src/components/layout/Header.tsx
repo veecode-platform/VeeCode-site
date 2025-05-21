@@ -16,10 +16,10 @@ const Header: React.FC<PatternComponentProps> = async ({ locale }) => {
     <header className="flex justify-center items-center self-stretch h-[94px] w-full gap-[40px_100px] flex-wrap bg-neutral-700 px-10 py-5 max-md:max-w-full max-md:px-5 z-[9999999] relative">
       <div className="w-full flex items-center justify-between  2xl:w-[80%]  2xl:mx-auto">
         <NavigationLink href="/">
-          <span className="flex items-center justify-center">
+          <span className="block md:hidden">
             <VeeCodeLogoMobile />
           </span>
-          <span className="hidden">
+          <span className="hidden md:block">
             <VeeCodeLogo />
           </span>
         </NavigationLink>
