@@ -18,9 +18,9 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
   rightFeatures,
 }) => {
   return (
-    <section className="self-center w-full max-w-[1496px] ml-2.5 my-[213px] max-md:max-w-full max-md:my-10">
+    <section className="self-center w-full max-w-[1496px] ml-2.5 my-[213px] max-md:max-w-full max-md:my-10 pb-10 md:pb-0">
       <div className="gap-5 flex max-md:flex-col max-md:items-stretch">
-        <div className="w-[50%] h-full flex flex-col justify-between gap-[284px] border-l-1 border-[#33FFCE]">
+        <div className="w-[100%] md:w-[50%] h-full flex flex-col justify-between gap-10 md:gap-[284px] md:border-l-1 md:border-[#33FFCE]">
           {leftFeatures.map((feature) => (
             <div key={feature.id}>
               <FeatureCard
@@ -32,7 +32,7 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
             </div>
           ))}
         </div>
-        <div className="w-[50%] flex flex-col justify-center gap-[284px] border-l-1 border-[#33FFCE]">
+        <div className="w-[100%] md:w-[50%] flex flex-col justify-center gap-10 md:gap-[284px] md:border-l-1 md:border-[#33FFCE]">
           {rightFeatures.map((feature) => (
             <div key={feature.id}>
               <FeatureCard

@@ -15,7 +15,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   altText,
 }) => {
   return (
-    <div className="flex gap-[14px_21px] flex-wrap h-[284px] text-slate-900 w-full border-l-4 border-[#33FFCE] p-10">
+    <div className="flex gap-[14px_21px] flex-wrap h-full md:h-[284px] text-slate-900 w-[95vw] md:w-full border-l-4 border-[#33FFCE] p-10 bg-neutral-50 md:bg-transparent">
       <Image
         src={icon}
         alt={altText || title}
