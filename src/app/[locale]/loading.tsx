@@ -6,7 +6,7 @@ const LoadingAnimation = `/assets/icons/loading.gif`;
 const loading = () => {
   return (
     <DefaultPage title="">
-      <div className="h-[75vh] flex justify-center items-center">
+      <div className="w-[100vw] h-[75vh] flex justify-center items-center">
         <div className="flex justify-center items-center w-full h-full">
           <Image
             src={LoadingAnimation}
