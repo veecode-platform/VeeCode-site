@@ -6,6 +6,7 @@ import Testimonials from "./home/Testimonials";
 import CallToAction from "./home/CallToAction";
 import { PageProps } from "@/lib/@types/pageProps";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { Chatbot } from "@/components/ui/Chatbot";
 
 export default async function Home({ params }: PageProps) {
   const { locale } = await params;
@@ -116,6 +117,7 @@ export default async function Home({ params }: PageProps) {
         buttonLabel2={t("call-to-action.buttons.button2.label")}
         descriptionExternalLink={a("external-links.demo")}
       />
+      <Chatbot />
     </main>
   );
 }
