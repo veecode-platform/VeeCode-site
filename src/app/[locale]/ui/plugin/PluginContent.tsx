@@ -38,22 +38,20 @@ export const PluginContent: React.FC<PluginContentProps> = ({ pluginData }) => {
   }, [pluginData]);
 
   return (
-    <>
-      <section className={style.root}>
-        <Remark
-          remarkPlugins={[remarkGemoji] as any}
-          remarkToRehypeOptions={{ allowDangerousHtml: true }}
-          rehypePlugins={[rehypeSlug, rehypeHighlight] as any}
-          rehypeReactOptions={{
-            components: {
-              a: (props: any) => <LinkTag {...props} />,
-            },
-          }}
-        >
-          {content}
-        </Remark>
-      </section>
+    <section className={style.root}>
+      <Remark
+        remarkPlugins={[remarkGemoji] as any}
+        remarkToRehypeOptions={{ allowDangerousHtml: true }}
+        rehypePlugins={[rehypeSlug, rehypeHighlight] as any}
+        rehypeReactOptions={{
+          components: {
+            a: (props: any) => <LinkTag {...props} />,
+          },
+        }}
+      >
+        {content}
+      </Remark>
       <ScrollTop />
-    </>
+    </section>
   );
 };

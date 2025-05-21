@@ -39,7 +39,7 @@ export default async function PluginDocPage(props: Props) {
 
   return (
     <main className="min-h-[75vh] self-center flex w-full max-w-[1268px] flex-col items-stretch px-4">
-      <section className="w-full flex justify-center items-center flex-col p-[160px] text-black rounded-md">
+      <section className="w-full flex justify-center items-center flex-col py-20 md:p-[160px] text-black rounded-md">
         <PluginContent pluginData={pluginData} />
       </section>
     </main>
