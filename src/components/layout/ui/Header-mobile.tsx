@@ -5,13 +5,12 @@ import { Button } from "@/components/ui/Button";
 import { RxHamburgerMenu } from "react-icons/rx";
 import clsx from "clsx";
 import { useTranslations } from "next-intl";
-import { ExternalLink, NavigationLink } from "@/components/ui/links";
+import { NavigationLink } from "@/components/ui/links";
 import VeeCodeLogo from "@/components/VeeCodeLogo";
 
 const MenuMobile = () => {
   const [open, setOpen] = React.useState(false);
   const t = useTranslations("header");
-  const a = useTranslations("accessibility");
 
   const toggleMenu = () => setOpen(!open);
 
@@ -19,7 +18,7 @@ const MenuMobile = () => {
     <>
       <button
         onClick={() => setOpen(!open)}
-        className="xl:hidden p-2.5 cursor-pointer hover:text-color-primary"
+        className="2xl:hidden p-2.5 cursor-pointer hover:text-color-primary"
       >
         <RxHamburgerMenu size={30} />
       </button>
@@ -27,10 +26,10 @@ const MenuMobile = () => {
       {open && (
         <div
           className={clsx(
-            "fixed top-0 left-0 z-[9999] transition-all duration-500 ease-in w-full h-full bg-neutral-800 md:w-[70%]",
+            "fixed top-0 left-0 z-[9999] transition-all duration-3500 ease-in w-full h-full bg-neutral-800 md:w-[70%]",
             open
-              ? "translate-x-0 opacity-100"
-              : "-translate-x-full opacity-0 pointer-events-none"
+              ? "ml-0 translate-x-0"
+              : "ml-[-100vw]-translate-x-full pointer-events-none"
           )}
         >
           <nav className="flex flex-col items-start justify-start gap-8 my-15 text-xl">
@@ -66,14 +65,9 @@ const MenuMobile = () => {
               {t("comparison")}
             </NavigationLink>
             <div className="p-4">
-              <ExternalLink
-                description={a("external-links.demo")}
-                href="https://devportal.demo.vee.codes/"
-              >
-                <Button variant="secondary" size="default">
-                  {t("demo")}
-                </Button>
-              </ExternalLink>
+              <Button variant="secondary" size="default">
+                {t("demo")}
+              </Button>
             </div>
           </nav>
         </div>
