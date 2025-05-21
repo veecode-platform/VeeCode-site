@@ -3,6 +3,7 @@ import ComparisonTable from "./components/ComparisonTable";
 import CTASection from "./components/CTASection";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
+import { ScrollTop } from "@/components/ui/ScrollTop";
 
 export async function generateMetadata(props: Omit<LayoutProps, "children">) {
   const { locale } = await props.params;
@@ -38,6 +39,7 @@ export default async function ComparisonPage({ params }: PageProps) {
         description={t("cta-section.description")}
         buttonLabel={t("cta-section.button.label")}
       />
+      <ScrollTop />
     </div>
   );
 }

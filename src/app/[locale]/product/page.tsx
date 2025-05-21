@@ -3,6 +3,7 @@ import FeatureSection from "./components/FeatureSection";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { LayoutProps, PageProps } from "@/lib/@types/pageProps";
 import { routing } from "@/i18n/routing";
+import { ScrollTop } from "@/components/ui/ScrollTop";
 
 const Icon1 = "/assets/product/icon1.svg";
 const Icon2 = "/assets/product/icon2.svg";
@@ -80,6 +81,7 @@ export default async function ProductPage({ params }: PageProps) {
         leftFeatures={leftFeatures}
         rightFeatures={rightFeatures}
       />
+      <ScrollTop />
     </main>
   );
 }

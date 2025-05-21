@@ -3,6 +3,7 @@ import { HeroSection } from "./components/HeroSection";
 import { PluginsSection } from "./components/PluginsSection";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
+import { ScrollTop } from "@/components/ui/ScrollTop";
 
 export async function generateMetadata(props: Omit<LayoutProps, "children">) {
   const { locale } = await props.params;
@@ -67,6 +68,7 @@ export default async function ResourcesPage({ params }: PageProps) {
     <main className="self-center flex w-full max-w-[1268px] flex-col items-stretch px-4 my-10">
       <HeroSection title={t("title")} description={t("description")} />
       <PluginsSection pluginsCards={pluginsCards} />
+      <ScrollTop />
     </main>
   );
 }

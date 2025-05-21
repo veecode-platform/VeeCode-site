@@ -1,3 +1,5 @@
+import { ScrollTop } from "../ui/ScrollTop";
+
 interface DefaultPageProps {
   title: string | React.ReactNode;
   subtitle?: string | React.ReactNode;
@@ -22,6 +24,7 @@ const DefaultPage: React.FC<DefaultPageProps> = ({
         )}
       </section>
       <section className="mt-25">{children}</section>
+      <ScrollTop />
     </main>
   );
 };
