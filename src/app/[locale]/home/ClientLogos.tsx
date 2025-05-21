@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 const VertigoLogo = "/assets/home/vertigo-logo.webp";
-const AmbimaLogo = "/assets/home/ambima-logo.webp";
+// const AmbimaLogo = "/assets/home/ambima-logo.webp";
 const CredSystemLogo = "/assets/home/credsystem-logo.webp";
 
 interface ClientLogosProps {
@@ -24,14 +24,14 @@ const ClientLogos: React.FC<ClientLogosProps> = ({ label }) => {
           className="aspect-[2.24] object-contain w-[161px] self-stretch shrink-0 my-auto"
           unoptimized
         />
-        <Image
+        {/* <Image
           src={AmbimaLogo}
           alt="Client Logo 2"
           width={183}
           height={97}
           className="aspect-[1.89] object-contain w-[183px] self-stretch shrink-0 my-auto"
           unoptimized
-        />
+        /> */}
         <Image
           src={CredSystemLogo}
           alt="Client Logo 3"
