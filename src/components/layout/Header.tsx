@@ -5,10 +5,11 @@ import MenuMobile from "./ui/Header-mobile";
 import SwitchLanguage from "../ui/SwitchLanguage";
 import { getTranslations } from "next-intl/server";
 import { PatternComponentProps } from "@/lib/@types/patternComponentProps";
-import { NavigationLink } from "../ui/links";
+import { ExternalLink, NavigationLink } from "../ui/links";
 
 const Header: React.FC<PatternComponentProps> = async ({ locale }) => {
   const t = await getTranslations({ locale, namespace: "header" });
+  const a = await getTranslations({ locale, namespace: "accessibility" });
 
   return (
     <header className="flex justify-center items-center self-stretch h-[94px] w-full gap-[40px_100px] flex-wrap bg-neutral-700 px-10 py-5 max-md:max-w-full max-md:px-5 z-[9999999] relative">
@@ -41,9 +42,15 @@ const Header: React.FC<PatternComponentProps> = async ({ locale }) => {
           >
             {t("comparison")}
           </NavigationLink>
-          <Button variant="secondary" size="default">
-            {t("demo")}
-          </Button>
+
+          <ExternalLink
+            description={a("external-links.demo")}
+            href="https://devportal.demo.vee.codes/"
+          >
+            <Button variant="secondary" size="default">
+              {t("demo")}
+            </Button>
+          </ExternalLink>
         </nav>
         <SwitchLanguage />
         <MenuMobile />

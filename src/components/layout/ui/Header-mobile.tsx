@@ -5,12 +5,13 @@ import { Button } from "@/components/ui/Button";
 import { RxHamburgerMenu } from "react-icons/rx";
 import clsx from "clsx";
 import { useTranslations } from "next-intl";
-import { NavigationLink } from "@/components/ui/links";
+import { ExternalLink, NavigationLink } from "@/components/ui/links";
 import VeeCodeLogo from "@/components/VeeCodeLogo";
 
 const MenuMobile = () => {
   const [open, setOpen] = React.useState(false);
   const t = useTranslations("header");
+  const a = useTranslations("accessibility");
 
   const toggleMenu = () => setOpen(!open);
 
@@ -65,9 +66,14 @@ const MenuMobile = () => {
               {t("comparison")}
             </NavigationLink>
             <div className="p-4">
-              <Button variant="secondary" size="default">
-                {t("demo")}
-              </Button>
+              <ExternalLink
+                description={a("external-links.demo")}
+                href="https://devportal.demo.vee.codes/"
+              >
+                <Button variant="secondary" size="default">
+                  {t("demo")}
+                </Button>
+              </ExternalLink>
             </div>
           </nav>
         </div>
