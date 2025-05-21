@@ -8,6 +8,10 @@
       "title": "Contact Success | VeeCode Platform",
       "description": "If you have reached this page, congratulations on your initiative! We will contact you soon."
     },
+    "contact-failed": {
+      "title": "Try Again | VeeCode Platform",
+      "description": "There was an issue submitting your message. Please check your information and try again."
+    },
     "contact-us": {
       "title": "Contact Us | VeeCode Platform",
       "description": "Get in touch with our team, ask your questions, and get more detailed information."

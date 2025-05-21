@@ -8,6 +8,10 @@
       "title": "Sucesso no Contato | VeeCode Platform ",
       "description": "Se você chegou a esta página, parabéns pela iniciativa! Entraremos em contato com você em breve."
     },
+    "contact-failed": {
+      "title": "Tente novamente | VeeCode Platform",
+      "description": "Houve um problema ao enviar sua mensagem. Por favor, verifique seus dados e tente novamente."
+    },
     "contact-us": {
       "title": "Fale Conosco | VeeCode Platform  ",
       "description": "Entre em contato com nossa equipe, tire suas dúvidas e obtenha informações mais detalhadas."
