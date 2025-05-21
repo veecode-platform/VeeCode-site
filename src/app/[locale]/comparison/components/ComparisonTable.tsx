@@ -24,7 +24,7 @@ const ComparisonTable: React.FC<ComparisionTableProps> = ({
         </p>
       </div>
 
-      <div className="self-center w-[788px] max-w-full gap-2.5 text-xl text-black font-normal text-center mt-24 p-2.5 max-md:max-w-full max-md:mt-10">
+      <div className="self-center w-[788px] max-w-full text-xl text-black font-normal text-center mt-24 p-2.5 max-md:max-w-full max-md:mt-10 flex justify-center items-center gap-8 flex-col">
         {description}
       </div>
 

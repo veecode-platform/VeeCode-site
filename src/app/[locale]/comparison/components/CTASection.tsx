@@ -17,9 +17,9 @@ const CTASection: React.FC<CTASectionProps> = ({
       <h2 className="text-neutral-50 text-center text-[40px] max-md:max-w-full">
         {title}
       </h2>
-      <p className="text-neutral-50 text-center text-xl font-normal mt-[22px] max-md:max-w-full">
+      <div className="text-neutral-50 text-center text-xl font-normal mt-[22px] max-md:max-w-full">
         {description}
-      </p>
+      </div>
       <NavigationLink
         href="/contact-us"
         className="border self-center text-base text-white mt-[22px] px-5 py-[15px] rounded-[10px] border-[rgba(51,255,205,1)] border-solid hover:bg-[rgba(51,255,205,0.1)] transition-colors"
