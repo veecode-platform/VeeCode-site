@@ -27,7 +27,7 @@ const PricingSection: React.FC<PricinSectionProps> = ({ title, cards }) => {
         {title}
       </h2>
       <div className="w-full max-w-[1410px] md:mt-[47px] max-md:max-w-full max-md:mt-10 pb-20 md:pb-0">
-        <div className="gap-5 grid grid-cols-1 md:grid-cols-3 max-md:items-stretch xl:w-[90vw] xl:mx-auto 2xl-w-full">
+        <div className="gap-5 grid grid-cols-1 md:grid-cols-3 max-md:items-stretch xl:w-[90vw] xl:mx-auto 2xl:w-full">
           {cards.map((plan) => (
             <div
               key={plan.id}

@@ -38,7 +38,7 @@ const PricingCard: React.FC<Omit<PricingCardProps, "id">> = ({
       </ul>
       <NavigationLink
         href="/contact-us"
-        className="text-center py-5 md:text-start 2xl:py-0"
+        className="text-center pt-12 pb-6 md:text-start"
       >
         <Button variant="default" size="sm" aria-label={buttonText}>
           {buttonText}
