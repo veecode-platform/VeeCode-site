@@ -22,7 +22,7 @@ const SupportCard: React.FC<SupportCardProps> = ({
   description,
 }) => {
   return (
-    <div className="flex justify-center items-center flex-col w-full m-0.5 py-4 border-1 border-slate-200  lg:flex-row lg:py-8 lg:border-0">
+    <div className="bg-neutral-50 md:bg-transparent flex justify-center items-center flex-col w-full m-0.5 py-4 border-1 border-slate-200  lg:flex-row lg:py-8 lg:border-0 my-5 md:my-0">
       <div className="p-0.2 text-5xl text-teal-400 w-full h-full flex justify-center items-center lg:w-[10%] lg:text-6xl lg:self-start lg:pt-5">
         {icon}
       </div>
@@ -37,7 +37,9 @@ const SupportCard: React.FC<SupportCardProps> = ({
 const SupportBenefits: React.FC<SupportBenefitsProps> = ({ title, cards }) => {
   return (
     <div className="py-8 w-full flex justify-center items-center flex-col lg:py-16">
-      <h2 className="cursor-pointer text-2xl text-left self-start">{title}</h2>
+      <h2 className="cursor-pointer text-2xl text-left self-start my-5 md:my-0">
+        {title}
+      </h2>
       {cards.map((card) => (
         <SupportCard
           key={card.id}
