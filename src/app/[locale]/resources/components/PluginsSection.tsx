@@ -7,6 +7,7 @@ type PluginCardTag = {
 interface PluginCardType {
   icon: string;
   title: string;
+  path: string;
   tags: PluginCardTag[];
   description: string;
 }
@@ -25,6 +26,7 @@ export const PluginsSection: React.FC<PluginSectionProps> = ({
           key={plugin.title}
           icon={plugin.icon}
           title={plugin.title}
+          path={plugin.path}
           tags={plugin.tags}
           description={plugin.description}
         />
