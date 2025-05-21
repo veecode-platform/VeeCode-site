@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import { PricingCardProps } from "./PricingSection";
+import { Button } from "@/components/ui/Button";
+import { NavigationLink } from "@/components/ui/links";
 
 const PricingCard: React.FC<Omit<PricingCardProps, "id">> = ({
   title,
@@ -32,12 +34,11 @@ const PricingCard: React.FC<Omit<PricingCardProps, "id">> = ({
           </li>
         ))}
       </ul>
-      <a
-        href="#"
-        className="bg-[rgba(51,255,205,1)] self-center min-h-[54px] w-[177px] max-w-full text-white font-bold mt-[152px] px-2.5 py-[15px] rounded-[10px] max-md:mt-10 flex items-center justify-center hover:bg-[rgba(41,204,164,1)] transition-colors"
-      >
-        {buttonText}
-      </a>
+      <NavigationLink href="/contact-us">
+        <Button variant="default" size="sm" aria-label={buttonText}>
+          {buttonText}
+        </Button>
+      </NavigationLink>
     </div>
   );
 };

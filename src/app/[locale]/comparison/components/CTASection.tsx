@@ -1,3 +1,4 @@
+import { NavigationLink } from "@/components/ui/links";
 import React from "react";
 
 interface CTASectionProps {
@@ -19,12 +20,12 @@ const CTASection: React.FC<CTASectionProps> = ({
       <p className="text-neutral-50 text-center text-xl font-normal mt-[22px] max-md:max-w-full">
         {description}
       </p>
-      <a
-        href="#"
+      <NavigationLink
+        href="/contact-us"
         className="border self-center text-base text-white mt-[22px] px-5 py-[15px] rounded-[10px] border-[rgba(51,255,205,1)] border-solid hover:bg-[rgba(51,255,205,0.1)] transition-colors"
       >
         {buttonLabel}
-      </a>
+      </NavigationLink>
     </section>
   );
 };
