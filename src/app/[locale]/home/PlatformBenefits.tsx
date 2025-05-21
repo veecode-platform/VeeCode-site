@@ -2,6 +2,7 @@ import React from "react";
 import BenefitCard from "./BenefitCard";
 import { Button } from "@/components/ui/Button";
 import Image from "next/image";
+import { NavigationLink } from "@/components/ui/links";
 
 const BackgroundBenefits = "/assets/home/banner-benefits.webp";
 
@@ -25,22 +26,32 @@ const PlatformBenefits: React.FC<PlatformBenefitsProps> = ({
   return (
     <section className="items-center self-stretch flex w-full flex-col overflow-hidden justify-center my-[123px] pt-[80px] pb-[32px] max-md:max-w-full max-md:my-10 max-md:px-5">
       <div className="max-w-full bg-[#1C1F25] relative flex min-h-[776px] w-[1204px] flex-col overflow-hidden p-[60px] rounded-[32px] max-md:pb-[100px] max-md:px-5">
+        <div className="bg-[rgba(56,127,245,0.1)] absolute z-0 flex min-h-[776px] w-full inset-0 pointer-events-none" />
         <Image
           width={879}
           height={424}
           src={BackgroundBenefits}
           alt="Background Pattern"
-          className="aspect-[2.07] object-contain w-[879px] absolute z-0 max-w-full h-[424px] left-0 bottom-0 opacity-50"
+          className="aspect-[2.07] object-contain w-[879px] absolute z-0 max-w-full h-[424px] left-0 bottom-0 opacity-50 pointer-events-none"
           unoptimized
         />
-        <div className="content-start self-stretch flex-wrap z-0 flex w-full gap-[40px_var(--inline-4xl,40px)] max-md:max-w-full">
+        <div className="z-10 content-start self-stretch flex-wrap flex w-full gap-[40px_var(--inline-4xl,40px)] max-md:max-w-full">
           <div className="w-[90vw] md:min-w-[360px] justify-center items-stretch flex flex-col font-bold flex-1 shrink basis-[0%] gap-10 max-md:max-w-full">
             <h2 className="text-white text-5xl leading-[56px] max-md:max-w-full max-md:text-[40px] max-md:leading-[52px]">
               {title}
             </h2>
-            <Button variant="secondary" size="default" className="mt-10 w-fit">
-              {buttonLabel}
-            </Button>
+            <NavigationLink
+              href="/support"
+              className="mt-10 w-fit cursor-pointer"
+            >
+              <Button
+                variant="secondary"
+                size="default"
+                aria-label={buttonLabel}
+              >
+                {buttonLabel}
+              </Button>
+            </NavigationLink>
           </div>
           <div className="min-w-[360px] w-[381px] gap-5">
             {cards.map((card) => {
@@ -56,7 +67,6 @@ const PlatformBenefits: React.FC<PlatformBenefitsProps> = ({
             })}
           </div>
         </div>
-        <div className="bg-[rgba(56,127,245,0.1)] absolute z-0 flex min-h-[776px] w-full inset-0" />
       </div>
     </section>
   );
