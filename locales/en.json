@@ -710,12 +710,6 @@
         "title": "What is DevPortal? What is it for?",
         "answer": "DevPortal is a platform that centralizes your Specs and APIs making it easy to control microservices. Today we understand that the microservices architecture is necessary to deliver value to our users. Devportal works as a showcase of specifications and APIs that facilitate the control and testing of services."
       }
-    },
-    "action": {
-      "contact": {
-        "title": "Still having doubts?",
-        "buttonLabel": "Contact us"
-      }
     }
   }
 }
