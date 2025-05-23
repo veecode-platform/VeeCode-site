@@ -45,9 +45,9 @@ const ClientLogos: React.FC<ClientLogosProps> = ({ label }) => {
             key={customer.id}
             src={customer.logo}
             alt={customer.alt}
-            width={161}
-            height={72}
-            className="aspect-[2.24] object-contain w-[161px] self-stretch shrink-0 my-auto"
+            width={181}
+            height={92}
+            className="aspect-[2.24] object-contain w-[181px] self-stretch shrink-0 my-auto"
             unoptimized
           />
         ))}
