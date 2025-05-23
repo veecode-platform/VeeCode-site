@@ -1,3 +1,5 @@
+"use client";
+
 import { gtagEvents } from "@/lib/helpers/gtag";
 import type { ReactNode } from "react";
 
