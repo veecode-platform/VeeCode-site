@@ -49,6 +49,7 @@ const Features: React.FC<FeaturesProps> = ({
         <ExternalLink
           description={descriptionExternalLink}
           href="https://docs.platform.vee.codes/devportal/installation-guide/VKDR/"
+          event="vkdrDocs"
         >
           <Button variant="outline" size="sm" aria-label={buttonLabel2}>
             {buttonLabel2}

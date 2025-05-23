@@ -53,8 +53,9 @@ const Header: React.FC<PatternComponentProps> = async ({ locale }) => {
           <ExternalLink
             description={a("external-links.demo")}
             href="https://devportal.demo.vee.codes/"
+            event="demo"
           >
-            <Button variant="secondary" size="default">
+            <Button aria-label={t("demo")} variant="secondary" size="default">
               {t("demo")}
             </Button>
           </ExternalLink>

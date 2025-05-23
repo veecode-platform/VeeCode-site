@@ -36,6 +36,7 @@ const Footer: React.FC<PatternComponentProps> = async ({ locale }) => {
                 <ExternalLink
                   href="https://github.com/vfipaas/safira-support/discussions"
                   description={a("external-links.github")}
+                  event="joinUs"
                   styles="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
                 >
                   {t("about-option3")}
@@ -55,6 +56,7 @@ const Footer: React.FC<PatternComponentProps> = async ({ locale }) => {
               <nav className="justify-center flex flex-col gap-2 mt-4">
                 <ExternalLink
                   href="https://docs.platform.vee.codes/"
+                  event="docs"
                   description={a("external-links.docs")}
                   styles="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
                 >
@@ -63,6 +65,7 @@ const Footer: React.FC<PatternComponentProps> = async ({ locale }) => {
                 <ExternalLink
                   description={a("external-links.vkdr")}
                   href="https://docs.platform.vee.codes/vkdr/intro/"
+                  event="vkdrDocs"
                   styles="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
                 >
                   {t("resources-option2")}
@@ -70,6 +73,7 @@ const Footer: React.FC<PatternComponentProps> = async ({ locale }) => {
                 <ExternalLink
                   description={a("external-links.docs")}
                   href="https://docs.platform.vee.codes/devportal/intro/"
+                  event="devportal"
                   styles="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
                 >
                   {t("resources-option3")}
@@ -90,6 +94,7 @@ const Footer: React.FC<PatternComponentProps> = async ({ locale }) => {
                 <ExternalLink
                   description={a("external-links.blog")}
                   href="https://blog.platform.vee.codes/"
+                  event="blog"
                   styles="text-neutral-300 hover:text-[rgba(51,255,205,1)] text-center md:text-left"
                 >
                   {t("more-option1")}
