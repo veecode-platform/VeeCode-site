@@ -117,7 +117,7 @@
           "label": "Fale Conosco"
         },
         "button2": {
-          "label": "Acesse a Demo"
+          "label": "Comece agora"
         }
       },
       "image-alt": "Print da tela de scaffolder templates"
@@ -132,7 +132,7 @@
           "label": "Fale Conosco"
         },
         "button2": {
-          "label": "Acesse a Demo"
+          "label": "Comece Agora"
         }
       },
       "card1": {
@@ -194,7 +194,7 @@
           "label": "Fale Conosco"
         },
         "button2": {
-          "label": "Acesse a Demo"
+          "label": "Comece Agora"
         }
       }
     }

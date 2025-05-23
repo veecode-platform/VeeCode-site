@@ -117,7 +117,7 @@
           "label": "Contact Us"
         },
         "button2": {
-          "label": "Access the Demo"
+          "label": "Get Started"
         }
       },
       "image-alt": "Screenshot of the scaffolder templates screen"
@@ -132,7 +132,7 @@
           "label": "Contact Us"
         },
         "button2": {
-          "label": "Access the Demo"
+          "label": "Get Started"
         }
       },
       "card1": {
@@ -194,7 +194,7 @@
           "label": "Contact Us"
         },
         "button2": {
-          "label": "Access the Demo"
+          "label": "Get Started"
         }
       }
     }
