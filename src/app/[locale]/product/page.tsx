@@ -76,7 +76,7 @@ export default async function ProductPage({ params }: PageProps) {
   ];
 
   return (
-    <main className="bg-white flex flex-col overflow-hidden items-stretch">
+    <main className="bg-white flex flex-col overflow-hidden items-stretch py-15 md:py:0">
       <FeatureSection
         leftFeatures={leftFeatures}
         rightFeatures={rightFeatures}
