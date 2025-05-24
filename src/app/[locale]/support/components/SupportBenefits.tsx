@@ -37,7 +37,7 @@ const SupportCard: React.FC<SupportCardProps> = ({
 const SupportBenefits: React.FC<SupportBenefitsProps> = ({ title, cards }) => {
   return (
     <div className="py-8 w-full flex justify-center items-center flex-col lg:py-16">
-      <h2 className="cursor-pointer text-2xl text-left self-start my-5 md:my-0">
+      <h2 className="cursor-pointer text-2xl text-center md:text-left self-start my-5 md:my-0">
         {title}
       </h2>
       {cards.map((card) => (

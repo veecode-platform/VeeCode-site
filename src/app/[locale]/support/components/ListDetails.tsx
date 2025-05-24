@@ -12,7 +12,9 @@ interface IListDetailsItem {
 
 const ListDetails: React.FC<ListDetailsProps> = ({ title, items }) => (
   <article className="w-full flex justify-center items-start flex-col">
-    <h3 className="my-5 cursor-pointer text-left text-2xl">{title}</h3>
+    <h3 className="my-5 cursor-pointer text-center md:text-left text-2xl">
+      {title}
+    </h3>
     <div className="py-4 w-full flex justify-center items-center bg-neutral-50 rounded-sm border-1 border-slate-200">
       <ul className="w-full flex justify-center items-start flex-col mx-auto flex-nowrap lg:flex-wrap lg:w-[97%] lg:flex-row lg:items-center">
         {items.map((item) => (

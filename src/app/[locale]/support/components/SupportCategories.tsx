@@ -9,8 +9,10 @@ const SupportCategories: React.FC<SupportCategoriesProps> = ({
 }) => {
   return (
     <div className="mb-8 w-full">
-      <h2 className="my-0.7 cursor-pointer text-2xl text-left my-5">{title}</h2>
-      <p className="text-xl text-left">{desc}</p>
+      <h2 className="my-0.7 cursor-pointer text-2xl text-center md:text-left my-5">
+        {title}
+      </h2>
+      <p className="text-xl text-center md:text-left">{desc}</p>
     </div>
   );
 };
