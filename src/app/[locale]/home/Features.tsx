@@ -29,8 +29,8 @@ const Features: React.FC<FeaturesProps> = ({
   cards,
 }) => {
   return (
-    <section className="max-w-[90vw] mx-auto flex flex-col items-center ">
-      <div className="items-center border border-[color:var(--Preto,#000)] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.10)] flex min-h-[54px] gap-2 text-base text-[#1e1e1e] font-medium text-center leading-[1.6] bg-neutral-50 mt-[161px] px-4 py-3.5 rounded-[30px] border-solid max-md:mt-10">
+    <section className="max-w-[90vw] mx-auto flex flex-col items-center">
+      <div className="items-center border border-[color:var(--Preto,#000)] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.10)] flex min-h-[54px] gap-2 text-base text-[#1e1e1e] font-medium text-center leading-[1.6] bg-neutral-50 px-4 rounded-[30px] border-solid">
         <BsStars className="w-5 h-5 self-stretch shrink-0 my-auto text-[#33ffcd]" />
         <div className="self-stretch my-auto">{label}</div>
       </div>
@@ -57,7 +57,7 @@ const Features: React.FC<FeaturesProps> = ({
         </ExternalLink>
       </div>
 
-      <div className="w-full max-w-[1257px] mt-[164px] max-md:max-w-full max-md:mt-10">
+      <div className="w-full max-w-[1257px] max-md:max-w-full mt-20">
         <div className="gap-5 flex max-md:flex-col max-md:items-stretch">
           <div className="w-full max-md:ml-0 grid grid-cols-3 gap-5 max-md:grid-cols-1">
             {cards.map((card) => {

@@ -35,8 +35,8 @@ const ClientLogos: React.FC<ClientLogosProps> = ({ label }) => {
   ];
 
   return (
-    <section className="flex flex-col items-center my-20 py-5 bg-neutral-50 md:bg-transparent md:my-0 md:py-0">
-      <p className="text-[#4B5162] text-center text-base font-normal leading-[1.6] opacity-80 mt-[125px] max-md:max-w-full max-md:mt-10">
+    <section className="flex flex-col items-center">
+      <p className="max-w-[90vw] text-[#4B5162] text-center text-base font-normal leading-[1.6] opacity-80 max-md:max-w-full">
         {label}
       </p>
       <div className="flex w-full max-w-[1182px] items-center justify-center flex-wrap mt-9 max-md:max-w-full gap-8">

@@ -16,7 +16,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
 }) => {
   return (
     <div className="self-stretch flex min-w-60 gap-[15px_12px] flex-wrap w-[519px] my-auto max-md:max-w-full">
-      <p className="text-neutral-900 text-lg font-normal leading-[30px] grow shrink w-[511px] max-md:max-w-full">
+      <p className="text-neutral-900 text-lg font-normal leading-[30px] grow shrink w-[511px] max-md:max-w-full text-center md:text-start">
         {quote}
       </p>
       <Image

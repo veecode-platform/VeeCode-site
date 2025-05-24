@@ -18,7 +18,7 @@ const CallToAction: React.FC<CallToActionProps> = ({
   descriptionExternalLink,
 }) => {
   return (
-    <section className="flex flex-col items-center my-[131px] max-md:my-15 md:py-0 gap-10 md:gap-10">
+    <section className="flex flex-col items-center gap-10">
       <div className="w-[1032px] max-w-[90vw]">
         <h2 className="text-black text-[40px] font-bold max-md:max-w-full text-center">
           {title}

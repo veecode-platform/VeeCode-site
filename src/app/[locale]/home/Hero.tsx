@@ -22,7 +22,7 @@ const Hero: React.FC<HeroProps> = ({
 }) => {
   return (
     <section className="flex flex-col items-center">
-      <div className="flex w-[90vw] pt-15 md:pt-0 md:w-[705px] max-w-full flex-col items-center text-black text-center mt-35 md:mt-[107px] max-md:mt-10">
+      <div className="flex w-[90vw] md:w-[705px] max-w-full flex-col items-center text-black text-center">
         <h1 className="text-[55px] font-bold max-md:max-w-full max-md:text-[40px]">
           {title}
         </h1>

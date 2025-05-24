@@ -78,7 +78,7 @@ export default async function Home({ params }: PageProps) {
   ];
 
   return (
-    <main>
+    <main className="flex flex-col justify-center items-center py-35 gap-40">
       <Hero
         title={t("hero.title")}
         description={t("hero.description")}
