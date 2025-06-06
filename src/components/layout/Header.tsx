@@ -7,6 +7,7 @@ import { getTranslations } from "next-intl/server";
 import { PatternComponentProps } from "@/lib/@types/patternComponentProps";
 import { ExternalLink, NavigationLink } from "../ui/links";
 import VeeCodeLogoMobile from "../VeeCodeLogoMobile";
+import { VEECODE_PLATFORM_DEMO } from "@/lib/constants";
 
 const Header: React.FC<PatternComponentProps> = async ({ locale }) => {
   const t = await getTranslations({ locale, namespace: "header" });
@@ -52,7 +53,7 @@ const Header: React.FC<PatternComponentProps> = async ({ locale }) => {
 
           <ExternalLink
             description={a("external-links.demo")}
-            href="https://devportal.demo.vee.codes/"
+            href={VEECODE_PLATFORM_DEMO}
             event="demo"
           >
             <Button aria-label={t("demo")} variant="secondary" size="default">

@@ -7,6 +7,7 @@ import clsx from "clsx";
 import { useTranslations } from "next-intl";
 import { ExternalLink, NavigationLink } from "@/components/ui/links";
 import VeeCodeLogo from "@/components/VeeCodeLogo";
+import { VEECODE_PLATFORM_DEMO } from "@/lib/constants";
 
 const MenuMobile = () => {
   const [open, setOpen] = React.useState(false);
@@ -68,7 +69,7 @@ const MenuMobile = () => {
             <div className="p-4">
               <ExternalLink
                 description={a("external-links.demo")}
-                href="https://devportal.demo.vee.codes/"
+                href={VEECODE_PLATFORM_DEMO}
                 event="demo"
               >
                 <Button
