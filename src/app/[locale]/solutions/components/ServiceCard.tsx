@@ -27,13 +27,13 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
       </p>
       <div className="flex w-[301px] max-w-full items-stretch gap-5 justify-center mt-[130px] max-md:mt-10">
         <ExternalLink description={descriptionExternalLink} href={externalLink}>
-          <Button variant="outline" size="sm" aria-label={buttonLabel2}>
-            {buttonLabel2}
+          <Button variant="default" size="sm" aria-label={buttonLabel1}>
+            {buttonLabel1}
           </Button>
         </ExternalLink>
         <NavigationLink href="/contact-us">
-          <Button variant="default" size="sm" aria-label={buttonLabel1}>
-            {buttonLabel1}
+          <Button variant="outline" size="sm" aria-label={buttonLabel2}>
+            {buttonLabel2}
           </Button>
         </NavigationLink>
       </div>
