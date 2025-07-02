@@ -285,7 +285,7 @@
           }
         },
         "card2": {
-          "title": "Pro Support",
+          "title": "Standard",
           "description": "<p>Get all your questions answered about our solutions. No more issues with DevOps, API Development, Kubernetes, AWS, and more.*</p> <p>*Price based on number of users and desired service level</p>",
           "subtitle": "Support includes:",
           "benefits-list": {
@@ -300,7 +300,7 @@
           }
         },
         "card3": {
-          "title": "Custom Support",
+          "title": "Enterprise",
           "description": "<p>Count on our strategic and specialized support to ensure efficient and continuous adoption of our solutions.</p><p>*Price based on number of users and desired service level</p>",
           "subtitle": "Support includes:",
           "benefits-list": {
