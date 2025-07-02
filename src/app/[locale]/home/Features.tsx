@@ -3,6 +3,7 @@ import FeatureCard from "./FeatureCard";
 import { BsStars } from "react-icons/bs";
 import { ExternalLink, NavigationLink } from "@/components/ui/links";
 import { Button } from "@/components/ui/Button";
+import Content from "@/components/layout/Content";
 
 export type FeatureCard = {
   id: number;
@@ -34,28 +35,30 @@ const Features: React.FC<FeaturesProps> = ({
         <BsStars className="w-5 h-5 self-stretch shrink-0 my-auto text-[#33ffcd]" />
         <div className="self-stretch my-auto">{label}</div>
       </div>
-      <h2 className="text-black text-center text-[40px] font-bold mt-[37px] max-md:max-w-full">
-        {title}
-      </h2>
-      <p className="text-[#1e1e1e] text-center text-xl font-normal mt-[21px] max-md:max-w-full">
-        {description}
-      </p>
-      <div className="flex min-h-[52px] items-center gap-[23px] text-base mt-[31px]">
-        <NavigationLink href="/contact-us">
-          <Button variant="default" size="sm" aria-label={buttonLabel1}>
-            {buttonLabel1}
-          </Button>
-        </NavigationLink>
-        <ExternalLink
-          description={descriptionExternalLink}
-          href="https://docs.platform.vee.codes/devportal/installation-guide/VKDR/"
-          event="vkdrDocs"
-        >
-          <Button variant="outline" size="sm" aria-label={buttonLabel2}>
-            {buttonLabel2}
-          </Button>
-        </ExternalLink>
-      </div>
+      <Content>
+        <h2 className="text-black text-center text-[40px] font-bold mt-[37px] max-md:max-w-full">
+          {title}
+        </h2>
+        <p className="text-[#1e1e1e] text-center text-xl font-normal mt-[21px] max-md:max-w-full">
+          {description}
+        </p>
+        <div className="flex min-h-[52px] items-center gap-[23px] text-base mt-[31px]">
+          <NavigationLink href="/contact-us">
+            <Button variant="default" size="sm" aria-label={buttonLabel1}>
+              {buttonLabel1}
+            </Button>
+          </NavigationLink>
+          <ExternalLink
+            description={descriptionExternalLink}
+            href="https://docs.platform.vee.codes/devportal/installation-guide/VKDR/"
+            event="vkdrDocs"
+          >
+            <Button variant="outline" size="sm" aria-label={buttonLabel2}>
+              {buttonLabel2}
+            </Button>
+          </ExternalLink>
+        </div>
+      </Content>
 
       <div className="w-full max-w-[1257px] max-md:max-w-full mt-20">
         <div className="gap-5 flex max-md:flex-col max-md:items-stretch">

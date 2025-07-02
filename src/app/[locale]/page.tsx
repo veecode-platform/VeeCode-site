@@ -60,6 +60,11 @@ export default async function Home({ params }: PageProps) {
       title: t("benefits.card5.title"),
       description: t("benefits.card5.description"),
     },
+    {
+      id: 6,
+      title: t("benefits.card6.title"),
+      description: t("benefits.card6.description"),
+    },
   ];
 
   const testimonialCards = [

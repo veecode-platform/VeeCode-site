@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/Button";
 import { ExternalLink, NavigationLink } from "@/components/ui/links";
+import Content from "@/components/layout/Content";
 
 interface CallToActionProps {
   title: string;
@@ -18,17 +19,17 @@ const CallToAction: React.FC<CallToActionProps> = ({
   descriptionExternalLink,
 }) => {
   return (
-    <section className="flex flex-col items-center gap-10">
-      <div className="w-[1032px] max-w-[90vw]">
-        <h2 className="text-black text-[40px] font-bold max-md:max-w-full text-center">
+    <section className="flex flex-col items-center gap-10 mt-[-80px]">
+      <Content>
+        <h2 className="text-black text-center text-[40px] font-bold mt-[37px] max-md:max-w-full">
           {title}
         </h2>
         {subtitle && (
-          <p className="text-[#1e1e1e] text-center text-xl font-normal max-md:max-w-full mt-5 md:mt-1">
+          <p className="text-[#1e1e1e] text-center text-xl font-normal mt-[21px] max-md:max-w-full">
             {subtitle}
           </p>
         )}
-      </div>
+      </Content>
       <div className="z-10 flex items-center gap-[23px] justify-center min-h-11 w-[374px] max-w-full  text-base">
         <NavigationLink href="/contact-us">
           <Button variant="default" size="sm" aria-label={buttonLabel1}>
