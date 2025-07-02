@@ -111,7 +111,7 @@
   "home": {
     "hero": {
       "title": "Transforme o trabalho da sua equipe",
-      "description": "Uma Plataforma Interna de Desenvolvedores construída a partir do Backstage que oferece transparência, flexibilidade e fácil implantação",
+      "description": "Construída a partir do Backstage, a VeeCode é sua Central Inteligente para desenvolvimento ágil, colaborativo e escalável com transparência, flexibilidade e fácil implantação",
       "buttons": {
         "button1": {
           "label": "Fale Conosco"
@@ -125,8 +125,8 @@
     "label-customer-section": "160 + usuários satisfeitos que escalam seus negócios com a VeeCode",
     "feature": {
       "label": "Nossa Estratégia",
-      "title": "Unifique nuvens, processos e ferramentas em um só lugar",
-      "description": "Rapidamente conecte sua infraestrutura, gerencie deploys, performance e custo",
+      "title": "Você sabe onde encontrar o que precisa para começar agora?",
+      "description": "O VeeCode IDP é uma plataforma centralizada, pronta para uso, que transforma a experiência do desenvolvedor ao consolidar tudo que você precisa para trabalhar de forma ágil, segura e eficiente — documentação, templates, serviços, métricas e integrações, tudo em um único lugar.",
       "buttons": {
         "button1": {
           "label": "Fale Conosco"
@@ -149,46 +149,50 @@
       }
     },
     "benefits": {
-      "title": "Eleve o seu código a um novo nível de eficiência com <strong>VeeCode Platform</strong>",
+      "title": "O que você encontra  com <strong>VeeCode Platform</strong>?",
       "button": {
         "label": "Planos de suporte"
       },
       "card1": {
-        "title": "Catálogos de API",
-        "description": "Acesse uma extensa possibilidade de recursos e criem aplicações inovadoras."
+        "title": "Catálogos de Serviço e Templates",
+        "description": "Acesse e crie novos serviços ou microsserviços com nossos templates otimizados e automatizados."
       },
       "card2": {
-        "title": "Templates de Software",
-        "description": "Simplifique o processo de criação e acelere o desenvolvimento de aplicações"
+        "title": "Documentação Centralizada",
+        "description": "Tenha à mão todas as informações técnicas, processos e boas práticas da sua organização."
       },
       "card3": {
-        "title": "Painéis de Observabilidade",
-        "description": "Monitore e analise a performance de suas aplicações"
+        "title": "Segurança e Governança",
+        "description": "Visualize e gerencie acessos, conformidade e auditorias com facilidade e transparência."
       },
       "card4": {
-        "title": "Engenharia de Plataformas",
-        "description": "Crie produtos de alta qualidade de forma eficiente e colaborativa em um ambiente robusto."
+        "title": "Dashboard de Adoção e Métricas",
+        "description": "Monitore uso, desempenho e produtividade de forma visual e em tempo real."
       },
       "card5": {
-        "title": "Gerenciamento de APIs",
-        "description": "Faça gestão, monitore e otimize de forma eficaz as suas APIs com as ferramentas ideais"
+        "title": "Features inteligentes com IA",
+        "description": "Automatize rotinas e aumente a produtividade com plugins como K8s GPT e o assistente Vee."
+      },
+      "card6": {
+        "title": "Ferramentas de Observabilidade e Troubleshooting",
+        "description": "Ganhe visibilidade e resolva problemas rapidamente com nossos plugins de monitoramento."
       }
     },
     "testimonials": {
       "testimonial-card1": {
-        "quote": "A VeeCode se tornou uma ferramenta essencial na nossa empresa. Aceleramos nossas entregas com uma redução significativa de tempo e mais importante, mantendo a observabilidade entre times.",
+        "quote": "No início do processo de implantação, o time da Vee Code nos ajudou a superar os desafios técnicos considerando o nosso ambiente mais restrito e trouxeram soluções técnicas que se encaixaram muito bem ao nosso contexto.",
         "author": "Gabriel",
         "role": "Principal Product Designer"
       },
       "testimonial-card2": {
-        "quote": "A VeeCode foi uma grata surpresa! Aceleramos em 90% as entregas de novos ambientes e tudo isso com um altíssimo padrão de segurança e governança, com um ótimo custo-benefício, que foi essencial na escolha da ferramenta.",
+        "quote": "Agora temos um ponto único para consultar todas as APIs, sua evolução, padrões, economizamos tempo na busca por informações e ganhamos eficiência operacional.",
         "author": "Geraldo",
         "role": "Tech Leader"
       }
     },
     "call-to-action": {
-      "title": "Aumente a visibilidade e alinhamento do seu time",
-      "description": "Adote Backstage pela VeeCode",
+      "title": "VeeCode IDP: O Pilar Estratégico da Engenharia Moderna",
+      "description": "Adote Backstage pela VeeCode e comece agora sua jornada  com nosso Internal Developer Portal.",
       "buttons": {
         "button1": {
           "label": "Fale Conosco"

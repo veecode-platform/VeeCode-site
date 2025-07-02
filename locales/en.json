@@ -111,7 +111,7 @@
   "home": {
     "hero": {
       "title": "Transform your team's work",
-      "description": "An Internal Developer Platform built on Backstage that offers transparency, flexibility, and easy deployment",
+      "description": "Built on Backstage, VeeCode is your Intelligent Hub for agile, collaborative, and scalable development with transparency, flexibility, and easy deployment.",
       "buttons": {
         "button1": {
           "label": "Contact Us"
@@ -125,8 +125,8 @@
     "label-customer-section": "160+ satisfied users scaling their business with VeeCode",
     "feature": {
       "label": "Our Strategy",
-      "title": "Unify clouds, processes, and tools in one place",
-      "description": "Quickly connect your infrastructure, manage deployments, performance, and cost",
+      "title": "Do you know where to find what you need to get started now?",
+      "description": "The VeeCode IDP is a centralized, ready-to-use platform that transforms the developer experience by consolidating everything you need to work in an agile, secure, and efficient way—documentation, templates, services, metrics, and integrations, all in one place.",
       "buttons": {
         "button1": {
           "label": "Contact Us"
@@ -154,41 +154,45 @@
         "label": "Support Plans"
       },
       "card1": {
-        "title": "API Catalogs",
-        "description": "Access a wide range of resources and create innovative applications."
+        "title": "Service Catalogs and Templates",
+        "description": "Access and create new services or microservices with our optimized and automated templates."
       },
       "card2": {
-        "title": "Software Templates",
-        "description": "Simplify the creation process and accelerate application development."
+        "title": "Centralized Documentation",
+        "description": "Have all your organization's technical information, processes, and best practices at hand."
       },
       "card3": {
-        "title": "Observability Dashboards",
-        "description": "Monitor and analyze the performance of your applications."
+        "title": "Security and Governance",
+        "description": "Easily view and manage access, compliance, and audits with transparency."
       },
       "card4": {
-        "title": "Platform Engineering",
-        "description": "Build high-quality products efficiently and collaboratively in a robust environment."
+        "title": "Adoption and Metrics Dashboard",
+        "description": "Monitor usage, performance, and productivity visually and in real time."
       },
       "card5": {
-        "title": "API Management",
-        "description": "Manage, monitor, and optimize your APIs effectively with the ideal tools."
+        "title": "Intelligent AI Features",
+        "description": "Automate routines and increase productivity with plugins like K8s GPT and the Vee assistant."
+      },
+      "card6": {
+        "title": "Observability and Troubleshooting Tools",
+        "description": "Gain visibility and quickly resolve issues with our monitoring plugins."
       }
     },
     "testimonials": {
       "testimonial-card1": {
-        "quote": "VeeCode has become an essential tool in our company. We accelerated our deliveries with a significant reduction in time and, more importantly, maintained observability between teams.",
+        "quote": "At the beginning of the implementation process, the Vee Code team helped us overcome technical challenges considering our more restricted environment and brought technical solutions that fit our context very well.",
         "author": "Gabriel",
         "role": "Principal Product Designer"
       },
       "testimonial-card2": {
-        "quote": "VeeCode was a pleasant surprise! We accelerated the delivery of new environments by 90%, all with a very high standard of security and governance, and great cost-benefit, which was essential in choosing the tool.",
+        "quote": "Now we have a single point to consult all APIs, their evolution, standards, we save time searching for information and gain operational efficiency.",
         "author": "Geraldo",
         "role": "Tech Leader"
       }
     },
     "call-to-action": {
-      "title": "Increase your team's visibility and alignment",
-      "description": "Adopt Backstage by VeeCode",
+      "title": "VeeCode IDP: The Strategic Pillar of Modern Engineering",
+      "description": "Adopt Backstage with VeeCode and start your journey now with our Internal Developer Portal.",
       "buttons": {
         "button1": {
           "label": "Contact Us"
