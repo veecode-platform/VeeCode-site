@@ -76,7 +76,7 @@ const FaqList: React.FC = () => {
     setActiveId((prev) => (prev === id ? null : id));
   };
 
-  const items: IFaq[] = Array.from({ length: 11 }, (_, i) => ({
+  const items: IFaq[] = Array.from({ length: 9 }, (_, i) => ({
     id: i + 1,
     title: t(`ask${i + 1}.title`),
     answer: t(`ask${i + 1}.answer`),

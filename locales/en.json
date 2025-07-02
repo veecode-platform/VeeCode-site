@@ -668,47 +668,45 @@
     "items": {
       "ask1": {
         "title": "What is the difference between Standard and Enterprise support?",
-        "answer": "In addition to the information already explained in the comparison card, the standard is the self-service logic, where you enter the ticket and communication platform and bring us your problems so that we at VeeCode can help you solve them. With Enterprise, the support offer is made according to your needs, where we can solve your problems with you, where we outline together a strategy with deadlines. Or, depending on the context, for you, where we separate our team to focus on the issues that are necessary."
+        "answer": "Standard support follows a self-service approach, where you access the ticket and communication platform and bring us your issues so we can help you solve them. Enterprise support, on the other hand, is tailored to your needs, where we can solve your problems with you, outlining a strategy and deadlines together. Or, depending on the context, solve them for you by allocating our team to focus on the necessary issues."
       },
       "ask2": {
-        "title": "Do I have to pay to use VeeCode Platform products?",
-        "answer": "No. Our products are free, we only charge for the personalized support service that offers help in stacks that permeate the world of APIs, microservices and Devops."
+        "title": "Do I need to pay to use Veecode Platform products?",
+        "answer": "No. Our products are free. We only charge for personalized support services, which offer help with stacks related to APIs, microservices, and DevOps."
       },
       "ask3": {
-        "title": "Which stacks does professional support cover?",
-        "answer": "VKPR, DevPortal, Safira-CLI, Kong, Kubernetes, Docker, Swagger, Insomnia, Okta, Mockserver, Vault, Keycloak, Prometheus, Jaeger, ArgoCD, Node, NPM, Okteto, Linux, AWS, Digital Ocean, Github, Gitlab, Gitbucket, Terraform, API design and microservices."
+        "title": "Are there any discounts on the subscription service?",
+        "answer": "Yes, by choosing the complete journey of Fast Track, Launch Workshop, and support, you get a discount on your purchase."
       },
       "ask4": {
-        "title": "Is there a discount on the subscription service?",
-        "answer": "We are on a launch promotion, so take advantage of the opportunity to have access to the most complete expert support on the market that fits in your pocket."
+        "title": "Are there any discounts on the subscription service?",
+        "answer": "We are running a launch promotion, so take advantage of the opportunity to access the most comprehensive specialized support on the market at an affordable price."
       },
       "ask5": {
-        "title": "Is there an opt-out fee for the personalized support subscription?",
-        "answer": "We offer you a 15-day Support Trial, during which your card will not be charged, and the value of the chosen package will be charged only after this trial period."
+        "title": "Is there a cancellation fee for the personalized support subscription?",
+        "answer": "We offer a 15-day free trial during which your card will not be charged. The chosen package will only be charged after this trial period."
       },
       "ask6": {
         "title": "What does 8x5 and 24x7 support mean?",
-        "answer": "They are models of operation of the support, the model 8x5, means that our availability of service is 8 hours a day on 5 days a week, already the 24x7, follows the same logic and it is 24 hours a day the 7 days a week, or full time."
+        "answer": "These are support operation models. The 8x5 model means our support is available 8 hours a day, 5 days a week. The 24x7 model means 24 hours a day, 7 days a week, that is, full-time support."
       },
       "ask7": {
-        "title": "Besides the site, what are other means of communication?",
-        "answer": "You can find us on our social networks (instagram, linkedin and facebook), as well as in our community on github where you will find perfect interaction channels to answer your questions and relate to the tech public."
+        "title": "Besides the website, what other communication channels are available?",
+        "answer": "You can find us on our social networks (Instagram, LinkedIn), as well as in our Discord community, where you'll find perfect channels to ask questions and connect with the tech community."
       },
       "ask8": {
-        "title": "I have a feedback about a VeeCode Platform product, where can I post it?",
-        "answer": "Our main contact channel is the Github Discussion, where you will find a dedicated channel for feedback where your criticism is genuinely heard. You can also contact us by any of our means of communication, and we will be very happy with your contribution."
+        "title": "I have feedback about a VeeCode Platform product. Where can I send it?",
+        "answer": "Our main contact channel is the Discord community, where you'll find a dedicated feedback channel and your input will be genuinely heard. You can also contact us through any of our communication channels, and we will be very happy with your contribution."
       },
       "ask9": {
-        "title": "What is Safira? And what is it used for?",
-        "answer": "Safira-CLI accelerates the construction of APIs from an OpenAPI file. Its purpose is to facilitate the routine of the developer who has a long learning curve for building custom APIs according to the market's demand for robustness and technology, which is embedded in the settings of our product when generating the API project template after a few commands in the Safira CLI."
-      },
-      "ask10": {
-        "title": "What is the VKPR? And what is it used for?",
-        "answer": "VKPR builds for you a cloud infrastructure with a few lines of code. We understand that there is a mystery that surrounds the world of Devops, and there are great challenges in cloud provisioning. VKPR abstracts away the difficulties of provisioning and gives you freedom in creating the infrastructure either in test or in production."
-      },
-      "ask11": {
         "title": "What is DevPortal? What is it for?",
-        "answer": "DevPortal is a platform that centralizes your Specs and APIs making it easy to control microservices. Today we understand that the microservices architecture is necessary to deliver value to our users. Devportal works as a showcase of specifications and APIs that facilitate the control and testing of services."
+        "answer": "DevPortal is a platform that centralizes your specifications and APIs, making microservices management easier. Today, we understand that microservices architecture is necessary to deliver value to our users. DevPortal acts as a showcase for specifications and APIs, making it easier to control and test services."
+      },
+      "action": {
+        "contact": {
+          "title": "Didn't find your answer?",
+          "buttonLabel": "Contact Us"
+        }
       }
     }
   },

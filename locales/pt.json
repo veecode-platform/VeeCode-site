@@ -668,15 +668,15 @@
     "items": {
       "ask1": {
         "title": "Qual é a diferença entre o suporte Standard e o Enterprise?",
-        "answer": "Além das informações já explicadas no cartão de comparação, o Standard segue a lógica de autoatendimento, onde você acessa a plataforma de tickets e comunicação e nos traz seus problemas para que possamos ajudar a resolvê-los. Com o Enterprise, o suporte é oferecido conforme suas necessidades, onde podemos resolver seus problemas com você, traçando uma estratégia com prazos juntos. Ou, dependendo do contexto, resolver para você, alocando nossa equipe para focar nas questões necessárias."
+        "answer": "O Standard segue a lógica de autoatendimento, onde você acessa a plataforma de tickets e comunicação e nos traz seus problemas para que possamos ajudá-los a resolvê-los. Já o Enterprise, oferece suporte conforme suas necessidades, onde podemos resolver seus problemas com você, traçando uma estratégia com prazos juntos. Ou, dependendo do contexto, resolver para você, alocando nossa equipe para focar nas questões necessárias."
       },
       "ask2": {
-        "title": "Eu preciso pagar para usar os produtos da VeeCode Platform?",
+        "title": "Eu preciso pagar para usar os produtos da Veecode Platform?",
         "answer": "Não. Nossos produtos são gratuitos. Nós cobramos apenas pelo serviço de suporte personalizado, que oferece ajuda em stacks que permeiam o mundo de APIs, microsserviços e DevOps."
       },
       "ask3": {
-        "title": "Quais stacks o suporte profissional cobre?",
-        "answer": "VKPR, DevPortal, Safira-CLI, Kong, Kubernetes, Docker, Swagger, Insomnia, Okta, Mockserver, Vault, Keycloak, Prometheus, Jaeger, ArgoCD, Node, NPM, Okteto, Linux, AWS, Digital Ocean, Github, Gitlab, Gitbucket, Terraform, design de APIs e microsserviços."
+        "title": "Existe algum desconto no serviço de assinatura?",
+        "answer": "Sim, ao optar pela jornada completa de Fast Track, Lauch Workshop e suporte você ganha desconto na aquisição."
       },
       "ask4": {
         "title": "Existe algum desconto no serviço de assinatura?",
@@ -692,21 +692,13 @@
       },
       "ask7": {
         "title": "Além do site, quais são os outros meios de comunicação?",
-        "answer": "Você pode nos encontrar em nossas redes sociais (Instagram, LinkedIn e Facebook), bem como em nossa comunidade no GitHub, onde encontrará canais de interação perfeitos para tirar suas dúvidas e se relacionar com o público de tecnologia."
+        "answer": "Você pode nos encontrar em nossas redes sociais (Instagram, LinkedIn), bem como em nossa comunidade no Discord, onde encontrará canais de interação perfeitos para tirar suas dúvidas e se relacionar com o público de tecnologia."
       },
       "ask8": {
         "title": "Tenho um feedback sobre um produto da VeeCode Platform, onde posso enviá-lo?",
-        "answer": "Nosso principal canal de contato é o GitHub Discussion, onde você encontrará um canal dedicado para feedbacks, e sua crítica será genuinamente ouvida. Você também pode nos contatar por qualquer um dos nossos meios de comunicação, e ficaremos muito felizes com sua contribuição."
+        "answer": "Nosso principal canal de contato é a comunidade do Discord, onde você encontrará um canal dedicado para feedbacks e sua crítica será genuinamente ouvida. Você também pode nos contatar por qualquer um dos nossos meios de comunicação, e ficaremos muito felizes com sua contribuição."
       },
       "ask9": {
-        "title": "O que é o Safira? E para que serve?",
-        "answer": "O Safira-CLI acelera a construção de APIs a partir de um arquivo OpenAPI. Seu objetivo é facilitar a rotina do desenvolvedor que enfrenta uma longa curva de aprendizado para construir APIs personalizadas de acordo com a demanda do mercado por robustez e tecnologia. Isso está embutido nas configurações do nosso produto ao gerar o template do projeto de API após alguns comandos no Safira CLI."
-      },
-      "ask10": {
-        "title": "O que é o VKPR? E para que serve?",
-        "answer": "O VKPR constrói para você uma infraestrutura em nuvem com poucas linhas de código. Entendemos que há um mistério em torno do mundo do DevOps, e grandes desafios no provisionamento de nuvem. O VKPR abstrai as dificuldades de provisionamento e dá liberdade para criar a infraestrutura, seja em teste ou em produção."
-      },
-      "ask11": {
         "title": "O que é o DevPortal? E para que serve?",
         "answer": "O DevPortal é uma plataforma que centraliza suas especificações e APIs, facilitando o controle de microsserviços. Hoje entendemos que a arquitetura de microsserviços é necessária para entregar valor aos nossos usuários. O DevPortal funciona como uma vitrine de especificações e APIs, que facilita o controle e o teste de serviços."
       },
