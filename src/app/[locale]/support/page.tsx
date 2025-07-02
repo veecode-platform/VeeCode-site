@@ -1,12 +1,9 @@
 import DefaultPage from "@/components/layout/DefaultPage";
 import { LayoutProps, PageProps } from "@/lib/@types/pageProps";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { FaInfoCircle } from "react-icons/fa";
-import { FaLayerGroup, FaMedal, FaUsers, FaWrench } from "react-icons/fa6";
-import SupportCategories from "./components/SupportCategories";
-import ListDetails from "./components/ListDetails";
-import SupportBenefits from "./components/SupportBenefits";
 import { routing } from "@/i18n/routing";
+import { CHECK_ICON } from "@/lib/constants";
+import SupportSection from "./components/SupportSection";
 
 export async function generateMetadata(props: Omit<LayoutProps, "children">) {
   const { locale } = await props.params;
@@ -27,116 +24,91 @@ export default async function SupportPage({ params }: PageProps) {
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "supportOptions" });
 
-  const listDetailsItems = [
+  const pricingCards = [
     {
       id: 1,
-      label: t("body.benefits.option1"),
-    },
-    {
-      id: 2,
-      label: t("body.benefits.option2"),
-    },
-    {
-      id: 3,
-      label: t("body.benefits.option3"),
-    },
-    {
-      id: 4,
-      label: t("body.benefits.option4"),
-    },
-    {
-      id: 5,
-      label: t("body.benefits.option5"),
-    },
-    {
-      id: 6,
-      label: t("body.benefits.option6"),
-    },
-    {
-      id: 7,
-      label: t("body.benefits.option7"),
-    },
-    {
-      id: 8,
-      label: t("body.benefits.option8"),
-    },
-    {
-      id: 9,
-      label: t("body.benefits.option9"),
-    },
-    {
-      id: 10,
-      label: t("body.benefits.option10"),
-    },
-    {
-      id: 11,
-      label: t("body.benefits.option11"),
-    },
-    {
-      id: 12,
-      label: t("body.benefits.option12"),
-    },
-    {
-      id: 13,
-      label: t("body.benefits.option13"),
-    },
-    {
-      id: 14,
-      label: t("body.benefits.option14"),
-    },
-    {
-      id: 15,
-      label: t("body.benefits.option15"),
-    },
-    {
-      id: 16,
-      label: t("body.benefits.option16"),
-    },
-  ];
-
-  const supportBenefitsCards = [
-    {
-      id: 1,
-      icon: <FaInfoCircle />,
-      title: t("body.items.item1.title"),
-      desc: t("body.items.item1.description"),
-    },
-    {
-      id: 2,
-      icon: <FaLayerGroup />,
-      title: t("body.items.item2.title"),
-      desc: t("body.items.item2.description"),
-    },
-    {
-      id: 3,
-      icon: <FaWrench />,
-      title: t("body.items.item3.title"),
-      desc: t("body.items.item3.description"),
-    },
-    {
-      id: 4,
-      icon: <FaUsers />,
-      title: t("body.items.item4.title"),
-      desc: t.rich("body.items.item4.description", {
-        strong: (chunks) => <strong>{chunks}</strong>,
-      }),
-    },
-    {
-      id: 5,
-      icon: <FaMedal />,
-      title: t("body.items.item5.title"),
-      desc: t.rich("body.items.item5.description", {
+      title: t("body.benefits.card1.title"),
+      description: t.rich("body.benefits.card1.description", {
         p: (chunks) => <p>{chunks}</p>,
-        strong: (chunks) => <strong>{chunks}</strong>,
       }),
+      subtitle: t("body.benefits.card1.subtitle"),
+      features: [
+        {
+          icon: CHECK_ICON,
+          text: t("body.benefits.card1.benefits-list.option1"),
+        },
+        {
+          icon: CHECK_ICON,
+          text: t("body.benefits.card1.benefits-list.option2"),
+        },
+        {
+          icon: CHECK_ICON,
+          text: t("body.benefits.card1.benefits-list.option3"),
+        },
+        {
+          icon: CHECK_ICON,
+          text: t("body.benefits.card1.benefits-list.option4"),
+        },
+        {
+          icon: CHECK_ICON,
+          text: t("body.benefits.card1.benefits-list.option5"),
+        },
+      ],
+      buttonText: t("body.benefits.card1.button.label"),
+    },
+    {
+      id: 2,
+      title: t("body.benefits.card2.title"),
+      description: t.rich("body.benefits.card2.description", {
+        p: (chunks) => <p>{chunks}</p>,
+      }),
+      subtitle: t("body.benefits.card2.subtitle"),
+      features: [
+        {
+          icon: CHECK_ICON,
+          text: t("body.benefits.card2.benefits-list.option1"),
+        },
+        {
+          icon: CHECK_ICON,
+          text: t("body.benefits.card2.benefits-list.option2"),
+        },
+        {
+          icon: CHECK_ICON,
+          text: t("body.benefits.card2.benefits-list.option3"),
+        },
+        {
+          icon: CHECK_ICON,
+          text: t("body.benefits.card2.benefits-list.option4"),
+        },
+        {
+          icon: CHECK_ICON,
+          text: t("body.benefits.card2.benefits-list.option5"),
+        },
+      ],
+      buttonText: t("body.benefits.card2.button.label"),
     },
   ];
 
   return (
     <DefaultPage title={t("title")} subtitle={t("subtitle")}>
-      <SupportCategories title={t("body.title1")} desc={t("body.subtitle1")} />
-      <ListDetails title={t("body.title2")} items={listDetailsItems} />
-      <SupportBenefits title={t("body.title3")} cards={supportBenefitsCards} />
+      <div className="mb-8 w-full flex flex-col justify-start align-center gap-4 md:mt-[-40px]">
+        <p className="text-xl text-center md:text-left">
+          {t("body.description")}
+        </p>
+        {t.rich("body.reactive-support", {
+          p: (chunks) => (
+            <p className="text-xl text-center md:text-left">{chunks}</p>
+          ),
+          strong: (chunk) => <strong>{chunk} </strong>,
+        })}
+        {t.rich("body.proactive-support", {
+          p: (chunks) => (
+            <p className="text-xl text-center md:text-left">{chunks}</p>
+          ),
+          strong: (chunk) => <strong>{chunk} </strong>,
+        })}
+      </div>
+      <SupportSection cards={pricingCards} />
     </DefaultPage>
   );
 }
