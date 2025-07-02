@@ -12,7 +12,7 @@ const DefaultPage: React.FC<DefaultPageProps> = ({
   children,
 }) => {
   return (
-    <main className="bg-white flex flex-col overflow-hidden items-center w-[969px] max-w-full text-black mx-auto py-25">
+    <main className="bg-white flex flex-col overflow-hidden items-center w-[969px] max-w-full md:max-w-[80vw] text-black mx-auto py-25">
       <section>
         <h1 className="text-[55px] font-bold max-md:max-w-full max-md:text-[40px] text-center">
           {title}
