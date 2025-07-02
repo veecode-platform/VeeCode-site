@@ -11,16 +11,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Node.js with Corepack
+      - name: Set up Node.js (sem cache do Yarn)
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: "yarn"
+          cache: "npm"
 
       - name: Enable Corepack and activate Yarn 4
         run: |
           corepack enable
           corepack prepare yarn@4.9.1 --activate
+
+      - name: Print Yarn version (verificação)
+        run: yarn --version
 
       - name: Install dependencies
         run: yarn install
