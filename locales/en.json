@@ -92,10 +92,9 @@
   },
   "footer": {
     "about-title": "About",
-    "about-option1": "How It Works",
-    "about-option2": "Support",
-    "about-option3": "Join the Community",
-    "about-option4": "Contact Us",
+    "about-option1": "Support",
+    "about-option2": "Join the Community",
+    "about-option3": "Contact Us",
     "resources-title": "Resources",
     "resources-option1": "Documentation",
     "resources-option2": "VKDR",
