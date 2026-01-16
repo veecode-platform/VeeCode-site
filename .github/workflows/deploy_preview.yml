@@ -6,8 +6,10 @@ on:
       - develop
 
 jobs:
-  build-and-deploy:
+  push-to-preview:
     runs-on: ubuntu-latest
+    # Only run on the source repository (not on forks or the preview repo itself)
+    if: github.repository == 'veecode-platform/VeeCode-site'
 
     steps:
       - name: Check for deploy token
@@ -23,42 +25,11 @@ jobs:
       - name: Checkout repository
         if: steps.check-token.outputs.has_token == 'true'
         uses: actions/checkout@v4
-
-      - name: Set up Node.js
-        if: steps.check-token.outputs.has_token == 'true'
-        uses: actions/setup-node@v4
         with:
-          node-version: "20"
-          cache: "npm"
+          fetch-depth: 0
 
-      - name: Enable Corepack and activate Yarn 4
+      - name: Force push to preview repository
         if: steps.check-token.outputs.has_token == 'true'
         run: |
-          corepack enable
-          corepack prepare yarn@4.12.0 --activate
-
-      - name: Install dependencies
-        if: steps.check-token.outputs.has_token == 'true'
-        run: yarn install
-
-      - name: Build the project
-        if: steps.check-token.outputs.has_token == 'true'
-        env:
-          NEXT_PUBLIC_BASE_PATH: ${{ secrets.PREVIEW_BASE_PATH }}
-          NEXT_PUBLIC_ANALYTICS_ID: ${{ secrets.NEXT_PUBLIC_ANALYTICS_ID }}
-          NEXT_PUBLIC_HOST_URL: ${{ secrets.PREVIEW_HOST_URL }}
-          NEXT_PUBLIC_GOOGLE_TAG_MANAGER: ${{ secrets.NEXT_PUBLIC_GOOGLE_TAG_MANAGER }}
-          NEXT_PUBLIC_LAMBDA_BASE_URL: ${{ secrets.NEXT_PUBLIC_LAMBDA_BASE_URL }}
-          NEXT_PUBLIC_NEUROLEAD_ID: ${{ secrets.NEXT_PUBLIC_NEUROLEAD_ID }}
-          NEXT_PUBLIC_LAMBDA_API_KEY: ${{ secrets.LAMBDA_API_KEY }}
-        run: yarn build
-
-      - name: Deploy to VeeCode-site-preview
-        if: steps.check-token.outputs.has_token == 'true'
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          personal_token: ${{ secrets.PREVIEW_DEPLOY_TOKEN }}
-          external_repository: veecode-platform/VeeCode-site-preview
-          publish_dir: ./out
-          publish_branch: gh-pages
-          force_orphan: true
+          git remote add preview https://x-access-token:${{ secrets.PREVIEW_DEPLOY_TOKEN }}@github.com/veecode-platform/VeeCode-site-preview.git
+          git push preview develop:main --force
