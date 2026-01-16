@@ -35,7 +35,7 @@ jobs:
         if: steps.check-token.outputs.has_token == 'true'
         run: |
           corepack enable
-          corepack prepare yarn@4.9.1 --activate
+          corepack prepare yarn@4.12.0 --activate
 
       - name: Install dependencies
         if: steps.check-token.outputs.has_token == 'true'
