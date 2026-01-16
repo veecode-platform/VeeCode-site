@@ -1,0 +1,48 @@
+name: Deploy Preview to VeeCode-site-preview
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Enable Corepack and activate Yarn 4
+        run: |
+          corepack enable
+          corepack prepare yarn@4.9.1 --activate
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Build the project
+        env:
+          NEXT_PUBLIC_BASE_PATH: ${{ secrets.PREVIEW_BASE_PATH }}
+          NEXT_PUBLIC_ANALYTICS_ID: ${{ secrets.NEXT_PUBLIC_ANALYTICS_ID }}
+          NEXT_PUBLIC_HOST_URL: ${{ secrets.PREVIEW_HOST_URL }}
+          NEXT_PUBLIC_GOOGLE_TAG_MANAGER: ${{ secrets.NEXT_PUBLIC_GOOGLE_TAG_MANAGER }}
+          NEXT_PUBLIC_LAMBDA_BASE_URL: ${{ secrets.NEXT_PUBLIC_LAMBDA_BASE_URL }}
+          NEXT_PUBLIC_NEUROLEAD_ID: ${{ secrets.NEXT_PUBLIC_NEUROLEAD_ID }}
+          NEXT_PUBLIC_LAMBDA_API_KEY: ${{ secrets.LAMBDA_API_KEY }}
+        run: yarn build
+
+      - name: Deploy to VeeCode-site-preview
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.PREVIEW_DEPLOY_TOKEN }}
+          external_repository: veecode-platform/VeeCode-site-preview
+          publish_dir: ./out
+          publish_branch: gh-pages
+          force_orphan: true
