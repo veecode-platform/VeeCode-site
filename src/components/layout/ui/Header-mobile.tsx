@@ -5,14 +5,12 @@ import { Button } from "@/components/ui/Button";
 import { RxHamburgerMenu } from "react-icons/rx";
 import clsx from "clsx";
 import { useTranslations } from "next-intl";
-import { ExternalLink, NavigationLink } from "@/components/ui/links";
+import { NavigationLink } from "@/components/ui/links";
 import VeeCodeLogo from "@/components/VeeCodeLogo";
-import { VEECODE_PLATFORM_DEMO } from "@/lib/constants";
 
 const MenuMobile = () => {
   const [open, setOpen] = React.useState(false);
   const t = useTranslations("header");
-  const a = useTranslations("accessibility");
 
   const toggleMenu = () => setOpen(!open);
 
@@ -66,20 +64,19 @@ const MenuMobile = () => {
             >
               {t("comparison")}
             </NavigationLink>
-            <div className="p-4">
-              <ExternalLink
-                description={a("external-links.demo")}
-                href={VEECODE_PLATFORM_DEMO}
-                event="demo"
+            <div className="p-4 relative inline-flex items-center">
+              <Button
+                aria-label={t("demo")}
+                variant="secondary"
+                size="default"
+                disabled
+                className="opacity-60 cursor-not-allowed"
               >
-                <Button
-                  aria-label={t("demo")}
-                  variant="secondary"
-                  size="default"
-                >
-                  {t("demo")}
-                </Button>
-              </ExternalLink>
+                {t("demo")}
+              </Button>
+              <span className="absolute -top-1 -right-1 bg-[rgba(51,255,205,1)] text-neutral-800 text-[10px] font-bold px-1.5 py-0.5 rounded-full uppercase tracking-wide">
+                Soon
+              </span>
             </div>
           </nav>
         </div>
