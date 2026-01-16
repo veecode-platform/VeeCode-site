@@ -5,13 +5,11 @@ import MenuMobile from "./ui/Header-mobile";
 import SwitchLanguage from "../ui/SwitchLanguage";
 import { getTranslations } from "next-intl/server";
 import { PatternComponentProps } from "@/lib/@types/patternComponentProps";
-import { ExternalLink, NavigationLink } from "../ui/links";
+import { NavigationLink } from "../ui/links";
 import VeeCodeLogoMobile from "../VeeCodeLogoMobile";
-import { VEECODE_PLATFORM_DEMO } from "@/lib/constants";
 
 const Header: React.FC<PatternComponentProps> = async ({ locale }) => {
   const t = await getTranslations({ locale, namespace: "header" });
-  const a = await getTranslations({ locale, namespace: "accessibility" });
 
   return (
     <header className="flex justify-center items-center self-stretch h-[94px] w-full gap-[40px_100px] flex-wrap bg-neutral-700 px-10 py-5 max-md:max-w-full max-md:px-5 z-[9999999] relative">
@@ -51,15 +49,20 @@ const Header: React.FC<PatternComponentProps> = async ({ locale }) => {
             {t("comparison")}
           </NavigationLink>
 
-          <ExternalLink
-            description={a("external-links.demo")}
-            href={VEECODE_PLATFORM_DEMO}
-            event="demo"
-          >
-            <Button aria-label={t("demo")} variant="secondary" size="default">
+          <div className="relative inline-flex items-center">
+            <Button
+              aria-label={t("demo")}
+              variant="secondary"
+              size="default"
+              disabled
+              className="opacity-60 cursor-not-allowed"
+            >
               {t("demo")}
             </Button>
-          </ExternalLink>
+            <span className="absolute -top-2 -right-2 bg-[rgba(51,255,205,1)] text-neutral-800 text-[10px] font-bold px-1.5 py-0.5 rounded-full uppercase tracking-wide">
+              Soon
+            </span>
+          </div>
         </nav>
         <SwitchLanguage />
         <MenuMobile />
