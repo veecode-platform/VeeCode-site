@@ -27,9 +27,12 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          persist-credentials: false
 
       - name: Force push to preview repository
         if: steps.check-token.outputs.has_token == 'true'
+        env:
+          PREVIEW_TOKEN: ${{ secrets.PREVIEW_DEPLOY_TOKEN }}
         run: |
-          git remote add preview https://x-access-token:${{ secrets.PREVIEW_DEPLOY_TOKEN }}@github.com/veecode-platform/VeeCode-site-preview.git
+          git remote add preview "https://x-access-token:${PREVIEW_TOKEN}@github.com/veecode-platform/VeeCode-site-preview.git"
           git push preview develop:main --force
