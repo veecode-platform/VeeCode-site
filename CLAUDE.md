@@ -1,0 +1,129 @@
+# CLAUDE.md - VeeCode Platform Site
+
+## Project Overview
+
+This is the **VeeCode Platform marketing website** - a Next.js-based site showcasing the VeeCode Internal Developer Platform (IDP) built on Backstage. It serves as a marketing hub with product information, plugin catalog, pricing, and multi-language support.
+
+## Tech Stack
+
+- **Framework:** Next.js 15.3.2 with App Router
+- **React:** 19.0.0
+- **TypeScript:** 5 (strict mode)
+- **Styling:** Tailwind CSS 4.1.6 with custom theme
+- **UI Components:** Radix UI + shadcn/ui architecture
+- **i18n:** next-intl 4.1.0 (English & Portuguese)
+- **Forms:** Formik, React Hook Form, Yup
+- **Data Fetching:** TanStack Query, Axios
+- **Analytics:** Google Tag Manager, Google Analytics
+
+## Essential Commands
+
+```bash
+yarn dev          # Development server
+yarn build        # Production build (static export)
+yarn start        # Start Next.js server
+yarn static       # Serve static output locally
+yarn eslint:fix   # Auto-fix linting issues
+```
+
+## Project Structure
+
+```
+src/
+├── app/                    # Next.js App Router
+│   ├── [locale]/          # Locale-based routing (en, pt)
+│   │   ├── page.tsx       # Home page
+│   │   ├── layout.tsx     # Main layout with Header/Footer
+│   │   ├── home/          # Home page components
+│   │   ├── product/       # Product showcase
+│   │   ├── solutions/     # Services & pricing
+│   │   ├── resources/     # Plugin catalog
+│   │   ├── plugin/[path]/ # Dynamic plugin pages
+│   │   ├── comparison/    # Feature comparison
+│   │   ├── how-it-works/  # Tutorial/guide
+│   │   ├── support/       # Support page
+│   │   ├── contact-us/    # Contact form
+│   │   └── faq/           # FAQ page
+│   └── layout.tsx         # Root layout
+├── components/            # Reusable components
+│   ├── layout/           # Header, Footer, DefaultPage
+│   └── ui/               # UI primitives (Button, Toast, etc.)
+├── hooks/                # Custom React hooks
+├── lib/                  # Utilities & helpers
+│   ├── @types/          # TypeScript interfaces
+│   ├── helpers/         # Helper functions (gtag, alerts, etc.)
+│   └── utils.ts         # cn() class merge utility
+├── services/            # API integration (Axios)
+├── data/plugins/        # Plugin catalog JSON
+└── i18n/                # Internationalization config
+locales/                 # Translation files (en.json, pt.json)
+public/                  # Static assets (images, fonts, favicons)
+```
+
+## Key Architecture Patterns
+
+1. **Static Export:** Site builds to static HTML (`output: 'export'` in next.config.mjs)
+2. **Locale-First Routing:** All routes prefixed with `[locale]` parameter
+3. **Server Components:** Async components for data fetching where needed
+4. **Component Composition:** Modular, reusable components
+5. **Type Safety:** Full TypeScript with strict mode enabled
+
+## Important Files
+
+- `next.config.mjs` - Next.js config with static export, CSP headers
+- `tailwind.config.ts` - Custom theme, primary color `#33FFCE`
+- `src/i18n/routing.ts` - Locale definitions and routing setup
+- `src/lib/utils.ts` - `cn()` utility for class name merging
+- `src/data/plugins/plugins.json` - Plugin catalog data
+- `locales/en.json` & `locales/pt.json` - Translation strings
+
+## Environment Variables
+
+Required in `.env.local` (see `.env.example`):
+
+```
+NEXT_PUBLIC_BASE_PATH          # Deployment base path
+NEXT_PUBLIC_ANALYTICS_ID       # Google Analytics ID
+NEXT_PUBLIC_HOST_URL           # Application host URL
+NEXT_PUBLIC_GOOGLE_TAG_MANAGER # GTM container ID
+NEXT_PUBLIC_LAMBDA_BASE_URL    # Backend API endpoint
+NEXT_PUBLIC_LAMBDA_API_KEY     # API authentication key
+NEXT_PUBLIC_NEUROLEAD_ID       # Lead tracking service ID
+```
+
+## Code Conventions
+
+- **Path Alias:** `@/*` maps to `./src/*`
+- **Styling:** Tailwind CSS classes, use `cn()` for conditional classes
+- **Components:** PascalCase filenames, default exports
+- **Translations:** Use `useTranslations()` hook from next-intl
+- **Links:** Use components from `src/components/ui/links/` for navigation
+
+## Adding New Pages
+
+1. Create folder under `src/app/[locale]/your-page/`
+2. Add `page.tsx` with async component if needed
+3. Add translations to both `locales/en.json` and `locales/pt.json`
+4. Update navigation in Header/Footer if needed
+
+## Adding Plugins
+
+Add entries to `src/data/plugins/plugins.json` with structure:
+```typescript
+interface Plugin {
+  id: string;
+  image: string;
+  title: { en: string; pt: string };
+  path: string;
+  tags: string[];
+  description: { en: string; pt: string };
+  url: string;
+}
+```
+
+## Deployment
+
+- **Target:** GitHub Pages at `platform.vee.codes`
+- **CI/CD:** GitHub Actions workflow in `.github/workflows/deploy_gh_pages.yml`
+- **Trigger:** Manual workflow dispatch
+- **Build:** Node.js 20, Yarn 4.9.1
