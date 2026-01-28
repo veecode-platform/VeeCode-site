@@ -110,7 +110,7 @@
   "home": {
     "hero": {
       "title": "Velocidade com governança para times de engenharia em escala.",
-      "description": "Um <strong>DevPortal pronto para uso</strong>, baseado em Backstage, entregue como <strong>SaaS gerenciado</strong>, que centraliza <strong>catálogo, templates e integrações</strong> para destravar autonomia dos times e acelerar o <strong>value stream</strong> com segurança e conformidade.",
+      "description": "Um <span class=\"font-semibold\">DevPortal pronto para uso</span>, baseado em Backstage, entregue como <span class=\"font-semibold\">SaaS gerenciado</span>, que centraliza <span class=\"font-semibold\">catálogo, templates e integrações</span> para destravar autonomia dos times e acelerar o <span class=\"font-semibold\">value stream</span> com segurança e conformidade.",
       "buttons": {
         "button1": {
           "label": "Ver Demo"
