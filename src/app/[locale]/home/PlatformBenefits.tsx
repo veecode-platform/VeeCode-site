@@ -1,4 +1,21 @@
 import React from "react";
+import {
+  LuLayoutGrid,
+  LuTarget,
+  LuLink,
+  LuBot,
+  LuChartColumnIncreasing,
+  LuShieldCheck,
+} from "react-icons/lu";
+
+const iconMap: Record<string, React.ElementType> = {
+  catalog: LuLayoutGrid,
+  golden: LuTarget,
+  integrations: LuLink,
+  ai: LuBot,
+  observability: LuChartColumnIncreasing,
+  security: LuShieldCheck,
+};
 
 interface FeatureCard {
   icon: string;
@@ -27,14 +44,22 @@ const PlatformBenefits: React.FC<PlatformBenefitsProps> = ({
           {subheading}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {cards.map((card, index) => (
+          {cards.map((card, index) => {
+            const IconComponent = iconMap[card.icon];
+            return (
             <div
               key={index}
               className="bg-[#1C1F25] rounded-2xl p-8"
             >
-              <span className="text-[64px] leading-none block mb-4">
-                {card.icon}
-              </span>
+              {IconComponent ? (
+                <div className="w-14 h-14 rounded-xl bg-[#1a2e2a] flex items-center justify-center mb-4">
+                  <IconComponent className="w-7 h-7 text-[#33FFCE]" />
+                </div>
+              ) : (
+                <span className="text-[64px] leading-none block mb-4">
+                  {card.icon}
+                </span>
+              )}
               <h3 className="text-2xl font-bold mb-4">{card.title}</h3>
               <ul className="space-y-2">
                 {card.features.map((feature, i) => (
@@ -45,7 +70,8 @@ const PlatformBenefits: React.FC<PlatformBenefitsProps> = ({
                 ))}
               </ul>
             </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

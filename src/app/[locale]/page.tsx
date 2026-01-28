@@ -63,7 +63,7 @@ export default async function Home({ params }: PageProps) {
 
   const benefitsCards = [
     {
-      icon: "📦",
+      icon: "catalog",
       title: t("benefits.card1.title"),
       features: [
         t("benefits.card1.f1"),
@@ -73,7 +73,7 @@ export default async function Home({ params }: PageProps) {
       ],
     },
     {
-      icon: "🎯",
+      icon: "golden",
       title: t("benefits.card2.title"),
       features: [
         t("benefits.card2.f1"),
@@ -82,7 +82,7 @@ export default async function Home({ params }: PageProps) {
       ],
     },
     {
-      icon: "🔗",
+      icon: "integrations",
       title: t("benefits.card3.title"),
       features: [
         t("benefits.card3.f1"),
@@ -92,7 +92,7 @@ export default async function Home({ params }: PageProps) {
       ],
     },
     {
-      icon: "🤖",
+      icon: "ai",
       title: t("benefits.card4.title"),
       features: [
         t("benefits.card4.f1"),
@@ -100,7 +100,7 @@ export default async function Home({ params }: PageProps) {
       ],
     },
     {
-      icon: "📊",
+      icon: "observability",
       title: t("benefits.card5.title"),
       features: [
         t("benefits.card5.f1"),
@@ -108,7 +108,7 @@ export default async function Home({ params }: PageProps) {
       ],
     },
     {
-      icon: "🔐",
+      icon: "security",
       title: t("benefits.card6.title"),
       features: [
         t("benefits.card6.f1"),
