@@ -214,17 +214,19 @@
         "f3": "LGPD ready"
       }
     },
-    "testimonials": {
-      "testimonial-card1": {
-        "quote": "No início do processo de implantação, o time da Vee Code nos ajudou a superar os desafios técnicos considerando o nosso ambiente mais restrito e trouxeram soluções técnicas que se encaixaram muito bem ao nosso contexto.",
-        "author": "Gabriel",
-        "role": "Principal Product Designer"
-      },
-      "testimonial-card2": {
-        "quote": "Agora temos um ponto único para consultar todas as APIs, sua evolução, padrões, economizamos tempo na busca por informações e ganhamos eficiência operacional.",
-        "author": "Geraldo",
-        "role": "Tech Leader"
-      }
+    "ideal-for": {
+      "headline": "É para você se:",
+      "yes-title": "✅ SIM, VeeCode é ideal se você:",
+      "yes-1": "✓ Tem 3+ squads e 20+ microserviços/APIs",
+      "yes-2": "✓ Perde horas/dia com tickets para plataforma",
+      "yes-3": "✓ Onboarding de novos devs leva semanas",
+      "yes-4": "✓ Cada deploy é uma \"surpresa\"",
+      "yes-5": "✓ Precisa de compliance (fintech, saúde, telecom)",
+      "yes-6": "✓ Avaliou Backstage mas \"muito trabalho manter\"",
+      "no-title": "❌ NÃO é ideal se:",
+      "no-1": "✗ Você tem <10 serviços",
+      "no-2": "✗ Time <5 devs",
+      "no-3": "✗ Infraestrutura 100% on-premise sem cloud"
     },
     "call-to-action": {
       "title": "VeeCode IDP: O Pilar Estratégico da Engenharia Moderna",

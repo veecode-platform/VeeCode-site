@@ -1,33 +1,49 @@
 import React from "react";
-import TestimonialCard from "./TestimonialCard";
 
-const Avatar = "/assets/home/Avatar.svg";
-
-export type TestimonialCardProps = {
-  id: number;
-  quote: string;
-  author: string;
-  role: string;
-};
-
-interface TestimonialsProps {
-  cards: TestimonialCardProps[];
+interface IdealForProps {
+  headline: string;
+  yesTitle: string;
+  yesItems: string[];
+  noTitle: string;
+  noItems: string[];
 }
 
-const Testimonials: React.FC<TestimonialsProps> = ({ cards }) => {
+const IdealFor: React.FC<IdealForProps> = ({
+  headline,
+  yesTitle,
+  yesItems,
+  noTitle,
+  noItems,
+}) => {
   return (
-    <section className="bg-[rgba(210,213,226,0.16)] py-10 2xl:py-0 self-stretch flex min-h-[448px] w-full items-center gap-[40px_120px] justify-center flex-wrap px-[120px] max-md:max-w-full max-md:px-5">
-      {cards.map((testimonial) => (
-        <TestimonialCard
-          key={testimonial.id}
-          quote={testimonial.quote}
-          avatar={Avatar}
-          name={testimonial.author}
-          role={testimonial.role}
-        />
-      ))}
+    <section className="bg-white py-24 self-stretch w-full px-[120px] max-md:px-5">
+      <h2 className="text-5xl font-bold text-center mb-16 text-gray-900 max-md:text-3xl">
+        {headline}
+      </h2>
+      <div className="grid grid-cols-2 gap-8 max-w-5xl mx-auto max-md:grid-cols-1">
+        <div className="bg-green-50 rounded-2xl p-10">
+          <h3 className="text-2xl font-bold text-gray-900 mb-6">{yesTitle}</h3>
+          <ul className="space-y-4">
+            {yesItems.map((item, index) => (
+              <li key={index} className="text-lg text-gray-700">
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="bg-red-50 rounded-2xl p-10">
+          <h3 className="text-2xl font-bold text-gray-900 mb-6">{noTitle}</h3>
+          <ul className="space-y-4">
+            {noItems.map((item, index) => (
+              <li key={index} className="text-lg text-gray-700">
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </section>
   );
 };
 
-export default Testimonials;
+export default IdealFor;
