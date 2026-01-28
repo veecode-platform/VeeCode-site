@@ -22,36 +22,42 @@ export default async function Home({ params }: PageProps) {
       icon: t("feature.card1.icon"),
       metric: t("feature.card1.metric"),
       title: t("feature.card1.title"),
+      subtitle: t("feature.card1.subtitle"),
     },
     {
       id: 2,
       icon: t("feature.card2.icon"),
       metric: t("feature.card2.metric"),
       title: t("feature.card2.title"),
+      subtitle: t("feature.card2.subtitle"),
     },
     {
       id: 3,
       icon: t("feature.card3.icon"),
       metric: t("feature.card3.metric"),
       title: t("feature.card3.title"),
+      subtitle: t("feature.card3.subtitle"),
     },
     {
       id: 4,
       icon: t("feature.card4.icon"),
       metric: t("feature.card4.metric"),
       title: t("feature.card4.title"),
+      subtitle: t("feature.card4.subtitle"),
     },
     {
       id: 5,
       icon: t("feature.card5.icon"),
       metric: t("feature.card5.metric"),
       title: t("feature.card5.title"),
+      subtitle: t("feature.card5.subtitle"),
     },
     {
       id: 6,
       icon: t("feature.card6.icon"),
       metric: t("feature.card6.metric"),
       title: t("feature.card6.title"),
+      subtitle: t("feature.card6.subtitle"),
     },
   ];
 

@@ -10,6 +10,7 @@ export type FeatureCard = {
   icon: string;
   metric: string;
   title: string;
+  subtitle?: string;
 };
 interface FeaturesProps {
   label?: string;
@@ -86,6 +87,7 @@ const Features: React.FC<FeaturesProps> = ({
               icon={card.icon}
               metric={card.metric}
               title={card.title}
+              subtitle={card.subtitle}
             />
           ))}
         </div>
