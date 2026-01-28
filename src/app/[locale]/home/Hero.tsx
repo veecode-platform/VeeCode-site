@@ -26,9 +26,10 @@ const Hero: React.FC<HeroProps> = ({
         <h1 className="text-[55px] font-bold max-md:max-w-full max-md:text-[40px]">
           {title}
         </h1>
-        <p className="text-xl font-normal mt-[23px] max-md:max-w-full">
-          {description}
-        </p>
+        <p
+          className="text-xl font-normal mt-[23px] max-md:max-w-full"
+          dangerouslySetInnerHTML={{ __html: description }}
+        />
       </div>
       <div className="flex items-center gap-[23px] text-base mt-[31px]">
         <NavigationLink href="/contact-us">

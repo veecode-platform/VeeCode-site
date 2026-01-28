@@ -110,7 +110,7 @@
   "home": {
     "hero": {
       "title": "Speed with governance for engineering teams at scale.",
-      "description": "A <strong>ready-to-use DevPortal</strong>, built on Backstage, delivered as a <strong>managed SaaS</strong>, that centralizes <strong>catalog, templates, and integrations</strong> to unlock team autonomy and accelerate the <strong>value stream</strong> with security and compliance.",
+      "description": "A <span class=\"font-semibold\">ready-to-use DevPortal</span>, built on Backstage, delivered as a <span class=\"font-semibold\">managed SaaS</span>, that centralizes <span class=\"font-semibold\">catalog, templates, and integrations</span> to unlock team autonomy and accelerate the <span class=\"font-semibold\">value stream</span> with security and compliance.",
       "buttons": {
         "button1": {
           "label": "See Demo"
