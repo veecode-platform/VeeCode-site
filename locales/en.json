@@ -214,17 +214,19 @@
         "f3": "LGPD ready"
       }
     },
-    "testimonials": {
-      "testimonial-card1": {
-        "quote": "At the beginning of the implementation process, the Vee Code team helped us overcome technical challenges considering our more restricted environment and brought technical solutions that fit our context very well.",
-        "author": "Gabriel",
-        "role": "Principal Product Designer"
-      },
-      "testimonial-card2": {
-        "quote": "Now we have a single point to consult all APIs, their evolution, standards, we save time searching for information and gain operational efficiency.",
-        "author": "Geraldo",
-        "role": "Tech Leader"
-      }
+    "ideal-for": {
+      "headline": "It's for you if:",
+      "yes-title": "✅ YES, VeeCode is ideal if you:",
+      "yes-1": "✓ Have 3+ squads and 20+ microservices/APIs",
+      "yes-2": "✓ Lose hours/day with platform tickets",
+      "yes-3": "✓ Onboarding new devs takes weeks",
+      "yes-4": "✓ Each deploy is a \"surprise\"",
+      "yes-5": "✓ Need compliance (fintech, healthcare, telecom)",
+      "yes-6": "✓ Evaluated Backstage but \"too much work to maintain\"",
+      "no-title": "❌ NOT ideal if:",
+      "no-1": "✗ You have <10 services",
+      "no-2": "✗ Team <5 devs",
+      "no-3": "✗ Infrastructure 100% on-premise without cloud"
     },
     "call-to-action": {
       "title": "VeeCode IDP: The Strategic Pillar of Modern Engineering",

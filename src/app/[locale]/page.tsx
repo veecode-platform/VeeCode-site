@@ -2,7 +2,7 @@ import Hero from "./home/Hero";
 import ClientLogos from "./home/ClientLogos";
 import Features from "./home/Features";
 import PlatformBenefits from "./home/PlatformBenefits";
-import Testimonials from "./home/Testimonials";
+import IdealFor from "./home/Testimonials";
 import CallToAction from "./home/CallToAction";
 import { PageProps } from "@/lib/@types/pageProps";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -118,19 +118,19 @@ export default async function Home({ params }: PageProps) {
     },
   ];
 
-  const testimonialCards = [
-    {
-      id: 1,
-      quote: t("testimonials.testimonial-card1.quote"),
-      author: t("testimonials.testimonial-card1.author"),
-      role: t("testimonials.testimonial-card1.role"),
-    },
-    {
-      id: 2,
-      quote: t("testimonials.testimonial-card2.quote"),
-      author: t("testimonials.testimonial-card2.author"),
-      role: t("testimonials.testimonial-card2.role"),
-    },
+  const idealForYesItems = [
+    t("ideal-for.yes-1"),
+    t("ideal-for.yes-2"),
+    t("ideal-for.yes-3"),
+    t("ideal-for.yes-4"),
+    t("ideal-for.yes-5"),
+    t("ideal-for.yes-6"),
+  ];
+
+  const idealForNoItems = [
+    t("ideal-for.no-1"),
+    t("ideal-for.no-2"),
+    t("ideal-for.no-3"),
   ];
 
   return (
@@ -158,7 +158,13 @@ export default async function Home({ params }: PageProps) {
         subheading={t("benefits.subheading")}
         cards={benefitsCards}
       />
-      <Testimonials cards={testimonialCards} />
+      <IdealFor
+        headline={t("ideal-for.headline")}
+        yesTitle={t("ideal-for.yes-title")}
+        yesItems={idealForYesItems}
+        noTitle={t("ideal-for.no-title")}
+        noItems={idealForNoItems}
+      />
       <CallToAction
         title={t("call-to-action.title")}
         subtitle={t("call-to-action.description")}
