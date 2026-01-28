@@ -138,34 +138,40 @@
         }
       },
       "card1": {
-        "icon": "⏰",
+        "icon": "clock",
         "metric": "2-3 dias",
-        "title": "aguardando aprovação"
+        "title": "Aguardando aprovação",
+        "subtitle": "Time parado esperando aprovações"
       },
       "card2": {
-        "icon": "🔐",
+        "icon": "lock",
         "metric": "1-2 dias",
-        "title": "para acessos/credenciais"
+        "title": "Acessos e credenciais",
+        "subtitle": "Cada novo dev precisa de acesso"
       },
       "card3": {
-        "icon": "📚",
+        "icon": "book",
         "metric": "4h+",
-        "title": "procurando docs desatualizadas"
+        "title": "Procurando documentação",
+        "subtitle": "Docs desatualizadas ou inexistentes"
       },
       "card4": {
-        "icon": "🔥",
+        "icon": "fire",
         "metric": "6-8h",
-        "title": "em 'salas de guerra'"
+        "title": "Salas de guerra",
+        "subtitle": "Troubleshooting de incidentes"
       },
       "card5": {
-        "icon": "🎲",
+        "icon": "deploy",
         "metric": "20%",
-        "title": "dos deploys falham por padrões inconsistentes"
+        "title": "Deploys inconsistentes",
+        "subtitle": "Dos deploys falham por padrões"
       },
       "card6": {
-        "icon": "💰",
+        "icon": "dollar",
         "metric": "R$ 42k/mês",
-        "title": "em ociosidade"
+        "title": "Custo de ociosidade",
+        "subtitle": "Tempo perdido = dinheiro queimado"
       }
     },
     "benefits": {

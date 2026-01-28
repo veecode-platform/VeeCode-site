@@ -138,34 +138,40 @@
         }
       },
       "card1": {
-        "icon": "⏰",
+        "icon": "clock",
         "metric": "2-3 days",
-        "title": "waiting for approval"
+        "title": "Waiting for approval",
+        "subtitle": "Team idle waiting for approvals"
       },
       "card2": {
-        "icon": "🔐",
+        "icon": "lock",
         "metric": "1-2 days",
-        "title": "for access/credentials"
+        "title": "Access and credentials",
+        "subtitle": "Every new dev needs access"
       },
       "card3": {
-        "icon": "📚",
+        "icon": "book",
         "metric": "4h+",
-        "title": "searching outdated docs"
+        "title": "Searching documentation",
+        "subtitle": "Outdated or missing docs"
       },
       "card4": {
-        "icon": "🔥",
+        "icon": "fire",
         "metric": "6-8h",
-        "title": "in 'war rooms'"
+        "title": "War rooms",
+        "subtitle": "Incident troubleshooting"
       },
       "card5": {
-        "icon": "🎲",
+        "icon": "deploy",
         "metric": "20%",
-        "title": "of deploys fail due to inconsistent standards"
+        "title": "Inconsistent deploys",
+        "subtitle": "Failing due to lack of standards"
       },
       "card6": {
-        "icon": "💰",
+        "icon": "dollar",
         "metric": "$42k/month",
-        "title": "in idle costs"
+        "title": "Idle costs",
+        "subtitle": "Wasted time = burned money"
       }
     },
     "benefits": {
