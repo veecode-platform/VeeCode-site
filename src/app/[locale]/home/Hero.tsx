@@ -1,9 +1,6 @@
 import React from "react";
 import { Button } from "@/components/ui/Button";
-import Image from "next/image";
 import { ExternalLink, NavigationLink } from "@/components/ui/links";
-
-const HeroImage = "/assets/home/hero.webp";
 
 interface HeroProps {
   title: string;
@@ -47,14 +44,6 @@ const Hero: React.FC<HeroProps> = ({
           </Button>
         </ExternalLink>
       </div>
-      <Image
-        src={HeroImage}
-        width={724}
-        height={407}
-        alt="VeeCode Platform Dashboard"
-        className="aspect-[1.78] object-contain w-[90vw] md:w-[724px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] max-w-full mt-[51px] rounded-[11px] max-md:mt-10"
-        unoptimized
-      />
     </section>
   );
 };
