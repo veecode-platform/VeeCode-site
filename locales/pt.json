@@ -138,16 +138,34 @@
         }
       },
       "card1": {
-        "title": "Acelere o Onboarding",
-        "description": "Centralize softwares, APIs, recursos e times em um só lugar. Otimize o tempo de onboarding do seu time e deixe toda a documentação centralizada em um só lugar"
+        "icon": "⏰",
+        "metric": "2-3 dias",
+        "title": "aguardando aprovação"
       },
       "card2": {
-        "title": "Configure sua plataforma",
-        "description": "Faça deploys com segurança e consistência usando Templates. Teste de forma mais rápida e consistente. Acompanhe métricas, identifique gargalos e mantenha uma entrega de alta qualidade"
+        "icon": "🔐",
+        "metric": "1-2 dias",
+        "title": "para acessos/credenciais"
       },
       "card3": {
-        "title": "Conte com o nosso suporte",
-        "description": "Esteja você executando na sua própria instância na nuvem ou dentro do seu datacenter, nós te ajudamos a configurar a plataforma de acordo com suas necessidades"
+        "icon": "📚",
+        "metric": "4h+",
+        "title": "procurando docs desatualizadas"
+      },
+      "card4": {
+        "icon": "🔥",
+        "metric": "6-8h",
+        "title": "em 'salas de guerra'"
+      },
+      "card5": {
+        "icon": "🎲",
+        "metric": "20%",
+        "title": "dos deploys falham por padrões inconsistentes"
+      },
+      "card6": {
+        "icon": "💰",
+        "metric": "R$ 42k/mês",
+        "title": "em ociosidade"
       }
     },
     "benefits": {

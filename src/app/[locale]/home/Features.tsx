@@ -7,8 +7,9 @@ import Content from "@/components/layout/Content";
 
 export type FeatureCard = {
   id: number;
+  icon: string;
+  metric: string;
   title: string;
-  description: string;
 };
 interface FeaturesProps {
   label?: string;
@@ -78,20 +79,15 @@ const Features: React.FC<FeaturesProps> = ({
       </Content>
 
       <div className="w-full max-w-[1257px] max-md:max-w-full mt-20">
-        <div className="gap-5 flex max-md:flex-col max-md:items-stretch">
-          <div className="w-full max-md:ml-0 grid grid-cols-3 gap-5 max-md:grid-cols-1">
-            {cards.map((card) => {
-              const FeatureImg = `/assets/home/feature-card${card.id}.svg`;
-              return (
-                <FeatureCard
-                  key={card.id}
-                  icon={FeatureImg}
-                  title={card.title}
-                  description={card.description}
-                />
-              );
-            })}
-          </div>
+        <div className="w-full grid grid-cols-3 gap-5 max-md:grid-cols-1">
+          {cards.map((card) => (
+            <FeatureCard
+              key={card.id}
+              icon={card.icon}
+              metric={card.metric}
+              title={card.title}
+            />
+          ))}
         </div>
       </div>
     </section>
