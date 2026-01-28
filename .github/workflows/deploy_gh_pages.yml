@@ -40,6 +40,11 @@ jobs:
           NEXT_PUBLIC_LAMBDA_BASE_URL: ${{ secrets.NEXT_PUBLIC_LAMBDA_BASE_URL }}
           NEXT_PUBLIC_NEUROLEAD_ID: ${{ secrets.NEXT_PUBLIC_NEUROLEAD_ID }}
           NEXT_PUBLIC_LAMBDA_API_KEY: ${{ secrets.LAMBDA_API_KEY }}
+          # Public, build-time values (inlined into the static bundle)
+          NEXT_PUBLIC_SITE_ENV: ${{ vars.NEXT_PUBLIC_SITE_ENV }}
+          # Supabase public credentials (still OK to be public in JS, but stored as secrets)
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_PUBLISHABLE_DEFAULT_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_DEFAULT_KEY }}
         run: yarn build
 
       - name: Deploy to GitHub Pages
