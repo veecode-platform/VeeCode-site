@@ -109,14 +109,14 @@
   },
   "home": {
     "hero": {
-      "title": "Transforme o trabalho da sua equipe",
-      "description": "Construída a partir do Backstage, a VeeCode é sua Central Inteligente para desenvolvimento ágil, colaborativo e escalável com transparência, flexibilidade e fácil implantação",
+      "title": "Velocidade com governança para times de engenharia em escala.",
+      "description": "Um <strong>DevPortal pronto para uso</strong>, baseado em Backstage, entregue como <strong>SaaS gerenciado</strong>, que centraliza <strong>catálogo, templates e integrações</strong> para destravar autonomia dos times e acelerar o <strong>value stream</strong> com segurança e conformidade.",
       "buttons": {
         "button1": {
-          "label": "Fale Conosco"
+          "label": "Ver Demo"
         },
         "button2": {
-          "label": "Comece agora"
+          "label": "Entrar no Early Access"
         }
       },
       "image-alt": "Print da tela de scaffolder templates"

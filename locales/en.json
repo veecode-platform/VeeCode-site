@@ -109,14 +109,14 @@
   },
   "home": {
     "hero": {
-      "title": "Transform your team's work",
-      "description": "Built on Backstage, VeeCode is your Intelligent Hub for agile, collaborative, and scalable development with transparency, flexibility, and easy deployment.",
+      "title": "Speed with governance for engineering teams at scale.",
+      "description": "A <strong>ready-to-use DevPortal</strong>, built on Backstage, delivered as a <strong>managed SaaS</strong>, that centralizes <strong>catalog, templates, and integrations</strong> to unlock team autonomy and accelerate the <strong>value stream</strong> with security and compliance.",
       "buttons": {
         "button1": {
-          "label": "Contact Us"
+          "label": "See Demo"
         },
         "button2": {
-          "label": "Get Started"
+          "label": "Join Early Access"
         }
       },
       "image-alt": "Screenshot of the scaffolder templates screen"
