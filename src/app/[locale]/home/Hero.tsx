@@ -20,9 +20,10 @@ const Hero: React.FC<HeroProps> = ({
   return (
     <section className="flex flex-col items-center">
       <div className="flex w-[90vw] md:w-[705px] max-w-full flex-col items-center text-black text-center">
-        <h1 className="text-[55px] font-bold max-md:max-w-full max-md:text-[40px]">
-          {title}
-        </h1>
+        <h1
+          className="text-[55px] font-bold max-md:max-w-full max-md:text-[40px]"
+          dangerouslySetInnerHTML={{ __html: title }}
+        />
         <p
           className="text-xl font-normal mt-[23px] max-md:max-w-full"
           dangerouslySetInnerHTML={{ __html: description }}

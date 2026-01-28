@@ -121,16 +121,20 @@
       },
       "image-alt": "Screenshot of the scaffolder templates screen"
     },
+    "clients": {
+      "label": "Companies that trust VeeCode"
+    },
     "feature": {
-      "label": "Our Strategy",
-      "title": "Do you know where to find what you need to get started now?",
-      "description": "The VeeCode IDP is a centralized, ready-to-use platform that transforms the developer experience by consolidating everything you need to work in an agile, secure, and efficient way—documentation, templates, services, metrics, and integrations, all in one place.",
+      "label": "",
+      "title": "The Invisible Queue Costing $400K+/year",
+      "subtitle": "(and no one is measuring)",
+      "description": "",
       "buttons": {
         "button1": {
-          "label": "Contact Us"
+          "label": ""
         },
         "button2": {
-          "label": "Get Started"
+          "label": ""
         }
       },
       "card1": {

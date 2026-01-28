@@ -11,18 +11,20 @@ export type FeatureCard = {
   description: string;
 };
 interface FeaturesProps {
-  label: string;
+  label?: string;
   title: string;
-  description: string;
-  buttonLabel1: string;
-  buttonLabel2: string;
-  descriptionExternalLink: string;
+  subtitle?: string;
+  description?: string;
+  buttonLabel1?: string;
+  buttonLabel2?: string;
+  descriptionExternalLink?: string;
   cards: FeatureCard[];
 }
 
 const Features: React.FC<FeaturesProps> = ({
   label,
   title,
+  subtitle,
   description,
   buttonLabel1,
   buttonLabel2,
@@ -31,33 +33,48 @@ const Features: React.FC<FeaturesProps> = ({
 }) => {
   return (
     <section className="max-w-[90vw] mx-auto flex flex-col items-center">
-      <div className="items-center border border-[color:var(--Preto,#000)] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.10)] flex min-h-[54px] gap-2 text-base text-[#1e1e1e] font-medium text-center leading-[1.6] bg-neutral-50 px-4 rounded-[30px] border-solid">
-        <BsStars className="w-5 h-5 self-stretch shrink-0 my-auto text-[#33ffcd]" />
-        <div className="self-stretch my-auto">{label}</div>
-      </div>
+      {label && (
+        <div className="items-center border border-[color:var(--Preto,#000)] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.10)] flex min-h-[54px] gap-2 text-base text-[#1e1e1e] font-medium text-center leading-[1.6] bg-neutral-50 px-4 rounded-[30px] border-solid">
+          <BsStars className="w-5 h-5 self-stretch shrink-0 my-auto text-[#33ffcd]" />
+          <div className="self-stretch my-auto">{label}</div>
+        </div>
+      )}
       <Content>
         <h2 className="text-black text-center text-[40px] font-bold mt-[37px] max-md:max-w-full">
           {title}
         </h2>
-        <p className="text-[#1e1e1e] text-center text-xl font-normal mt-[21px] max-md:max-w-full">
-          {description}
-        </p>
-        <div className="flex min-h-[52px] items-center gap-[23px] text-base mt-[31px]">
-          <NavigationLink href="/contact-us">
-            <Button variant="default" size="sm" aria-label={buttonLabel1}>
-              {buttonLabel1}
-            </Button>
-          </NavigationLink>
-          <ExternalLink
-            description={descriptionExternalLink}
-            href="https://docs.platform.vee.codes/devportal/installation-guide/VKDR/"
-            event="vkdrDocs"
-          >
-            <Button variant="outline" size="sm" aria-label={buttonLabel2}>
-              {buttonLabel2}
-            </Button>
-          </ExternalLink>
-        </div>
+        {subtitle && (
+          <p className="text-[#1e1e1e] text-center text-base font-normal mt-2 max-md:max-w-full">
+            {subtitle}
+          </p>
+        )}
+        {description && (
+          <p className="text-[#1e1e1e] text-center text-xl font-normal mt-[21px] max-md:max-w-full">
+            {description}
+          </p>
+        )}
+        {(buttonLabel1 || buttonLabel2) && (
+          <div className="flex min-h-[52px] items-center gap-[23px] text-base mt-[31px]">
+            {buttonLabel1 && (
+              <NavigationLink href="/contact-us">
+                <Button variant="default" size="sm" aria-label={buttonLabel1}>
+                  {buttonLabel1}
+                </Button>
+              </NavigationLink>
+            )}
+            {buttonLabel2 && descriptionExternalLink && (
+              <ExternalLink
+                description={descriptionExternalLink}
+                href="https://docs.platform.vee.codes/devportal/installation-guide/VKDR/"
+                event="vkdrDocs"
+              >
+                <Button variant="outline" size="sm" aria-label={buttonLabel2}>
+                  {buttonLabel2}
+                </Button>
+              </ExternalLink>
+            )}
+          </div>
+        )}
       </Content>
 
       <div className="w-full max-w-[1257px] max-md:max-w-full mt-20">
