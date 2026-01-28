@@ -175,33 +175,43 @@
       }
     },
     "benefits": {
-      "title": "Take your code to a new level of efficiency with <strong>VeeCode Platform</strong>",
-      "button": {
-        "label": "Support Plans"
-      },
+      "headline": "Everything you need. Day 1.",
+      "subheading": "No months of implementation. No plugins to hunt.\nEnterprise-ready DevPortal in 48 hours:",
       "card1": {
-        "title": "Service Catalogs and Templates",
-        "description": "Access and create new services or microservices with our optimized and automated templates."
+        "title": "Catalog",
+        "f1": "Auto-discovery",
+        "f2": "Ownership",
+        "f3": "Dependencies",
+        "f4": "APIs/Docs"
       },
       "card2": {
-        "title": "Centralized Documentation",
-        "description": "Have all your organization's technical information, processes, and best practices at hand."
+        "title": "Golden Paths",
+        "f1": "Templates React/Node/Python/Go",
+        "f2": "Scaffolding 5min",
+        "f3": "Best practices embedded"
       },
       "card3": {
-        "title": "Security and Governance",
-        "description": "Easily view and manage access, compliance, and audits with transparency."
+        "title": "Integrations",
+        "f1": "GitHub/GitLab",
+        "f2": "Jenkins/CircleCI",
+        "f3": "K8s/Cloud",
+        "f4": "Grafana"
       },
       "card4": {
-        "title": "Adoption and Metrics Dashboard",
-        "description": "Monitor usage, performance, and productivity visually and in real time."
+        "title": "AI K8s GPT",
+        "f1": "Automatic troubleshoot",
+        "f2": "Contextual suggestions"
       },
       "card5": {
-        "title": "Intelligent AI Features",
-        "description": "Automate routines and increase productivity with plugins like K8s GPT and the Vee assistant."
+        "title": "Observability",
+        "f1": "Health checks",
+        "f2": "Cost insights"
       },
       "card6": {
-        "title": "Observability and Troubleshooting Tools",
-        "description": "Gain visibility and quickly resolve issues with our monitoring plugins."
+        "title": "Security",
+        "f1": "RBAC",
+        "f2": "Audit logs",
+        "f3": "LGPD ready"
       }
     },
     "testimonials": {

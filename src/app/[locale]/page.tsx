@@ -63,34 +63,58 @@ export default async function Home({ params }: PageProps) {
 
   const benefitsCards = [
     {
-      id: 1,
+      icon: "📦",
       title: t("benefits.card1.title"),
-      description: t("benefits.card1.description"),
+      features: [
+        t("benefits.card1.f1"),
+        t("benefits.card1.f2"),
+        t("benefits.card1.f3"),
+        t("benefits.card1.f4"),
+      ],
     },
     {
-      id: 2,
+      icon: "🎯",
       title: t("benefits.card2.title"),
-      description: t("benefits.card2.description"),
+      features: [
+        t("benefits.card2.f1"),
+        t("benefits.card2.f2"),
+        t("benefits.card2.f3"),
+      ],
     },
     {
-      id: 3,
+      icon: "🔗",
       title: t("benefits.card3.title"),
-      description: t("benefits.card3.description"),
+      features: [
+        t("benefits.card3.f1"),
+        t("benefits.card3.f2"),
+        t("benefits.card3.f3"),
+        t("benefits.card3.f4"),
+      ],
     },
     {
-      id: 4,
+      icon: "🤖",
       title: t("benefits.card4.title"),
-      description: t("benefits.card4.description"),
+      features: [
+        t("benefits.card4.f1"),
+        t("benefits.card4.f2"),
+      ],
     },
     {
-      id: 5,
+      icon: "📊",
       title: t("benefits.card5.title"),
-      description: t("benefits.card5.description"),
+      features: [
+        t("benefits.card5.f1"),
+        t("benefits.card5.f2"),
+      ],
     },
     {
-      id: 6,
+      icon: "🔐",
       title: t("benefits.card6.title"),
-      description: t("benefits.card6.description"),
+      features: [
+        t("benefits.card6.f1"),
+        t("benefits.card6.f2"),
+        t("benefits.card6.f3"),
+      ],
     },
   ];
 
@@ -130,16 +154,8 @@ export default async function Home({ params }: PageProps) {
         cards={featureCards}
       />
       <PlatformBenefits
-        title={
-          <>
-            {t.rich("benefits.title", {
-              strong: (chunk) => (
-                <strong className="text-[rgba(51,255,206,1)]">{chunk} </strong>
-              ),
-            })}
-          </>
-        }
-        buttonLabel={t("benefits.button.label")}
+        headline={t("benefits.headline")}
+        subheading={t("benefits.subheading")}
         cards={benefitsCards}
       />
       <Testimonials cards={testimonialCards} />
