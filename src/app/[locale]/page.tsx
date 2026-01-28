@@ -91,7 +91,7 @@ export default async function Home({ params }: PageProps) {
         buttonLabel2={t("hero.buttons.button2.label")}
         descriptionExternalLink={a("external-links.docs")}
       />
-      <ClientLogos label={t("label-customer-section")} />
+      <ClientLogos />
       <Features
         label={t("feature.label")}
         title={t("feature.title")}
