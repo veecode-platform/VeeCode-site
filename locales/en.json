@@ -138,16 +138,34 @@
         }
       },
       "card1": {
-        "title": "Accelerate Onboarding",
-        "description": "Centralize software, APIs, resources, and teams in one place. Optimize your team's onboarding time and keep all documentation centralized."
+        "icon": "⏰",
+        "metric": "2-3 days",
+        "title": "waiting for approval"
       },
       "card2": {
-        "title": "Configure your platform",
-        "description": "Deploy securely and consistently using Templates. Test faster and more consistently. Track metrics, identify bottlenecks, and maintain high-quality delivery."
+        "icon": "🔐",
+        "metric": "1-2 days",
+        "title": "for access/credentials"
       },
       "card3": {
-        "title": "Count on our support",
-        "description": "Whether you are running on your own cloud instance or in your datacenter, we help you configure the platform according to your needs."
+        "icon": "📚",
+        "metric": "4h+",
+        "title": "searching outdated docs"
+      },
+      "card4": {
+        "icon": "🔥",
+        "metric": "6-8h",
+        "title": "in 'war rooms'"
+      },
+      "card5": {
+        "icon": "🎲",
+        "metric": "20%",
+        "title": "of deploys fail due to inconsistent standards"
+      },
+      "card6": {
+        "icon": "💰",
+        "metric": "$42k/month",
+        "title": "in idle costs"
       }
     },
     "benefits": {

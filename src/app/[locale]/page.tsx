@@ -19,18 +19,39 @@ export default async function Home({ params }: PageProps) {
   const featureCards = [
     {
       id: 1,
+      icon: t("feature.card1.icon"),
+      metric: t("feature.card1.metric"),
       title: t("feature.card1.title"),
-      description: t("feature.card1.description"),
     },
     {
       id: 2,
+      icon: t("feature.card2.icon"),
+      metric: t("feature.card2.metric"),
       title: t("feature.card2.title"),
-      description: t("feature.card2.description"),
     },
     {
       id: 3,
+      icon: t("feature.card3.icon"),
+      metric: t("feature.card3.metric"),
       title: t("feature.card3.title"),
-      description: t("feature.card3.description"),
+    },
+    {
+      id: 4,
+      icon: t("feature.card4.icon"),
+      metric: t("feature.card4.metric"),
+      title: t("feature.card4.title"),
+    },
+    {
+      id: 5,
+      icon: t("feature.card5.icon"),
+      metric: t("feature.card5.metric"),
+      title: t("feature.card5.title"),
+    },
+    {
+      id: 6,
+      icon: t("feature.card6.icon"),
+      metric: t("feature.card6.metric"),
+      title: t("feature.card6.title"),
     },
   ];
 
