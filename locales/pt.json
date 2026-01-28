@@ -109,7 +109,7 @@
   },
   "home": {
     "hero": {
-      "title": "Velocidade com governança para times de engenharia em escala.",
+      "title": "Reduza 70% do Tempo de Deploy.<br/>Sem aumentar a equipe de DevOps.",
       "description": "Um <span class=\"font-semibold\">DevPortal pronto para uso</span>, baseado em Backstage, entregue como <span class=\"font-semibold\">SaaS gerenciado</span>, que centraliza <span class=\"font-semibold\">catálogo, templates e integrações</span> para destravar autonomia dos times e acelerar o <span class=\"font-semibold\">value stream</span> com segurança e conformidade.",
       "buttons": {
         "button1": {
@@ -121,16 +121,20 @@
       },
       "image-alt": "Print da tela de scaffolder templates"
     },
+    "clients": {
+      "label": "Empresas que confiam na VeeCode"
+    },
     "feature": {
-      "label": "Nossa Estratégia",
-      "title": "Você sabe onde encontrar o que precisa para começar agora?",
-      "description": "O VeeCode IDP é uma plataforma centralizada, pronta para uso, que transforma a experiência do desenvolvedor ao consolidar tudo que você precisa para trabalhar de forma ágil, segura e eficiente — documentação, templates, serviços, métricas e integrações, tudo em um único lugar.",
+      "label": "",
+      "title": "A Fila Invisível que Consome R$ 2M+/ano",
+      "subtitle": "(e ninguém está medindo)",
+      "description": "",
       "buttons": {
         "button1": {
-          "label": "Fale Conosco"
+          "label": ""
         },
         "button2": {
-          "label": "Comece Agora"
+          "label": ""
         }
       },
       "card1": {

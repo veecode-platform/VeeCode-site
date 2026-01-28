@@ -91,13 +91,14 @@ export default async function Home({ params }: PageProps) {
         buttonLabel2={t("hero.buttons.button2.label")}
         descriptionExternalLink={a("external-links.docs")}
       />
-      <ClientLogos />
+      <ClientLogos label={t("clients.label")} />
       <Features
-        label={t("feature.label")}
+        label={t("feature.label") || undefined}
         title={t("feature.title")}
-        description={t("feature.description")}
-        buttonLabel1={t("feature.buttons.button1.label")}
-        buttonLabel2={t("feature.buttons.button2.label")}
+        subtitle={t("feature.subtitle") || undefined}
+        description={t("feature.description") || undefined}
+        buttonLabel1={t("feature.buttons.button1.label") || undefined}
+        buttonLabel2={t("feature.buttons.button2.label") || undefined}
         descriptionExternalLink={a("external-links.docs")}
         cards={featureCards}
       />
