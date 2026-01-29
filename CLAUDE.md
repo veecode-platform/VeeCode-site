@@ -180,10 +180,10 @@ graph LR
 
     D[main branch] -->|build & deploy| E[platform.vee.codes]
 
-    style A fill:#f9f,stroke:#333
-    style D fill:#9f9,stroke:#333
-    style C fill:#ff9,stroke:#333
-    style E fill:#9ff,stroke:#333
+    style A fill:#e879f9,stroke:#fff,stroke-width:2px,color:#fff
+    style D fill:#4ade80,stroke:#fff,stroke-width:2px,color:#000
+    style C fill:#fbbf24,stroke:#fff,stroke-width:2px,color:#000
+    style E fill:#38bdf8,stroke:#fff,stroke-width:2px,color:#000
 ```
 
 ### Production Environment
