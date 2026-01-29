@@ -48,12 +48,20 @@ This project includes **Vercel Labs agent skills** - curated React and Next.js b
   - UI/UX best practices
   - Design system patterns
 
+- **agent-browser** (Browser automation)
+  - Automated testing and QA workflows
+  - Form submission validation (contact forms, newsletter signup)
+  - Screenshot capture for documentation
+  - Web accessibility testing
+  - Multi-locale navigation testing (en/pt)
+
 ### Setup After Clone
 
-**Important:** After cloning this repository, run the following command to generate AI assistant symlinks:
+**Important:** After cloning this repository, run the following commands to generate AI assistant symlinks:
 
 ```bash
 npx skills add vercel-labs/agent-skills --yes
+npx skills add https://github.com/vercel-labs/agent-browser --skill agent-browser --yes
 ```
 
 This creates symlinks in directories like `.cursor/`, `.claude/`, `.cline/` that allow AI coding assistants (Claude Code, Cursor, Copilot, etc.) to access the skills. These symlinks are gitignored but reference the shared skills in `.agents/skills/`.
