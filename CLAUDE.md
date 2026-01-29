@@ -44,9 +44,21 @@ This project includes **Vercel Labs agent skills** - curated React and Next.js b
   - React 19 patterns (no forwardRef needed)
   - State management best practices
 
-- **web-design-guidelines** (Frontend design)
-  - UI/UX best practices
-  - Design system patterns
+- **web-design-guidelines** (Technical compliance auditing)
+  - Accessibility (ARIA, semantic HTML, keyboard navigation)
+  - Performance (virtualization, layout thrashing prevention)
+  - Forms (autocomplete, validation, proper input types)
+  - Animation (prefers-reduced-motion, compositor-friendly)
+  - Typography (number formatting, text wrapping)
+  - Dark mode, i18n, hydration safety
+
+- **frontend-design** (Creative aesthetic direction)
+  - Bold typography choices (avoiding generic fonts like Inter, Arial)
+  - Cohesive color themes with sharp accents
+  - Well-orchestrated animations and micro-interactions
+  - Unexpected layouts and spatial composition
+  - Visual polish (backgrounds, textures, gradient meshes)
+  - Avoiding generic "AI slop" aesthetics
 
 - **agent-browser** (Browser automation)
   - Automated testing and QA workflows
@@ -55,6 +67,97 @@ This project includes **Vercel Labs agent skills** - curated React and Next.js b
   - Web accessibility testing
   - Multi-locale navigation testing (en/pt)
 
+### Skill Usage Guidelines
+
+Our agent skills serve different purposes and work together at different stages of development:
+
+#### 🎨 Creative Design (frontend-design)
+
+**When to use:**
+- Creating new UI components or pages
+- Redesigning existing sections
+- Making aesthetic decisions (fonts, colors, layouts)
+- Adding visual polish and personality
+
+**Purpose:** Guides AI to make **bold creative choices** that result in visually striking, memorable interfaces.
+
+**Examples:**
+- "Design a hero section with a distinctive aesthetic"
+- "Create a unique pricing card layout"
+- "Redesign the contact form with more visual interest"
+- "Add creative micro-interactions to the navigation"
+
+**Key principles:**
+- Choose distinctive, characterful fonts (avoid Inter, Arial, system fonts)
+- Commit to bold color palettes with sharp accents
+- Use unexpected layouts, asymmetry, and overlap
+- Add atmospheric backgrounds, textures, and effects
+- Execute one clear aesthetic vision with precision
+
+#### ✅ Technical Compliance (web-design-guidelines)
+
+**When to use:**
+- Reviewing existing code for best practices
+- Auditing accessibility compliance
+- Checking performance optimizations
+- Validating forms and interactions
+
+**Purpose:** Ensures code meets **technical standards** for accessibility, performance, and UX quality.
+
+**Examples:**
+- "Review the contact form for accessibility issues"
+- "Audit the homepage for performance problems"
+- "Check if dark mode is properly implemented"
+- "Validate i18n implementation across the site"
+
+**Key checks:**
+- Accessibility (ARIA labels, semantic HTML, keyboard navigation)
+- Performance (virtualization, layout thrashing prevention)
+- Forms (autocomplete, validation, proper input types)
+- Animation (prefers-reduced-motion, compositor-friendly)
+- Typography (proper number formatting, text wrapping)
+- Dark mode (color scheme setup, theme meta tags)
+- i18n (Intl APIs, proper formatting)
+- Hydration safety (SSR/CSR consistency)
+
+#### 🧪 Testing & QA (agent-browser)
+
+**When to use:**
+- Automated testing of forms and workflows
+- Visual regression testing with screenshots
+- Multi-locale testing (en/pt)
+- Accessibility validation
+
+**Purpose:** Automates browser interactions for testing, validation, and documentation.
+
+#### ⚡ React/Next.js Performance (vercel-react-best-practices)
+
+**When to use:**
+- Writing or refactoring React components
+- Implementing data fetching
+- Optimizing bundle size
+- Improving rendering performance
+
+**Purpose:** Apply Vercel Engineering's 57 optimization rules for React and Next.js applications.
+
+#### 🏗️ Component Architecture (vercel-composition-patterns)
+
+**When to use:**
+- Designing component APIs
+- Refactoring component hierarchies
+- Managing component state
+
+**Purpose:** Follow React best practices for component composition and state management.
+
+---
+
+**Workflow Example:**
+
+1. **Create** new feature with `frontend-design` → Bold, creative UI
+2. **Optimize** with `vercel-react-best-practices` → Fast, efficient code
+3. **Audit** with `web-design-guidelines` → Accessible, compliant
+4. **Test** with `agent-browser` → Validated, working
+
 ### Setup After Clone
 
 **Important:** After cloning this repository, run the following commands to generate AI assistant symlinks:
@@ -62,6 +165,7 @@ This project includes **Vercel Labs agent skills** - curated React and Next.js b
 ```bash
 npx skills add vercel-labs/agent-skills --yes
 npx skills add https://github.com/vercel-labs/agent-browser --skill agent-browser --yes
+npx skills add https://github.com/anthropics/skills --skill frontend-design --yes
 ```
 
 This creates symlinks in directories like `.cursor/`, `.claude/`, `.cline/` that allow AI coding assistants (Claude Code, Cursor, Copilot, etc.) to access the skills. These symlinks are gitignored but reference the shared skills in `.agents/skills/`.
