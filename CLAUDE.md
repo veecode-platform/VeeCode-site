@@ -26,6 +26,44 @@ yarn static       # Serve static output locally
 yarn eslint:fix   # Auto-fix linting issues
 ```
 
+## Agent Skills Setup
+
+This project includes **Vercel Labs agent skills** - curated React and Next.js best practices from Vercel Engineering that AI coding assistants can reference when writing code.
+
+### Installed Skills
+
+- **vercel-react-best-practices** (57 optimization rules)
+  - Eliminating async waterfalls with `Promise.all()`
+  - Bundle size optimization (direct imports, dynamic imports)
+  - Server-side performance (React.cache(), parallel fetching)
+  - Re-render optimization (memoization, derived state)
+  - Rendering performance (content visibility, static JSX)
+
+- **vercel-composition-patterns** (React architecture)
+  - Compound components over boolean props
+  - React 19 patterns (no forwardRef needed)
+  - State management best practices
+
+- **web-design-guidelines** (Frontend design)
+  - UI/UX best practices
+  - Design system patterns
+
+### Setup After Clone
+
+**Important:** After cloning this repository, run the following command to generate AI assistant symlinks:
+
+```bash
+npx skills add vercel-labs/agent-skills --yes
+```
+
+This creates symlinks in directories like `.cursor/`, `.claude/`, `.cline/` that allow AI coding assistants (Claude Code, Cursor, Copilot, etc.) to access the skills. These symlinks are gitignored but reference the shared skills in `.agents/skills/`.
+
+**Why this is needed:**
+- Skills are stored in `.agents/skills/` (committed to git)
+- Each AI assistant needs symlinks in its config directory (gitignored)
+- The command regenerates these symlinks without re-downloading skills
+- Works for 33+ AI coding assistants automatically
+
 ## Project Structure
 
 ```
