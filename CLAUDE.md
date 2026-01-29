@@ -121,9 +121,67 @@ interface Plugin {
 }
 ```
 
-## Deployment
+## Deployment & Environments
 
-- **Target:** GitHub Pages at `platform.vee.codes`
-- **CI/CD:** GitHub Actions workflow in `.github/workflows/deploy_gh_pages.yml`
-- **Trigger:** Manual workflow dispatch
-- **Build:** Node.js 20, Yarn 4.9.1
+The project uses a **dual-environment architecture** with automatic deployments for both production and staging.
+
+### Environment Overview
+
+```mermaid
+graph LR
+    A[develop branch] -->|force push| B[VeeCode-site-preview repo]
+    B -->|build & deploy| C[next.platform.vee.codes]
+
+    D[main branch] -->|build & deploy| E[platform.vee.codes]
+
+    style A fill:#f9f,stroke:#333
+    style D fill:#9f9,stroke:#333
+    style C fill:#ff9,stroke:#333
+    style E fill:#9ff,stroke:#333
+```
+
+### Production Environment
+
+- **Branch:** `main`
+- **URL:** `platform.vee.codes`
+- **Workflow:** `.github/workflows/deploy_gh_pages.yml`
+- **Trigger:** Push to `main` branch
+- **Process:**
+  1. Checkout repository
+  2. Setup Node.js 20 + Yarn 4.9.1
+  3. Install dependencies
+  4. Build static site (`yarn build` → `./out`)
+  5. Deploy to GitHub Pages with custom CNAME
+
+### Staging Environment
+
+- **Branch:** `develop`
+- **URL:** `next.platform.vee.codes`
+- **Workflow:** `.github/workflows/deploy_preview.yml`
+- **Trigger:** Push to `develop` branch
+- **Process:**
+  1. Checkout repository with full history
+  2. Force push to `veecode-platform/VeeCode-site-preview` repo (`develop` → `main`)
+  3. Preview repo automatically builds and deploys to its own GitHub Pages
+
+### Branch Strategy
+
+| Branch | Purpose | Deploys To |
+|--------|---------|------------|
+| `develop` | Active development, staging | `next.platform.vee.codes` |
+| `main` | Production releases | `platform.vee.codes` |
+
+### Workflow Benefits
+
+1. **Simple Branch Model** - Only 2 branches to manage
+2. **Automatic Staging** - Every push to `develop` updates staging instantly
+3. **Separation of Concerns** - Preview repo is a mirror; all development happens here
+4. **No Manual Sync** - Force push ensures staging is always in sync
+5. **Parallel Environments** - Test in staging before promoting to production
+
+### Release Process
+
+1. Develop features on `develop` branch
+2. Test at `next.platform.vee.codes`
+3. When ready for release, merge `develop` → `main`
+4. Production automatically deploys to `platform.vee.codes`
