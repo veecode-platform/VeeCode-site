@@ -7,6 +7,7 @@ const VertigoLogo = "/assets/home/vertigo-logo.webp";
 const AmbimaLogo = "/assets/home/ambima-logo.webp";
 const SankhyaLogo = "/assets/home/sankhya.webp";
 const CredSystemLogo = "/assets/home/credsystem-logo.webp";
+const RodonavesLogo = "/assets/home/rodonaves-logo.webp";
 
 interface ClientLogosProps {
   label?: string;
@@ -33,6 +34,11 @@ const ClientLogos: React.FC<ClientLogosProps> = ({ label }) => {
       id: 4,
       logo: CredSystemLogo,
       alt: "CredSystem logo",
+    },
+    {
+      id: 5,
+      logo: RodonavesLogo,
+      alt: "Rodonaves logo",
     },
   ];
 
