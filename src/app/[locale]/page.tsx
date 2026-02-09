@@ -86,7 +86,11 @@ export default async function Home({ params }: PageProps) {
     <main className="flex flex-col justify-center items-center py-35 gap-40">
       <Hero
         title={t("hero.title")}
-        description={t("hero.description")}
+        description={t.rich("hero.description", {
+          strong: (chunk) => (
+            <span className="font-semibold">{chunk}</span>
+          ),
+        })}
         buttonLabel1={t("hero.buttons.button1.label")}
         buttonLabel2={t("hero.buttons.button2.label")}
         descriptionExternalLink={a("external-links.docs")}

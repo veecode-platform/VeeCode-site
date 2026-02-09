@@ -7,7 +7,7 @@ const HeroImage = "/assets/home/hero.webp";
 
 interface HeroProps {
   title: string;
-  description: string;
+  description: React.ReactNode;
   buttonLabel1: string;
   buttonLabel2: string;
   descriptionExternalLink: string;
