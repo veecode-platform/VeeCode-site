@@ -47,6 +47,7 @@ interface PricingCardData {
   buttonHref: ComponentProps<typeof NavigationLink>["href"];
   features: string[];
   isFreeTier?: boolean;
+  useModal?: boolean;
 }
 
 function PricingCardItem({ card }: { card: PricingCardData }) {
@@ -68,8 +69,15 @@ function PricingCardItem({ card }: { card: PricingCardData }) {
           </p>
         </div>
 
-        {card.isFreeTier ? (
-          <HubSpotPopupButton buttonText={card.buttonText} />
+        {card.useModal ? (
+          <HubSpotPopupButton
+            buttonText={card.buttonText}
+            buttonClassName={
+              card.isFreeTier
+                ? "w-full py-4 bg-transparent border-2 border-gray-300 text-gray-700 rounded-lg font-semibold text-base hover:border-[#33FFCE] hover:bg-[rgba(51,255,206,0.1)] transition-all"
+                : "w-full py-4 bg-[#33FFCE] text-gray-800 rounded-lg font-bold text-base shadow-xl hover:bg-[#2ee6b9] hover:scale-105 transition-all"
+            }
+          />
         ) : (
           <NavigationLink href={card.buttonHref}>
             <button className="w-full py-4 bg-[#33FFCE] text-gray-800 rounded-lg font-bold text-base shadow-xl hover:bg-[#2ee6b9] hover:scale-105 transition-all">
@@ -111,6 +119,7 @@ export default async function PricingPage({ params }: PageProps) {
       buttonText: "Comece grátis",
       buttonHref: "/contact-us",
       isFreeTier: true,
+      useModal: true,
       features: [
         "Suporte",
         "Templates básicos",
@@ -125,6 +134,7 @@ export default async function PricingPage({ params }: PageProps) {
       users: "de 5 a 10 usuários",
       buttonText: "Comece agora",
       buttonHref: "/contact-us",
+      useModal: true,
       features: [
         "Suporte 8x5",
         "Suporte para plugins e templates",
@@ -139,6 +149,7 @@ export default async function PricingPage({ params }: PageProps) {
       users: "de 11 a 50 usuários",
       buttonText: "Comece agora",
       buttonHref: "/contact-us",
+      useModal: true,
       features: [
         "Suporte 8x5",
         "Suporte para plugins e templates",
