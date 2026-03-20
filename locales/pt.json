@@ -380,25 +380,25 @@
     "title": "Plugins VeeCode",
     "description": "Acesse descrições, guias e instruções de instalação para nossos plugins",
     "github-workflows": {
-      "description": "O plugin Github Workflows fornece uma alternativa para acionar manualmente os workflows do GitHub dentro do seu componente Backstage."
+      "description": "The Github Workflows plugin enables manual triggering and monitoring of GitHub Actions workflows directly from Backstage components. - **Complete Workflow Listing**: View all workflows in your repository with status, branch filtering, and execution history - **On-Demand Workflows**: Configure specific workflows via annotations in your `catalog-info.yaml`"
     },
     "gitlab-pipelines": {
-      "description": "O plugin Gitlab pipelines integra o GitlabCi ao seu componente Backstage de forma simples."
+      "description": "The Gitlab-pipelines plugin integrates GitlabCi with its backstage component. It offers two approaches: - Execute / Cancel a new pipeline, listing the status of the latest pipelines in your project."
     },
     "kong-service-manager": {
-      "description": "O plugin Kong Service Manager fornece informações sobre o serviço Kong, uma lista de rotas associadas e também oferece a possibilidade de manipular plugins sem sair do Backstage."
+      "description": "<!-- markdownlint-disable MD033 --> Backstage frontend plugin for managing and plugins directly from the catalog."
     },
     "kubernetes-gpt-analyzer": {
-      "description": "O plugin Kubernetes GPT Analyzer utiliza inteligência artificial com a ajuda do k8s-operator para analisar e otimizar suas entidades Kubernetes, melhorando a gestão e o desempenho do seu cluster. Facilita a detecção de anomalias e sugere melhores práticas."
+      "description": "The Kubernetes GPT Analyzer plug-in offers an AI approach to your Kubernetes component. The plug-in offers a dynamic approach, in conjunction with the `@backstage/plugin-kubernetes` and `k8s-operator`: - Application error analysis."
     },
     "infracost": {
-      "description": "O plugin Infracost funciona em conjunto com o terraform e fornece uma representação gráfica e estimativas de custo para sua entidade no respectivo provedor."
+      "description": "<br> The **Infracost** plugin provides a graphic representation of the application's cost estimate in its respective provider. <br> The Plugin offers a generalized approach with all the resources used and also presents a more detailed approach with the cost components that each resource has.<br>"
     },
     "about": {
-      "description": "O plugin About exibe informações detalhadas sobre a entidade do catálogo, incluindo metadados, proprietários e dependências."
+      "description": "Frontend plugin for the VeeCode DevPortal \"About\" page. Displays system information such as OS, Node.js version, resource utilization, and Backstage/DevPortal versions. Supports dynamic plugin export via `rhdh-cli`."
     },
     "ldap-auth": {
-      "description": "O plugin LDAP Auth fornece autenticação via LDAP para o Backstage, permitindo login corporativo integrado ao diretório LDAP da organização."
+      "description": "> LDAP Authentication frontend for [Backstage](https://backstage.io/) This package provides a custom LDAP login page and client-side token management for your Backstage instance. This is a **maintained fork** of the original [`@immobiliarelabs/backstage-plugin-ldap-auth`](https://github.com/immobiliare/backstage-plugin-ldap-auth), updated and adapted for:"
     },
     "action": {
       "contact": {
