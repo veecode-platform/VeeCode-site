@@ -1,0 +1,13 @@
+{
+  "id": "ldap-auth",
+  "title": "LDAP Auth",
+  "path": "ldap-auth",
+  "image": "https://veecode-platform.github.io/support/imgs/logo_2.svg",
+  "url": "https://github.com/veecode-platform/devportal-plugins/tree/main/workspace/ldap-auth/plugins/ldap-auth",
+  "desc": "No description available.",
+  "npm": "@veecode-platform/backstage-plugin-ldap-auth",
+  "tags": [
+    "Auth",
+    "LDAP"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "gitlab-pipelines",
+  "title": "Gitlab Pipelines",
+  "path": "gitlab-pipelines",
+  "image": "https://veecode-platform.github.io/support/imgs/logo_1.svg",
+  "url": "https://github.com/veecode-platform/platform-backstage-plugins/tree/master/plugins/gitlab-pipelines",
+  "desc": "No description available.",
+  "npm": "@veecode-platform/backstage-plugin-gitlab-pipelines",
+  "tags": [
+    "CI-CD",
+    "Gitlab"
+  ]
+}

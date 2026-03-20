@@ -1,0 +1,13 @@
+{
+  "id": "github-workflows",
+  "title": "Github Workflows",
+  "path": "github-workflows",
+  "image": "https://veecode-platform.github.io/support/imgs/logo_2.svg",
+  "url": "https://github.com/veecode-platform/devportal-plugins/tree/main/workspace/github-workflows/plugins/github-workflows",
+  "desc": "No description available.",
+  "npm": "@veecode-platform/backstage-plugin-github-workflows",
+  "tags": [
+    "CI-CD",
+    "Github"
+  ]
+}

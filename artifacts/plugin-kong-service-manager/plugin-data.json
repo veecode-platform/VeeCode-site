@@ -1,0 +1,14 @@
+{
+  "id": "kong-service-manager",
+  "title": "Kong Service Manager",
+  "path": "kong-service-manager",
+  "image": "https://veecode-platform.github.io/support/imgs/logo_3.svg",
+  "url": "https://github.com/veecode-platform/devportal-plugins/tree/main/workspace/kong-tools/plugins/kong-service-manager",
+  "desc": "No description available.",
+  "npm": "@veecode-platform/backstage-plugin-kong-service-manager",
+  "tags": [
+    "Kong",
+    "API Gateway",
+    "Services"
+  ]
+}

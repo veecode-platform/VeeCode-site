@@ -1,0 +1,14 @@
+{
+  "id": "infracost",
+  "title": "Infracost",
+  "path": "infracost",
+  "image": "https://veecode-platform.github.io/support/imgs/logo_5.svg",
+  "url": "https://github.com/veecode-platform/platform-backstage-plugins/tree/master/plugins/infracost",
+  "desc": "No description available.",
+  "npm": "@veecode-platform/backstage-plugin-infracost",
+  "tags": [
+    "Finops",
+    "Infracost",
+    "Estimate"
+  ]
+}

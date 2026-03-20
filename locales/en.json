@@ -380,25 +380,25 @@
     "title": "VeeCode Plugins",
     "description": "Access descriptions, guides, and installation instructions for our plugins",
     "github-workflows": {
-      "description": "The Github Workflows plugin provides an alternative to manually trigger GitHub workflows within your Backstage component."
+      "description": "No description available."
     },
     "gitlab-pipelines": {
-      "description": "The Gitlab Pipelines plugin integrates GitlabCi into your Backstage component in a simple way."
+      "description": "No description available."
     },
     "kong-service-manager": {
-      "description": "The Kong Service Manager plugin provides information about the Kong service, a list of associated routes, and also allows you to manage plugins without leaving Backstage."
+      "description": "No description available."
     },
     "kubernetes-gpt-analyzer": {
-      "description": "The Kubernetes GPT Analyzer plugin uses artificial intelligence with the help of the k8s-operator to analyze and optimize your Kubernetes entities, improving cluster management and performance. It facilitates anomaly detection and suggests best practices."
+      "description": "No description available."
     },
     "infracost": {
-      "description": "The Infracost plugin works together with Terraform and provides a graphical representation and cost estimates for your entity in the respective provider."
+      "description": "No description available."
     },
     "about": {
-      "description": "The About plugin displays detailed information about the catalog entity, including metadata, owners, and dependencies."
+      "description": "No description available."
     },
     "ldap-auth": {
-      "description": "The LDAP Auth plugin provides LDAP authentication for Backstage, enabling corporate login integrated with the organization's LDAP directory."
+      "description": "No description available."
     },
     "action": {
       "contact": {

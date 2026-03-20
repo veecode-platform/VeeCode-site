@@ -1,0 +1,14 @@
+{
+  "id": "kubernetes-gpt-analyzer",
+  "title": "Kubernetes GPT Analyzer",
+  "path": "kubernetes-gpt-analyzer",
+  "image": "https://veecode-platform.github.io/support/imgs/logo_4.svg",
+  "url": "https://github.com/veecode-platform/platform-backstage-plugins/tree/master/plugins/kubernetes-gpt-analyzer",
+  "desc": "No description available.",
+  "npm": "@veecode-platform/backstage-plugin-kubernetes-gpt-analyzer",
+  "tags": [
+    "Kubernetes",
+    "AI",
+    "Monitoring"
+  ]
+}

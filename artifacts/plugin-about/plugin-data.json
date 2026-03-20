@@ -1,0 +1,13 @@
+{
+  "id": "about",
+  "title": "About",
+  "path": "about",
+  "image": "https://veecode-platform.github.io/support/imgs/logo_2.svg",
+  "url": "https://github.com/veecode-platform/devportal-plugins/tree/main/workspace/about/plugins/about",
+  "desc": "No description available.",
+  "npm": "@veecode-platform/backstage-plugin-about",
+  "tags": [
+    "DevPortal",
+    "Info"
+  ]
+}
