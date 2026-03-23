@@ -49,6 +49,7 @@ interface PricingCardData {
   features: string[];
   isFreeTier?: boolean;
   isContactForm?: boolean;
+  contactFormId?: string;
 }
 
 function PricingCardItem({ card }: { card: PricingCardData }) {
@@ -73,7 +74,7 @@ function PricingCardItem({ card }: { card: PricingCardData }) {
         {card.isFreeTier ? (
           <HubSpotPopupButton buttonText={card.buttonText} />
         ) : card.isContactForm ? (
-          <HubSpotContactButton buttonText={card.buttonText} />
+          <HubSpotContactButton buttonText={card.buttonText} formId={card.contactFormId} />
         ) : (
           <NavigationLink href={card.buttonHref}>
             <button className="w-full py-4 bg-[#33FFCE] text-gray-800 rounded-lg font-bold text-base shadow-xl hover:bg-[#2ee6b9] hover:scale-105 transition-all">
@@ -159,6 +160,7 @@ export default async function PricingPage({ params }: PageProps) {
       buttonText: "Entre em contato",
       buttonHref: "/contact-us",
       isContactForm: true,
+      contactFormId: "18504ff1-ca29-442c-8f7d-f3df138c3f06",
       features: [
         "Suporte 8x5",
         "Suporte para plugins e templates",
@@ -173,6 +175,7 @@ export default async function PricingPage({ params }: PageProps) {
       buttonText: "Entre em contato",
       buttonHref: "/contact-us",
       isContactForm: true,
+      contactFormId: "18504ff1-ca29-442c-8f7d-f3df138c3f06",
       features: [
         "Suporte 24x7",
         "Suporte para plugins e templates",
