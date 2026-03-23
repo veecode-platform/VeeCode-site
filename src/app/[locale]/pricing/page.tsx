@@ -129,7 +129,6 @@ export default async function PricingPage({ params }: PageProps) {
       users: "de 5 a 10 usuários",
       buttonText: "Comece agora",
       buttonHref: "/contact-us",
-      isContactForm: true,
       features: [
         "Suporte 8x5",
         "Suporte para plugins e templates",
@@ -158,7 +157,6 @@ export default async function PricingPage({ params }: PageProps) {
       users: "50-200 usuários",
       buttonText: "Entre em contato",
       buttonHref: "/contact-us",
-      isContactForm: true,
       features: [
         "Suporte 8x5",
         "Suporte para plugins e templates",
@@ -172,7 +170,6 @@ export default async function PricingPage({ params }: PageProps) {
       users: "+200 usuários",
       buttonText: "Entre em contato",
       buttonHref: "/contact-us",
-      isContactForm: true,
       features: [
         "Suporte 24x7",
         "Suporte para plugins e templates",
